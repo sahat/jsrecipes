@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fullstackApp')
+angular.module('MyApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

@@ -1,11 +1,6 @@
 'use strict';
 
-angular.module('fullstackApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngRoute'
-])
+angular.module('MyApp', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
