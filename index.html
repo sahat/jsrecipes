@@ -5,29 +5,23 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet'>
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-app="MyApp">
 
   <div class="container">
 
-    <!--Header-->
-    <div class="header">
-      <ul class="nav nav-pills pull-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <h3 class="text-muted">Project name</h3>
-    </div>
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Library</a></li>
+      <li class="active">Data</li>
+    </ol>
 
     <!--View-->
     <div ng-view=""></div>
 
-    <!--Footer-->
-    <div class="footer">
-      <p>&copy; Company 2014</p>
-    </div>
   </div>
 
   <script>
