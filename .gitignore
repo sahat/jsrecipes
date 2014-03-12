@@ -1,1 +1,6 @@
-_site/
+node_modules
+dist
+.idea
+.tmp
+.sass-cache
+app/bower_components
