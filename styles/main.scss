@@ -1,5 +1,8 @@
 @import 'lib/bootstrap/bootstrap';
 
+/* Angular UI */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
