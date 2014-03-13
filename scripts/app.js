@@ -11,10 +11,12 @@ angular.module('MyApp', ['ngRoute', 'ui.bootstrap'])
         templateUrl: 'views/backend.html',
         controller: 'MainCtrl'
       })
-      .when('/backend/:language', {
-        templateUrl: function(params) {
-          return 'views/' + params.language + '.html';
-        }
+      .when('/backend/node', {
+        templateUrl: 'views/node.html',
+        controller: 'MainCtrl'
+      })
+      .when('/backend/node/:name', {
+        templateUrl: 'views/detail.html'
       })
       .when('/frontend', {
         templateUrl: 'views/frontend.html',
