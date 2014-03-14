@@ -13,25 +13,41 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
-        </li>
-        <li><a href="#">Dashboard</a>
-        </li>
-        <li><a href="#">Shortcuts</a>
-        </li>
-        <li><a href="#">Overview</a>
-        </li>
-        <li><a href="#">Events</a>
-        </li>
-        <li><a href="#">About</a>
-        </li>
-        <li><a href="#">Services</a>
-        </li>
-        <li><a href="#">Contact</a>
-        </li>
-      </ul>
+    <div id="sidebar-wrapper" class="sidebar">
+      <nav class="sidebar-nav">
+        <ul id="menu" class="sidebar-nav">
+          <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+          </li>
+          <li><a href="#">
+            <i class="fa fa-github"></i>
+            Dashboard
+          </a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="list-unstyled">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          </li>
+          <li><a href="#">Overview</a>
+          </li>
+          <li><a href="#">Events</a>
+          </li>
+          <li><a href="#">About</a>
+          </li>
+          <li><a href="#">Services</a>
+          </li>
+          <li><a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <!-- Page content -->
@@ -57,6 +73,8 @@
   <script src="scripts/lib/angular-sanitize.js"></script>
   <script src="scripts/lib/angular-route.js"></script>
   <script src="scripts/lib/angular-ui-bootstrap-0.10.0.js"></script>
+  <script src="scripts/lib/jquery.metisMenu.js"></script>
+
 
   <!-- Custom JavaScript for the Menu Toggle -->
   <script>
@@ -64,6 +82,8 @@
       e.preventDefault();
       $('#wrapper').toggleClass('active');
     });
+
+    $("#menu").metisMenu();
   </script>
 
   <script src="scripts/app.js"></script>
