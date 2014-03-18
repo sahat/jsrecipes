@@ -12,14 +12,13 @@ $link-hover-color: $link-color;
 $jumbotron-bg: #7761a7;
 $jumbotron-color: #fff;
 
-$navbar-default-bg: rgba($brand-primary, 0.9);
-$navbar-default-link-color: #fff;
-$navbar-default-link-active-color: #fff;
-$navbar-default-link-hover-color: #fff;
-$navbar-default-link-hover-bg: darken($navbar-default-bg, 6.5%);
+
+$navbar-default-bg: #fff;
+$navbar-default-link-color: $brand-primary;
+$navbar-default-link-hover-bg: #f9f9f9;
 $navbar-default-toggle-icon-bar-bg: #fff;
 $navbar-default-toggle-hover-bg: $brand-primary;
-
+$navbar-margin-bottom: 0;
 $panel-success-text: #fff;
 $panel-success-border: $brand-success;
 $panel-success-heading-bg: $brand-success;
@@ -32,20 +31,21 @@ $panel-danger-text: #fff;
 $panel-danger-border: $brand-danger;
 $panel-danger-heading-bg: $brand-danger;
 
-
-
-
 @import 'lib/bootstrap/bootstrap';
 @import 'lib/font-awesome';
 @import 'lib/jquery.metisMenu.css';
 
-body {
-  padding-top: 40px;
-}
 
 /* Angular UI */
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer;
+}
+
+.jumbotron p {
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #cdbfe3;
 }
 
 .fa {
@@ -941,4 +941,10 @@ textarea.form-control {
 }
 .input-group {
   margin-bottom: 15px;
+}
+
+.navbar-form {
+  .btn {
+    margin-bottom: 0 !important;
+  }
 }
