@@ -21,6 +21,11 @@ $navbar-default-link-active-color: #fff;
   cursor: pointer;
 }
 
+.fa {
+  display: inline;
+  margin-right: 5px;
+}
+
 #wrapper {
   padding-left: 250px;
   transition: all 0.4s ease 0s;
