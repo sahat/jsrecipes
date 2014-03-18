@@ -860,3 +860,85 @@ body {
   background-color: #DDD;
   border-color: #DDD;
 }
+
+.form-inline .form-group, .navbar-form .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/*Forms*/
+.form-horizontal.group-border .form-group {
+  padding: 5px 0 15px 0;
+}
+.form-horizontal.group-border .form-group label {
+  margin-bottom: 7px;
+}
+.form-horizontal.group-border-dashed .form-group label {
+  margin-bottom: 7px;
+}
+
+/*Forms*/
+label {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.form-horizontal.group-border .form-group {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #efefef;
+}
+.form-horizontal.group-border .form-group:last-child {
+  border-bottom: 0;
+}
+.form-horizontal.group-border-dashed .form-group {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px dashed #efefef;
+}
+.form-horizontal.group-border-dashed .form-group:last-child {
+  border-bottom: 0;
+}
+.form-control {
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  box-shadow: none;
+}
+.input-group .btn {
+  margin: 0 !important;
+  margin-left: -1px !important;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  box-shadow: none;
+  line-height: 20px;
+}
+.input-group-btn > .btn + .btn {
+  margin-left: -5px !important;
+}
+.input-group-lg > .input-group-addon {
+  line-height: 0.33;
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+.input-group-addon {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  padding: 6px 11px;
+}
+.input-group-addon.primary {
+  background-color: #7761a7;
+  color: #fff;
+}
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: none;
+  background-color: #F4F5F7;
+}
+select.form-control,
+textarea.form-control {
+  padding: 6px 8px;
+}
+.input-group {
+  margin-bottom: 15px;
+}
