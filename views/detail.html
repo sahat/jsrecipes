@@ -1,6 +1,6 @@
 <div class="jumbotron">
-  <h1>JS Recipes {{ title }}</h1>
-  <p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
+  <h1>{{ getTitle() }}</h1>
+  <p>{{ getDescription() || 'No Description' }}</p>
 </div>
 
 <div class="container">
