@@ -1,95 +1,97 @@
-<div class="page-header">
-  <h2 class="text-info"><span class="fa fa-hdd-o"></span> Backend</h2>
+<div class="jumbotron">
+  <h1>JS Recipes {{ title }}</h1>
+  <p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
 </div>
 
-
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h3 class="panel-title">Beginner</h3>
+<div class="container">
+  <div class="page-header">
+    <h2 class="text-info"><span class="fa fa-hdd-o"></span> Backend</h2>
   </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Jade</a>
-    <a href="#" class="list-group-item">Form submission in Express</a>
-    <a href="#" class="list-group-item">CORS</a>
-    <a href="#" class="list-group-item">Websockets</a>
-    <a href="#" class="list-group-item">Upload files</a>
-    <a href="#" class="list-group-item">Node.js productivity</a>
-    <a href="#" class="list-group-item">Creating MongoDB schema</a>
+
+
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Beginner</h3>
+    </div>
+    <div class="list-group" ng-repeat="title in backend.beginner">
+      <a href="#/backend/{{ title | slugify}}" class="list-group-item">{{ title }}</a>
+    </div>
+  </div>
+
+
+  <div class="panel panel-warning">
+    <div class="panel-heading">
+      <h3 class="panel-title">Intermediate</h3>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item">Gravatar support</a>
+      <a href="#" class="list-group-item">Local Authentication</a>
+      <a href="#" class="list-group-item">OAuth Authentication</a>
+      <a href="#" class="list-group-item">CSRF protection</a>
+      <a href="#" class="list-group-item">Gulp build tool</a>
+      <a href="#" class="list-group-item">Send emails</a>
+      <a href="#" class="list-group-item">Formatting filesize</a>
+      <a href="#" class="list-group-item">Get user's location from IP address</a>
+    </div>
+  </div>
+
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">Advanced</h3>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item">Organizing callbacks with Async.js</a>
+      <a href="#" class="list-group-item">Organizing callbacks with Bluebird promises</a>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h2 class="text-info"><i class="fa fa-html5"></i> Frontend</h2>
+  </div>
+
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">Beginner</h3>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item">Styling Bootstrap buttons</a>
+      <a href="#" class="list-group-item">Creating an HTML email template</a>
+      <a href="#" class="list-group-item">Animated progress bar (like YouTube)</a>
+      <a href="#" class="list-group-item">Creating a responsive grid of images</a>
+      <a href="#" class="list-group-item">Using Underscore templates</a>
+      <a href="#" class="list-group-item">Growl notifications</a>
+      <a href="#" class="list-group-item">Testing with Jasmine 2.0</a>
+    </div>
+  </div>
+
+  <div class="panel panel-warning">
+    <div class="panel-heading">
+      <h3 class="panel-title">Intermediate</h3>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item">Offline support</a>
+      <a href="#" class="list-group-item">Creating a star rating</a>
+      <a href="#" class="list-group-item">OAuth Authentication</a>
+      <a href="#" class="list-group-item">Detect client's platform</a>
+      <a href="#" class="list-group-item">Gulp build tool</a>
+      <a href="#" class="list-group-item">Customizable select elements</a>
+    </div>
+  </div>
+
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title">Advanced</h3>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item">Bootstrap Sidebar Menu</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
+    </div>
   </div>
 </div>
 
-
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h3 class="panel-title">Intermediate</h3>
-  </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Gravatar support</a>
-    <a href="#" class="list-group-item">Local Authentication</a>
-    <a href="#" class="list-group-item">OAuth Authentication</a>
-    <a href="#" class="list-group-item">CSRF protection</a>
-    <a href="#" class="list-group-item">Gulp build tool</a>
-    <a href="#" class="list-group-item">Send emails</a>
-    <a href="#" class="list-group-item">Formatting filesize</a>
-    <a href="#" class="list-group-item">Get user's location from IP address</a>
-  </div>
-</div>
-
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Advanced</h3>
-  </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Organizing callbacks with Async.js</a>
-    <a href="#" class="list-group-item">Organizing callbacks with Bluebird promises</a>
-  </div>
-</div>
-
-<div class="page-header">
-  <h2 class="text-info"><i class="fa fa-html5"></i> Frontend</h2>
-</div>
-
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h3 class="panel-title">Beginner</h3>
-  </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Styling Bootstrap buttons</a>
-    <a href="#" class="list-group-item">Creating an HTML email template</a>
-    <a href="#" class="list-group-item">Animated progress bar (like YouTube)</a>
-    <a href="#" class="list-group-item">Creating a responsive grid of images</a>
-    <a href="#" class="list-group-item">Using Underscore templates</a>
-    <a href="#" class="list-group-item">Growl notifications</a>
-    <a href="#" class="list-group-item">Testing with Jasmine 2.0</a>
-  </div>
-</div>
-
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h3 class="panel-title">Intermediate</h3>
-  </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Offline support</a>
-    <a href="#" class="list-group-item">Creating a star rating</a>
-    <a href="#" class="list-group-item">OAuth Authentication</a>
-    <a href="#" class="list-group-item">Detect client's platform</a>
-    <a href="#" class="list-group-item">Gulp build tool</a>
-    <a href="#" class="list-group-item">Customizable select elements</a>
-  </div>
-</div>
-
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Advanced</h3>
-  </div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Bootstrap Sidebar Menu</a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-12">
-    <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>
-  </div>
-</div>
 

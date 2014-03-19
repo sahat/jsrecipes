@@ -5,7 +5,6 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet'>
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-app="MyApp">
@@ -39,7 +38,7 @@
           </li>
         </ul>
         <form class="navbar-form navbar-right" role="search">
-          <div class="form-group  ">
+          <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default">
@@ -51,12 +50,8 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
-    <h1>JS Recipes</h1>
-    <p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
-  </div>
 
-  <div class="container" ng-view></div>
+  <div ng-view></div>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
