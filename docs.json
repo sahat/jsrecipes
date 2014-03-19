@@ -71,6 +71,72 @@
         "slug": "get-clients-location-from-an-ip-address"
       }
     ],
-    "advanced": []
+    "advanced": [
+      {
+        "title": "Organizing callbacks using Async.js",
+        "slug": "organizing-callbacks-using-asyncjs"
+      },
+      {
+        "title": "Organizing callbacks using Bluebird",
+        "slug": "organizing-callbacks-using-bluebird"
+      }
+    ]
+  },
+  "frontend": {
+    "beginner": [
+      {
+        "title": "Styling Bootstrap buttons",
+        "slug": "styling-bootstrap-buttons"
+      },
+      {
+        "title": "Creating HTML email template",
+        "slug": "creating-html-email-template"
+      },
+      {
+        "title": "Animated progress bar",
+        "slug": "animated-progress-bar"
+      },
+      {
+        "title": "Creating a responsive grid of images",
+        "slug": "creating-a-responsive-grid-of-images"
+      },
+      {
+        "title": "Using Underscore templates",
+        "slug": "using-underscore-templates"
+      },
+      {
+        "title": "Growl-like notifications",
+        "slug": "growl-like-notifications"
+      },
+      {
+        "title": "Testing with Jasmine 2.0",
+        "slug": "testing-with-jasmine-2"
+      }
+    ],
+    "intermediate": [
+
+      {
+        "title": "Offline support",
+        "slug": "offline-support"
+      },
+      {
+        "title": "Creating a star rating",
+        "slug": "creating-a-star-rating"
+      },
+      {
+        "title": "Detecting client's platform",
+        "slug": "detecting-clients-platform"
+      },
+      {
+        "title": "Customizing select dropdown",
+        "slug": "customizing-select-dropdown"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Bootstrap Sidebar Menu",
+        "slug": "bootstrap-sidebar-menu"
+      }
+    ]
   }
 }

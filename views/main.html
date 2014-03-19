@@ -30,9 +30,8 @@
     <div class="panel-heading">
       <h3 class="panel-title">Advanced</h3>
     </div>
-    <div class="list-group">
-      <a href="#" class="list-group-item">Organizing callbacks with Async.js</a>
-      <a href="#" class="list-group-item">Organizing callbacks with Bluebird promises</a>
+    <div class="list-group" ng-repeat="page in backend.advanced">
+      <a href="#/backend/{{ page.slug }}" class="list-group-item">{{ page.title }}</a>
     </div>
   </div>
 
@@ -44,14 +43,8 @@
     <div class="panel-heading">
       <h3 class="panel-title">Beginner</h3>
     </div>
-    <div class="list-group">
-      <a href="#" class="list-group-item">Styling Bootstrap buttons</a>
-      <a href="#" class="list-group-item">Creating an HTML email template</a>
-      <a href="#" class="list-group-item">Animated progress bar (like YouTube)</a>
-      <a href="#" class="list-group-item">Creating a responsive grid of images</a>
-      <a href="#" class="list-group-item">Using Underscore templates</a>
-      <a href="#" class="list-group-item">Growl notifications</a>
-      <a href="#" class="list-group-item">Testing with Jasmine 2.0</a>
+    <div class="list-group" ng-repeat="page in frontend.beginner">
+      <a href="#/frontend/{{ page.slug }}" class="list-group-item">{{ page.title }}</a>
     </div>
   </div>
 
@@ -59,13 +52,8 @@
     <div class="panel-heading">
       <h3 class="panel-title">Intermediate</h3>
     </div>
-    <div class="list-group">
-      <a href="#" class="list-group-item">Offline support</a>
-      <a href="#" class="list-group-item">Creating a star rating</a>
-      <a href="#" class="list-group-item">OAuth Authentication</a>
-      <a href="#" class="list-group-item">Detect client's platform</a>
-      <a href="#" class="list-group-item">Gulp build tool</a>
-      <a href="#" class="list-group-item">Customizable select elements</a>
+    <div class="list-group" ng-repeat="page in frontend.intermediate">
+      <a href="#/frontend/{{ page.slug }}" class="list-group-item">{{ page.title }}</a>
     </div>
   </div>
 
@@ -73,8 +61,8 @@
     <div class="panel-heading">
       <h3 class="panel-title">Advanced</h3>
     </div>
-    <div class="list-group">
-      <a href="#" class="list-group-item">Bootstrap Sidebar Menu</a>
+    <div class="list-group" ng-repeat="page in frontend.advanced">
+      <a href="#/frontend/{{ page.slug }}" class="list-group-item">{{ page.title }}</a>
     </div>
   </div>
 

@@ -6,6 +6,7 @@ angular.module('MyApp')
     $http.get('docs.json')
       .then(function(res) {
         $scope.backend = res.data.backend;
+        $scope.frontend = res.data.frontend;
 
         var currentPage = _.findWhere($scope.backend.beginner, { slug: $routeParams.name });
 
