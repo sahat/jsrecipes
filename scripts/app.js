@@ -7,18 +7,11 @@ angular.module('MyApp', ['ngRoute', 'ui.bootstrap'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/backend', {
-        templateUrl: 'views/backend.html',
-        controller: 'MainCtrl'
-      })
-      .when('/backend/node', {
-        templateUrl: 'views/node.html',
-        controller: 'MainCtrl'
-      })
-      .when('/backend/node/:name', {
+      .when('/backend/:name', {
         templateUrl: 'views/detail.html'
+        controller: 'MainCtrl'
       })
-      .when('/frontend', {
+      .when('/frontend/:name', {
         templateUrl: 'views/frontend.html',
         controller: 'MainCtrl'
       })
