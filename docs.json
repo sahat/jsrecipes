@@ -37,7 +37,40 @@
         "slug": "nodejs-debugging"
       }
     ],
-    "intermediate": [],
+    "intermediate": [
+      {
+        "title": "Gravatar support",
+        "slug": "gravatar-support"
+      },
+      {
+        "title": "Local Authentication",
+        "slug": "local-authentication"
+      },
+      {
+        "title": "OAuth Authentication",
+        "slug": "oauth-authentication"
+      },
+      {
+        "title": "CSRF protection",
+        "slug": "csrf-protection"
+      },
+      {
+        "title": "Optimizing assets using Gulp",
+        "slug": "optimizing-assets-using-gulp"
+      },
+      {
+        "title": "Sending emails via Nodemailer",
+        "slug": "sending-emails-via-nodemailer"
+      },
+      {
+        "title": "Formatting filesize",
+        "slug": "formatting-filesize"
+      },
+      {
+        "title": "Get client's location from an IP address",
+        "slug": "get-clients-location-from-an-ip-address"
+      }
+    ],
     "advanced": []
   }
 }

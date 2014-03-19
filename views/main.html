@@ -8,7 +8,6 @@
     <h2 class="text-info"><span class="fa fa-hdd-o"></span> Backend</h2>
   </div>
 
-
   <div class="panel panel-success">
     <div class="panel-heading">
       <h3 class="panel-title">Beginner</h3>
@@ -18,20 +17,12 @@
     </div>
   </div>
 
-
   <div class="panel panel-warning">
     <div class="panel-heading">
       <h3 class="panel-title">Intermediate</h3>
     </div>
-    <div class="list-group">
-      <a href="#" class="list-group-item">Gravatar support</a>
-      <a href="#" class="list-group-item">Local Authentication</a>
-      <a href="#" class="list-group-item">OAuth Authentication</a>
-      <a href="#" class="list-group-item">CSRF protection</a>
-      <a href="#" class="list-group-item">Gulp build tool</a>
-      <a href="#" class="list-group-item">Send emails</a>
-      <a href="#" class="list-group-item">Formatting filesize</a>
-      <a href="#" class="list-group-item">Get user's location from IP address</a>
+    <div class="list-group" ng-repeat="page in backend.intermediate">
+      <a href="#/backend/{{ page.slug }}" class="list-group-item">{{ page.title }}</a>
     </div>
   </div>
 
