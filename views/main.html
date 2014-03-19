@@ -13,8 +13,8 @@
     <div class="panel-heading">
       <h3 class="panel-title">Beginner</h3>
     </div>
-    <div class="list-group" ng-repeat="title in backend.beginner">
-      <a href="#/backend/{{ title | slugify}}" class="list-group-item">{{ title }}</a>
+    <div class="list-group" ng-repeat="page in backend.beginner">
+      <a href="#/backend/{{ page.slug }}" class="list-group-item">{{ page.title }}</a>
     </div>
   </div>
 
