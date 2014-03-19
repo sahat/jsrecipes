@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyApp', ['ngRoute', 'ui.bootstrap'])
+angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'slugifier'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -8,7 +8,7 @@ angular.module('MyApp', ['ngRoute', 'ui.bootstrap'])
         controller: 'MainCtrl'
       })
       .when('/backend/:name', {
-        templateUrl: 'views/detail.html'
+        templateUrl: 'views/detail.html',
         controller: 'MainCtrl'
       })
       .when('/frontend/:name', {
