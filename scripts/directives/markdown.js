@@ -1,6 +1,6 @@
 angular.module('MyApp')
   .directive('markdown', function() {
-    var converter = new Showdown.converter();
+    var converter = new Showdown.converter({ extensions: ['table', 'twitter', 'github'] });
     return {
       restrict: 'A',
       link: function(scope, element, attrs) {
