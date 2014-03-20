@@ -4,15 +4,14 @@ angular.module('MyApp')
         if ($routeParams.name) {
           ngProgress.start();
           Posts.getBySlug($routeParams.name, function(data) {
-            $scope.page = data;
+            $scope.post = data;
             ngProgress.complete();
-            $window.document.title = $scope.page.title + " - " + 'JS Recipes'
+            $window.document.title = $scope.post.title + " - " + 'JS Recipes'
           });
         } else {
           $window.document.title = 'JS Recipes' + " - " + 'Site Description';
           Posts.getPosts(function(data) {
-            console.log(data)
-            $scope.docs = data;
+            $scope.posts = data;
           });
         }
       });
