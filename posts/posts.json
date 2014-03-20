@@ -4,6 +4,7 @@
       {
         "title": "Introduction to Jade",
         "slug": "introduction-to-jade",
+        "file": "introduction-to-jade.md",
         "description": "Brief crash course into Jade templating language"
       },
       {
