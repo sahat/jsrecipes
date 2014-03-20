@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'slugifier'])
+angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'ngProgress'])
   .config(function($routeProvider) {
     $routeProvider
       .when('/', {

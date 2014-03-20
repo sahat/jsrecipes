@@ -1,7 +1,6 @@
 {
   "name": "fullstack",
   "version": "0.0.0",
-  "dependencies": {},
   "devDependencies": {
     "gulp": "~3.5.5",
     "gulp-sass": "~0.7.1"

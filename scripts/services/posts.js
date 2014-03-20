@@ -1,16 +1,27 @@
 angular.module('MyApp')
   .factory('Posts', function($http) {
-    return{
+    return {
       getPosts: function(callback) {
         $http.get('posts/posts.json').success(callback);
       },
       getBySlug: function(slug, callback) {
         this.getPosts(function(data) {
-          for (var i = 0; i < data.length; i++) {
-            if (data[i].slug === slug) {
-              callback(data[i]);
+
+          var recursiveGetProperty = function(obj, lookup, callback) {
+            for (var property in obj) {
+              if (property == lookup) {
+                callback(obj);
+              } else if (obj[property] instanceof Object) {
+                recursiveGetProperty(obj[property], lookup, callback);
+              }
             }
-          }
+          };
+
+          recursiveGetProperty(data, 'slug', function(obj) {
+            if (obj.slug === slug) {
+              callback(obj);
+            }
+          });
         })
       }
     }
