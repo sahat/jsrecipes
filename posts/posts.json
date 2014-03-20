@@ -4,82 +4,102 @@
       {
         "title": "Introduction to Jade",
         "slug": "introduction-to-jade",
-        "file": "introduction-to-jade.md",
+        "file": "backend/introduction-to-jade.md",
         "description": "Brief crash course into Jade templating language"
       },
       {
         "title": "Form submission in Express",
         "slug": "form-submission-in-express",
+        "file": "backend/form-submission-in-express.md",
         "description": "Learn how to POST forms in Express"
       },
       {
         "title": "File Upload",
         "slug": "file-upload",
+        "file": "backend/file-upload.md",
         "description": "Uploading user files"
       },
       {
         "title": "Useful Node.js utilities",
-        "slug": "useful-nodejs-utlities"
+        "slug": "useful-nodejs-utlities",
+        "file": "backend/useful-nodejs-utlities.md"
       },
       {
         "title": "Socket.IO Basics",
-        "slug": "socketio-basics"
+        "slug": "socketio-basics",
+        "file": "backend/socketio-basics.md",
+
       },
       {
         "title": "Creating a MongoDB model",
-        "slug": "creating-a-simple-mongodb-schema"
+        "slug": "creating-a-simple-mongodb-schema",
+        "file": "backend/creating-a-simple-mongodb-schema.md"
+
       },
       {
         "title": "Logging",
-        "slug": "logging"
+        "slug": "logging",
+        "file": "backend/logging.md"
       },
       {
         "title": "Debugging Node.js Applications",
-        "slug": "nodejs-debugging"
+        "slug": "nodejs-debugging",
+        "file": "backend/nodejs-debugging.md"
+
       }
     ],
     "intermediate": [
       {
         "title": "Gravatar support",
-        "slug": "gravatar-support"
+        "slug": "gravatar-support",
+        "file": "backend/gravatar-support.md"
       },
       {
         "title": "Local Authentication",
-        "slug": "local-authentication"
+        "slug": "local-authentication",
+        "file": "backend/local-authentication.md"
       },
       {
         "title": "OAuth Authentication",
-        "slug": "oauth-authentication"
+        "slug": "oauth-authentication",
+        "file": "backend/oauth-authentication.md"
       },
       {
         "title": "CSRF protection",
-        "slug": "csrf-protection"
+        "slug": "csrf-protection",
+        "file": "backend/csrf-protection.md"
       },
       {
         "title": "Optimizing assets using Gulp",
-        "slug": "optimizing-assets-using-gulp"
+        "slug": "optimizing-assets-using-gulp",
+        "file": "backend/.md"
       },
       {
         "title": "Sending emails via Nodemailer",
-        "slug": "sending-emails-via-nodemailer"
+        "slug": "sending-emails-via-nodemailer",
+        "file": "backend/sending-emails-via-nodemailer.md"
       },
       {
         "title": "Formatting filesize",
-        "slug": "formatting-filesize"
+        "slug": "formatting-filesize",
+        "file": "backend/formatting-filesize.md"
       },
       {
         "title": "Get client's location from an IP address",
-        "slug": "get-clients-location-from-an-ip-address"
+        "slug": "get-clients-location-from-an-ip-address",
+        "file": "backend/get-clients-location-from-an-ip-address.md"
       }
     ],
     "advanced": [
       {
         "title": "Organizing callbacks using Async.js",
-        "slug": "organizing-callbacks-using-asyncjs"
+        "slug": "organizing-callbacks-using-asyncjs",
+        "file": "backend/organizing-callbacks-using-asyncjs.md"
       },
       {
         "title": "Organizing callbacks using Bluebird",
-        "slug": "organizing-callbacks-using-bluebird"
+        "slug": "organizing-callbacks-using-bluebird",
+        "file": "backend/organizing-callbacks-using-bluebird.md"
       }
     ]
   },
