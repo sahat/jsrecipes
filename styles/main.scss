@@ -5,7 +5,7 @@ $brand-danger: #ea6152;
 $brand-info: #4aa3ef;
 
 $state-info-text: $brand-info;
-
+$state-danger-text: #d14;
 $link-color: $brand-primary;
 $link-hover-color: $link-color;
 
@@ -16,8 +16,8 @@ $jumbotron-color: #fff;
 $navbar-default-bg: #fff;
 $navbar-default-link-color: $brand-primary;
 $navbar-default-link-hover-bg: #f9f9f9;
-$navbar-default-toggle-icon-bar-bg: #fff;
-$navbar-default-toggle-hover-bg: $brand-primary;
+$navbar-default-toggle-icon-bar-bg: $brand-primary;
+$navbar-default-toggle-hover-bg: rgba($brand-primary, 0.1);
 $navbar-margin-bottom: 0;
 $panel-success-text: #fff;
 $panel-success-border: $brand-success;
@@ -33,7 +33,6 @@ $panel-danger-heading-bg: $brand-danger;
 
 @import 'lib/bootstrap/bootstrap';
 @import 'lib/font-awesome';
-@import 'lib/jquery.metisMenu.css';
 
 /* Angular UI */
 .nav, .pagination, .carousel, .panel-title a {
@@ -946,4 +945,33 @@ textarea.form-control {
   .btn {
     margin-bottom: 0 !important;
   }
+}
+
+/* Styling for the ngProgress itself */
+#ngProgress {
+  margin: 0;
+  padding: 0;
+  z-index: 99998;
+  background-color: green;
+  color: green;
+  box-shadow: 0 0 10px 0; /* Inherits the font color */
+  height: 2px;
+  opacity: 0;
+
+  /* Add CSS3 styles for transition smoothing */
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Styling for the ngProgress-container */
+#ngProgress-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
