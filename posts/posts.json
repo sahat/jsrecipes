@@ -27,8 +27,7 @@
       {
         "title": "Socket.IO Basics",
         "slug": "socketio-basics",
-        "file": "backend/socketio-basics.md",
-
+        "file": "backend/socketio-basics.md"
       },
       {
         "title": "Creating a MongoDB model",
