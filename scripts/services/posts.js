@@ -1,11 +1,11 @@
 angular.module('MyApp')
-  .factory('Docs', function($http) {
+  .factory('Posts', function($http) {
     return{
-      getDocs: function(callback) {
-        $http.get('/docs/docs.json').success(callback);
+      getPosts: function(callback) {
+        $http.get('posts/posts.json').success(callback);
       },
       getBySlug: function(slug, callback) {
-        this.getDocs(function(data) {
+        this.getPosts(function(data) {
           for (var i = 0; i < data.length; i++) {
             if (data[i].slug === slug) {
               callback(data[i]);
