@@ -21,11 +21,11 @@
         "slug": "useful-nodejs-utlities"
       },
       {
-        "title": "Socket.IO 101",
-        "slug": "socketio-101"
+        "title": "Socket.IO Basics",
+        "slug": "socketio-basics"
       },
       {
-        "title": "Creating a simple MongoDB Schema",
+        "title": "Creating a MongoDB model",
         "slug": "creating-a-simple-mongodb-schema"
       },
       {
@@ -33,7 +33,7 @@
         "slug": "logging"
       },
       {
-        "title": "Node.js Debugging",
+        "title": "Debugging Node.js Applications",
         "slug": "nodejs-debugging"
       }
     ],
