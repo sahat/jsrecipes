@@ -1,10 +1,9 @@
 <div class="jumbotron">
-  <h1>{{ getTitle() }}</h1>
-  <p>{{ getDescription() || 'No Description' }}</p>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.description }}</p>
 </div>
 
 <div class="container">
-  <h1>Detail page</h1>
-
-  <div markdown ng-include="docUrl()"></div>
+  <div markdown link="{{ post.file }}"></div>
 </div>
+
