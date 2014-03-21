@@ -61,6 +61,18 @@
     ],
     "intermediate": [
       {
+        "title": "Online visitor counter with Socket.io",
+        "slug": "online-visitor-counter-with-socketio",
+        "file": "backend/intermediate/online-visitor-counter-with-socketio.md",
+        "description": "Display how many users are online"
+      },
+      {
+        "title": "Storing Express sessions in Redis",
+        "slug": "storing-express-sessions-in-redis",
+        "file": "backend/intermediate/storing-express-sessions-in-redis.md",
+        "description": "By default Express stores sessions in-memory, but that approach does not scale well. Redis is an excellent choice for storing sessions in production-ready apps."
+      },
+      {
         "title": "Building a REST API service using Express",
         "slug": "building-a-rest-api-service-using-express",
         "file": "backend/intermediate/building-a-rest-api-service-using-express.md",
