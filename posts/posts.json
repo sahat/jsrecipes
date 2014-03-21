@@ -36,10 +36,10 @@
         "file": "backend/socketio-basics.md"
       },
       {
-        "title": "Creating a MongoDB model",
-        "slug": "creating-a-simple-mongodb-schema",
-        "file": "backend/creating-a-simple-mongodb-schema.md"
-
+        "title": "Getting Started with Mongoose",
+        "slug": "getting-started-with-mongoose",
+        "file": "backend/beginner/getting-started-with-mongoose.md",
+        "description": "A brief introduction to Mongoose"
       },
       {
         "title": "Node.js Logging",
@@ -60,6 +60,12 @@
       }
     ],
     "intermediate": [
+      {
+        "title": "Building a REST API service using Express",
+        "slug": "building-a-rest-api-service-using-express",
+        "file": "backend/intermediate/building-a-rest-api-service-using-express.md",
+        "description": "Build a REST API"
+      },
       {
         "title": "Form Validation",
         "slug": "form-validation",
