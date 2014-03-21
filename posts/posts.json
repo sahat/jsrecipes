@@ -42,9 +42,10 @@
 
       },
       {
-        "title": "Logging",
-        "slug": "logging",
-        "file": "backend/logging.md"
+        "title": "Node.js Logging",
+        "slug": "nodejs-logging",
+        "file": "backend/beginner/nodejs-logging.md",
+        "description": "Prettify your console.log messages"
       },
       {
         "title": "Debugging Node.js Applications",
