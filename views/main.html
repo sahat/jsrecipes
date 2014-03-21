@@ -67,6 +67,19 @@
     </div>
   </div>
 
+  <div class="page-header">
+    <h2 class="text-info"><span class="fa fa-star"></span> General</h2>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Best Practices</h3>
+    </div>
+    <div class="list-group" ng-repeat="post in posts.general | orderBy:'title'">
+      <a href="#/general/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-md-12">
       <p class="lead">This simple sidebar template has a hint of JavaScript to make the template responsive. It also includes Font Awesome icon fonts.</p>

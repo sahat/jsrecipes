@@ -141,6 +141,11 @@
   "frontend": {
     "beginner": [
       {
+        "title": "Autocompleting text fields",
+        "slug": "autocompleting-text-fields",
+        "file": "frontend/beginner/autocompleting-text-fields.md"
+      },
+      {
         "title": "Styling Bootstrap buttons",
         "slug": "styling-bootstrap-buttons"
       },
@@ -170,7 +175,11 @@
       }
     ],
     "intermediate": [
-
+      {
+        "title": "Underscore Templates",
+        "slug": "underscore-templates",
+        "file": "frontend/beginner/underscore-templates.md"
+      },
       {
         "title": "Offline support",
         "slug": "offline-support"
@@ -190,9 +199,21 @@
     ],
     "advanced": [
       {
+        "title": "Organizing code with Require.js",
+        "slug": "organizing-code-with-requirejs",
+        "file": "frontend/advanced/organizing-code-with-requirejs.md"
+      },
+      {
         "title": "Bootstrap Sidebar Menu",
         "slug": "bootstrap-sidebar-menu"
       }
     ]
-  }
+  },
+  "general": [
+    {
+      "title": "JavaScript Style Guide",
+      "slug": "javascript-style-guide",
+      "file": "/general/javascript-style-guide.md"
+    }
+  ]
 }
