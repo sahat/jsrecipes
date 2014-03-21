@@ -9,6 +9,7 @@ angular.module('MyApp')
             $http.get('posts/' + link).success(function(response) {
               var htmlText = converter.makeHtml(response);
               element.html(htmlText);
+              $('pre code').each(function(i, e) { hljs.highlightBlock(e)} );
             });
           }
         });
