@@ -2,6 +2,18 @@
   "backend": {
     "beginner": [
       {
+        "title": "Parsing XML documents",
+        "slug": "parsing-xml-documents",
+        "file": "backend/parsing-xml-documents.md",
+        "description": "Learn how to parse XML documents"
+      },
+      {
+        "title": "Parsing QueryString, POST and URL parameters",
+        "slug": "parsing-querystring-post-and-url-parameters",
+        "file": "backend/parsing-querystring-post-and-url-parameters.md",
+        "description": "Learn how to parse something like example.com?q=hello"
+      },
+      {
         "title": "Introduction to Jade",
         "slug": "introduction-to-jade",
         "file": "backend/introduction-to-jade.md",
@@ -12,12 +24,6 @@
         "slug": "form-submission-in-express",
         "file": "backend/form-submission-in-express.md",
         "description": "Learn how to POST forms in Express"
-      },
-      {
-        "title": "File Upload",
-        "slug": "file-upload",
-        "file": "backend/file-upload.md",
-        "description": "Uploading user files"
       },
       {
         "title": "Useful Node.js utilities",
@@ -45,9 +51,32 @@
         "slug": "nodejs-debugging",
         "file": "backend/nodejs-debugging.md"
 
+      },
+      {
+        "title": "Using Sass and LESS in Express",
+        "slug": "using-sass-and-less-in-express",
+        "file": "backend/using-sass-and-less-in-express.md"
       }
     ],
     "intermediate": [
+      {
+        "title": "Form Validation",
+        "slug": "form-validation",
+        "file": "backend/form-validation.md",
+        "description": "Validating forms for correct input"
+      },
+      {
+        "title": "Uploading files via form",
+        "slug": "uploading-files-via-form",
+        "file": "backend/uploading-files-via-form.md",
+        "description": "Uploading user files using an HTML form"
+      },
+      {
+        "title": "Uploading files via AJAX",
+        "slug": "uploading-files-via-ajax",
+        "file": "backend/uploading-files-via-ajax.md",
+        "description": "Uploading user files"
+      },
       {
         "title": "Gravatar support",
         "slug": "gravatar-support",
