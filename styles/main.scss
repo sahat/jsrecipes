@@ -9,6 +9,8 @@ $state-danger-text: #d14;
 $link-color: $brand-primary;
 $link-hover-color: $link-color;
 
+$line-height-base: 1.5;
+
 $jumbotron-bg: #7761a7;
 $jumbotron-color: #fff;
 
@@ -36,6 +38,32 @@ $panel-danger-heading-bg: $brand-danger;
 /* Angular UI */
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer;
+}
+
+
+pre {
+  color: #353535;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e7e7e7;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 3px 0 #eee;
+  -webkit-border-radius: 3px;
+}
+
+pre code {
+  font-family: monaco, monospace;
+  font-size: 0.80em;
+}
+
+code {
+  font-family: monaco, monospace;
+  font-size: 0.75em;
+  padding: 2px 8px;
+  border-radius: 3px;
 }
 
 .container img {
@@ -444,6 +472,268 @@ textarea.form-control {
     margin-bottom: 0 !important;
   }
 }
+
+/*Alerts*/
+.alert {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  box-shadow: 0;
+}
+.alert .sign {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center;
+  width: 25px;
+  display: inline-block;
+}
+.alert .close {
+  text-shadow: none;
+}
+.alert-primary {
+  background-color: #7761a7;
+  border-color: #6d579d;
+  color: #fff;
+}
+.alert-success {
+  background-color: #19b698;
+  border-color: #0fac8e;
+  color: #fff;
+}
+.alert-info {
+  background-color: #4aa3df;
+  border-color: #4099d5;
+  color: #fff;
+}
+.alert-warning {
+  background-color: #f16e3f;
+  border-color: #e76435;
+  color: #fff;
+}
+.alert-danger {
+  background-color: #ea6153;
+  border-color: #e05749;
+  color: #fff;
+}
+/*Alert White*/
+.alert-white {
+  background: #fff;
+  border-color: #d5d5d5;
+  color: #404040;
+  padding-left: 61px;
+  position: relative;
+}
+.alert-white .icon {
+  text-align: center;
+  width: 45px;
+  height: 103%;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #BDBDBD;
+  padding-top: 15px;
+}
+.alert-white .icon:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #BDBDBD;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  top: 50%;
+  right: -6px;
+  margin-top: -3px;
+  background: #fff;
+}
+.alert-white.rounded {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.alert-white.rounded .icon {
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+.alert-white .icon i {
+  font-size: 20px;
+  color: #FFF;
+  left: 12px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+}
+.alert-white.alert-danger .icon,
+.alert-white.alert-danger .icon:after {
+  border-color: #e05749;
+  background: #ea6153;
+}
+.alert-white.alert-info .icon,
+.alert-white.alert-info .icon:after {
+  border-color: #4099d5;
+  background: #4aa3df;
+}
+.alert-white.alert-warning .icon,
+.alert-white.alert-warning .icon:after {
+  border-color: #e76435;
+  background: #f16e3f;
+}
+.alert-white.alert-success .icon,
+.alert-white.alert-success .icon:after {
+  border-color: #0fac8e;
+  background: #19b698;
+}
+.alert-white.alert-primary .icon,
+.alert-white.alert-primary .icon:after {
+  border-color: #6d579d;
+  background: #7761a7;
+}
+/*Alert White alt 1*/
+.alert-white-alt {
+  border-width: 2px;
+  background: #fff;
+  color: #404040;
+  padding-left: 61px;
+  position: relative;
+}
+.alert-white-alt .icon {
+  text-align: center;
+  width: 45px;
+  height: 103%;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #BDBDBD;
+  padding-top: 15px;
+}
+.alert-white-alt .icon:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #BDBDBD;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  top: 50%;
+  right: -6px;
+  margin-top: -3px;
+  background: #fff;
+}
+.alert-white-alt.rounded {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.alert-white-alt.rounded .icon {
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+.alert-white-alt .icon i {
+  font-size: 20px;
+  color: #FFF;
+  left: 12px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+}
+.alert-white-alt.alert-danger .icon,
+.alert-white-alt.alert-danger .icon:after {
+  border-color: #e05749;
+  background: #ea6153;
+}
+.alert-white-alt.alert-info .icon,
+.alert-white-alt.alert-info .icon:after {
+  border-color: #4099d5;
+  background: #4aa3df;
+}
+.alert-white-alt.alert-warning .icon,
+.alert-white-alt.alert-warning .icon:after {
+  border-color: #e76435;
+  background: #f16e3f;
+}
+.alert-white-alt.alert-success .icon,
+.alert-white-alt.alert-success .icon:after {
+  border-color: #0fac8e;
+  background: #19b698;
+}
+.alert-white-alt.alert-primary .icon,
+.alert-white-alt.alert-primary .icon:after {
+  border-color: #6d579d;
+  background: #7761a7;
+}
+/*Alert White Alt 2*/
+.alert-white-alt2 {
+  background: #fff;
+  border-color: #d5d5d5;
+  color: #404040;
+  padding-left: 61px;
+  position: relative;
+}
+.alert-white-alt2 .icon {
+  text-align: center;
+  width: 45px;
+  height: 103%;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #d5d5d5;
+  padding-top: 15px;
+}
+.alert-white-alt2 .icon:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #d5d5d5;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  top: 50%;
+  right: -6px;
+  margin-top: -3px;
+  background: #fff;
+}
+.alert-white-alt2 .icon i {
+  font-size: 20px;
+  color: #FFF;
+  left: 12px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+}
+.alert-white-alt2.alert-danger .icon i {
+  color: #ea6153;
+}
+.alert-white-alt2.alert-info .icon i {
+  color: #4aa3df;
+}
+.alert-white-alt2.alert-warning .icon i {
+  color: #f16e3f;
+}
+.alert-white-alt2.alert-success .icon i {
+  color: #19b698;
+}
+.alert-white-alt2.alert-primary .icon i {
+  color: #7761a7;
+}
+
+
 
 /* Styling for the ngProgress itself */
 #ngProgress {
