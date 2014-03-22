@@ -34,12 +34,24 @@ $panel-danger-heading-bg: $brand-danger;
 
 @import 'lib/bootstrap/bootstrap';
 @import 'lib/font-awesome';
+@import 'lib/xcode.min';
 
 /* Angular UI */
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer;
 }
 
+body {
+  padding-bottom: 20px;
+}
+
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
 
 pre {
   color: #353535;
