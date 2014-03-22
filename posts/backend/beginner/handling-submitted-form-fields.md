@@ -51,7 +51,28 @@ app.post('/signup', function(req, res) {
 });
 ```
 
-On a related note this is also how you could also do input validation inside your
+In the case of radio buttons, keep the same **name** attribute on logically groupped
+radio buttons, but different **value** attributes to differentiate them from
+each other.
+
+```
+label.radio-inline
+  input(type='radio', name='gender', value='male')
+  | Male
+label.radio-inline
+  input(type='radio', name='gender', value='female')
+  | Female
+```
+
+This would print *male* or *female* depending on the radio button choice.
+
+```
+app.post('/signup', function(req, res, next) {
+  console.log(req.body.gender);
+});
+```
+
+On a related note, this is also how you could also do input validation inside your
 route, before you try to create a new user:
 
 ```
@@ -73,3 +94,13 @@ if (!req.body.password) {
 to the same page and display flash messages. Try submitting a blank
 form on [Hackathon Starter](http://hackathonstarter.herokuapp.com/signup) to see
 what I mean. But that is a discussion for another article.
+
+To recap, you create a form with `method='POST'` and `action='/url'` with whatever URL that you
+are *POST*'ing that form to. Make sure each input field has a unique **name** attribute.
+Then to access that input value from your `app.post` route your would use
+`req.body.INPUT_NAME_ATTRIBUTE`.
+
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+
+1. [Express API Reference on req.body](http://expressjs.com/3x/api.html#req.body)
