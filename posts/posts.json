@@ -20,9 +20,9 @@
         "description": "Brief crash course into Jade templating language"
       },
       {
-        "title": "Form submission in Express",
-        "slug": "form-submission-in-express",
-        "file": "backend/form-submission-in-express.md",
+        "title": "Handling Submitted Form Fields",
+        "slug": "handling-submitted-form-fields",
+        "file": "backend/beginner/handling-submitted-form-fields.md",
         "description": "Learn how to POST forms in Express"
       },
       {
@@ -46,12 +46,6 @@
         "slug": "nodejs-logging",
         "file": "backend/beginner/nodejs-logging.md",
         "description": "Prettify your console.log messages"
-      },
-      {
-        "title": "Debugging Node.js Applications",
-        "slug": "nodejs-debugging",
-        "file": "backend/nodejs-debugging.md"
-
       },
       {
         "title": "Using Sass and LESS in Express",
