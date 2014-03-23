@@ -165,8 +165,9 @@ User.find(function(err, users) {
 Or if you know the ObjectId you could use `findById` method instead:
 
 ```
-var id = '530c17c1fb8c96752498e120';
-User.findById(id, function(err, user) {
+var _id = '530c17c1fb8c96752498e120';
+
+User.findById(_id, function(err, user) {
   console.log(user);
 });
 ```
@@ -241,3 +242,9 @@ User.aggregate({ $group: { _id: null, total: { $sum: '$votes' } } }, function(er
   console.log(votesCount.total);
 });
 ```
+
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+
+1. [Quick-Start Guide to MongoLab](http://docs.mongolab.com)
+2. [Official Mongoose Guide](http://mongoosejs.com/docs/guide.html)
