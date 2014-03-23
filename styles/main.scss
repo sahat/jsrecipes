@@ -41,15 +41,12 @@ $panel-danger-heading-bg: $brand-danger;
   cursor: pointer;
 }
 
-body {
-  padding-bottom: 20px;
-}
 
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 20px;
-  color: #777;
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
 }
 
