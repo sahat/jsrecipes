@@ -2,7 +2,7 @@ There are three common ways of sending data from client to server:
 
 1. Query String - key-value pair after `?`, separated by `&`.
 2. POST - parameters that are sent as part of a `POST` request.
-3. URL - route parameters.
+3. URL - route parameters, e.g. `/posts/:id`.
 
 ### Query String
 

@@ -8,10 +8,10 @@
         "description": "Learn how to parse XML documents"
       },
       {
-        "title": "Parsing QueryString, POST and URL parameters",
+        "title": "Parsing Query String, POST and URL Parameters",
         "slug": "parsing-query-string-post-and-url-parameters",
         "file": "backend/beginner/parsing-query-string-post-and-url-parameters.md",
-        "description": "Learn how to parse user input like example.com?q=hello"
+        "description": "Learn how to parse user input like example.com?q=hello, data sent via AJAX request or route parameters like /posts/:id"
       },
       {
         "title": "Introduction to Jade",
