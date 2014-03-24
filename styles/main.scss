@@ -35,6 +35,7 @@ $panel-danger-heading-bg: $brand-danger;
 @import 'lib/bootstrap/bootstrap';
 @import 'lib/font-awesome';
 @import 'lib/xcode.min';
+@import 'lib/codemirror';
 
 /* Angular UI */
 .nav, .pagination, .carousel, .panel-title a {
@@ -67,7 +68,7 @@ pre code {
   font-size: 0.80em;
 }
 
-code {
+p code {
   background: #f8f8ff;
   border: 1px solid #dedede;
   border-radius: 0;
