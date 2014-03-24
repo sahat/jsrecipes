@@ -35,7 +35,6 @@ $panel-danger-heading-bg: $brand-danger;
 @import 'lib/bootstrap/bootstrap';
 @import 'lib/font-awesome';
 @import 'lib/xcode.min';
-@import 'lib/codemirror';
 
 /* Angular UI */
 .nav, .pagination, .carousel, .panel-title a {
@@ -83,6 +82,12 @@ p code {
   margin-bottom: 0;
   font-weight: 300;
   line-height: 1.4;
+  color: #cdbfe3;
+}
+
+.jumbotron .hint {
+  margin-top: 5px;
+  font-weight: 300;
   color: #cdbfe3;
 }
 
