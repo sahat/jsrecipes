@@ -2,10 +2,10 @@
   "backend": {
     "beginner": [
       {
-        "title": "Parsing XML documents",
-        "slug": "parsing-xml-documents",
-        "file": "backend/parsing-xml-documents.md",
-        "description": "Learn how to parse XML documents"
+        "title": "Parsing XML",
+        "slug": "parsing-xml",
+        "file": "backend/beginner/parsing-xml.md",
+        "description": "Learn how to parse XML documents and turn them into JavaScript objects"
       },
       {
         "title": "Parsing Query String, POST and URL Parameters",
