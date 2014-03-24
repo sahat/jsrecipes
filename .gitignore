@@ -3,6 +3,7 @@ Thumbs.db
 node_modules
 dist
 .idea
+*.iml
 .tmp
 .sass-cache
 app/bower_components
