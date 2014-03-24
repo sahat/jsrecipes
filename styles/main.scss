@@ -6,7 +6,7 @@ $brand-info: #4aa3ef;
 
 $state-info-text: $brand-info;
 $state-danger-text: #d14;
-$link-color: $brand-primary;
+$link-color: #80bd01;
 $link-hover-color: $link-color;
 
 $line-height-base: 1.5;
@@ -41,7 +41,6 @@ $panel-danger-heading-bg: $brand-danger;
   cursor: pointer;
 }
 
-
 .footer {
   padding: 40px 0;
   color: #999;
@@ -69,10 +68,10 @@ pre code {
 }
 
 code {
-  font-family: monaco, monospace;
-  font-size: 0.75em;
-  padding: 2px 8px;
-  border-radius: 3px;
+  background: #f8f8ff;
+  border: 1px solid #dedede;
+  border-radius: 0;
+  padding: 0 0.2em;
 }
 
 .container img {
