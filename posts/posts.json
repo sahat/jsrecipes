@@ -9,9 +9,9 @@
       },
       {
         "title": "Parsing QueryString, POST and URL parameters",
-        "slug": "parsing-querystring-post-and-url-parameters",
-        "file": "backend/parsing-querystring-post-and-url-parameters.md",
-        "description": "Learn how to parse something like example.com?q=hello"
+        "slug": "parsing-query-string-post-and-url-parameters",
+        "file": "backend/beginner/parsing-query-string-post-and-url-parameters.md",
+        "description": "Learn how to parse user input like example.com?q=hello"
       },
       {
         "title": "Introduction to Jade",
