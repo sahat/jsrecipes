@@ -26,9 +26,10 @@
         "description": "Learn how to POST forms in Express"
       },
       {
-        "title": "Useful Node.js utilities",
-        "slug": "useful-nodejs-utlities",
-        "file": "backend/useful-nodejs-utlities.md"
+        "title": "Useful Node.js Utilities",
+        "slug": "useful-nodejs-utilities",
+        "file": "backend/beginner/useful-nodejs-utilities.md",
+        "description": "List of amwesome node.js libraries that make you more productive"
       },
       {
         "title": "Socket.IO Basics",
