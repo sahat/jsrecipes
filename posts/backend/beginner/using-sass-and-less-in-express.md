@@ -1,9 +1,9 @@
 There are at least **3** different methods that you could use for Sass or LESS
 integration:
 
-#### 1. LESS/Sass middleware (personal preference)
-#### 2. Build tool (e.g. Gulp, Grunt)
-#### 3. Connect Assets library
+1. LESS/Sass middleware (personal preference)
+2. Build tool (e.g. Gulp, Grunt)
+3. Connect Assets library
 
 ### LESS  Middleware
 
@@ -132,7 +132,7 @@ dependencies at the top and task functions that you wish to run. Since I have in
 `gulp` from the command line, it will compile your stylesheets and will automatically
 start monitoring for changes.
 
-There is an excellent blog post [Getting Starter with Gulp](http://travismaynard.com/writing/getting-started-with-gulp)
+There is an excellent blog post [Getting Started with Gulp](http://travismaynard.com/writing/getting-started-with-gulp)
 by **Travis Maynard** if you would to learn more about Gulp. It is an excellent
 general purpose build-tool that you can use from compiling stylesheets to
 optimizing images and concatenating scripts. Even if you are planning to use
@@ -228,3 +228,11 @@ heard of connect-assets.
 - Slightly slows down the app startup process because it has to pre-compile stylesheets.
 In my experience it roughly adds an extra ~500ms startup delay. While it's not much,
 you can certainly feel it.
+
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+
+1. [Getting Started with Gulp](http://travismaynard.com/writing/getting-started-with-gulp)
+2. [LESS-Middleware: Using LESS with Node.js](http://blog.dylants.com/2013/03/16/less-middleware-using-less-with-node-js/)
+3. [Node-Sass GitHub Project](https://github.com/andrew/node-sass)
+4. [Connect Assets v3.0.0 GitHub Project](https://github.com/adunkman/connect-assets/tree/v3)
