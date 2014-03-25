@@ -51,7 +51,8 @@
       {
         "title": "Using Sass and LESS in Express",
         "slug": "using-sass-and-less-in-express",
-        "file": "backend/using-sass-and-less-in-express.md"
+        "file": "backend/beginner/using-sass-and-less-in-express.md",
+        "description": "Using LESS and/or Sass stylesheets in your application"
       }
     ],
     "intermediate": [
