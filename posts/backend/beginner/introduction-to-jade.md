@@ -68,7 +68,7 @@ of a tag:
 h1= name
 ```
 
-**HTML
+**HTML**
 ```
 <h1>World</h1>
 ```
