@@ -8144,13 +8144,6 @@ pre code {
   font-size: 0.8em;
 }
 
-p code {
-  background: #f8f8ff;
-  border: 1px solid #dedede;
-  border-radius: 0;
-  padding: 0 0.2em;
-}
-
 .container img {
   width: 100%;
 }
