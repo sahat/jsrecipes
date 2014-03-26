@@ -15,8 +15,8 @@ angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'ngProgress'])
         templateUrl: 'views/frontend.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
+      .when('/feedback', {
+        templateUrl: 'views/feedback.html',
         controller: 'MainCtrl'
       })
       .otherwise({
