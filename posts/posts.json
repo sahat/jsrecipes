@@ -57,10 +57,10 @@
     ],
     "intermediate": [
       {
-        "title": "Online visitor counter with Socket.io",
-        "slug": "online-visitor-counter-with-socketio",
-        "file": "backend/intermediate/online-visitor-counter-with-socketio.md",
-        "description": "Display how many users are online"
+        "title": "Who is Online with Socket.IO",
+        "slug": "who-is-online-with-socketio",
+        "file": "backend/intermediate/who-is-online-with-socketio.md",
+        "description": "Display how many users are online in real-time"
       },
       {
         "title": "Storing Express sessions in Redis",
@@ -108,9 +108,10 @@
         "file": "backend/oauth-authentication.md"
       },
       {
-        "title": "CSRF protection",
-        "slug": "csrf-protection",
-        "file": "backend/csrf-protection.md"
+        "title": "CSRF Protection with Express",
+        "slug": "csrf-protection-with-express",
+        "file": "backend/csrf-protection-with-express.md",
+        "description": "Add cross-site request forgery protection to your Express app"
       },
       {
         "title": "Optimizing assets using Gulp",
