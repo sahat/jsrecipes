@@ -98,14 +98,14 @@
         "file": "backend/gravatar-support.md"
       },
       {
-        "title": "Local Authentication",
+        "title": "Sign in with Username and Password",
         "slug": "local-authentication",
         "file": "backend/local-authentication.md"
       },
       {
-        "title": "OAuth Authentication",
-        "slug": "oauth-authentication",
-        "file": "backend/oauth-authentication.md"
+        "title": "Sign in with Facebook",
+        "slug": "sign-in-with-facebook",
+        "file": "backend/intermediate/sign-in-with-facebook.md"
       },
       {
         "title": "CSRF Protection with Express",
@@ -124,26 +124,36 @@
         "file": "backend/sending-emails-via-nodemailer.md"
       },
       {
-        "title": "Formatting filesize",
-        "slug": "formatting-filesize",
-        "file": "backend/formatting-filesize.md"
+        "title": "Formatting File Sizes",
+        "slug": "formatting-file-sizes",
+        "file": "backend/intermediate/formatting-file-sizes.md"
       },
       {
-        "title": "Get client's location from an IP address",
-        "slug": "get-clients-location-from-an-ip-address",
-        "file": "backend/get-clients-location-from-an-ip-address.md"
+        "title": "Formatting Dates",
+        "slug": "formatting-dates",
+        "file": "backend/intermediate/formatting-dates.md"
+      },
+      {
+        "title": "Get User's Location from IP Address",
+        "slug": "get-users-location-from-ip-address",
+        "file": "backend/intermediate/get-users-location-from-ip-address.md"
       }
     ],
     "advanced": [
       {
-        "title": "Organizing callbacks using Async.js",
-        "slug": "organizing-callbacks-using-asyncjs",
-        "file": "backend/organizing-callbacks-using-asyncjs.md"
+        "title": "Organizing Callbacks with Async",
+        "slug": "organizing-callbacks-with-async",
+        "file": "backend/organizing-callbacks-with-async.md"
       },
       {
-        "title": "Organizing callbacks using Bluebird",
-        "slug": "organizing-callbacks-using-bluebird",
-        "file": "backend/organizing-callbacks-using-bluebird.md"
+        "title": "Asynchronous Control Flow with Promises",
+        "slug": "asynchronous-control-flow-with-promises",
+        "file": "backend/advanced/asynchronous-control-flow-with-promises.md"
+      },
+      {
+        "title": "Error Handling Techniques",
+        "slug": "error-handling-techniques",
+        "file": "backend/advanced/error-handling-techniques.md"
       }
     ]
   },
