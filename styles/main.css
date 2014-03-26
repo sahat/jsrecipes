@@ -7300,8 +7300,8 @@ button.close {
   cursor: pointer;
 }
 
-.nav-tabs > li > a {
-  border-radius: 0;
+.tab-content {
+  padding: 15px;
 }
 
 html, body {
@@ -7354,7 +7354,8 @@ pre code {
 }
 
 .jumbotron h1 {
-  text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.35), 9px 8px 0 rgba(0, 0, 0, 0.15); }
+  text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.35), 9px 8px 0 rgba(0, 0, 0, 0.15);
+}
 
 .jumbotron p {
   margin-bottom: 0;

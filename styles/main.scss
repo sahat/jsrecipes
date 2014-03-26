@@ -42,7 +42,10 @@ $panel-danger-heading-bg: $brand-danger;
 }
 
 .nav-tabs > li > a {
-  border-radius: 0;
+}
+
+.tab-content {
+  padding: 15px;
 }
 
 html, body {
@@ -891,4 +894,3 @@ textarea.form-control {
   right: 0;
   z-index: 99999;
 }
-

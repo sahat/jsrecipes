@@ -93,7 +93,7 @@
         "description": "Uploading user files"
       },
       {
-        "title": "Gravatar support",
+        "title": "Gravatar Support",
         "slug": "gravatar-support",
         "file": "backend/gravatar-support.md"
       },
@@ -110,7 +110,7 @@
       {
         "title": "CSRF Protection with Express",
         "slug": "csrf-protection-with-express",
-        "file": "backend/csrf-protection-with-express.md",
+        "file": "backend/intermediate/csrf-protection-with-express.md",
         "description": "Add cross-site request forgery protection to your Express app"
       },
       {
@@ -237,6 +237,11 @@
       "title": "JavaScript Style Guide",
       "slug": "javascript-style-guide",
       "file": "/general/javascript-style-guide.md"
+    },
+    {
+      "title": "WebStorm IDE Tips",
+      "slug": "webstorm-ide-tips",
+      "file": "/general/webstorm-ide-tips.md"
     }
   ]
 }

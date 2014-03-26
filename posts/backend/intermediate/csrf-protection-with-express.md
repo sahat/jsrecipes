@@ -14,6 +14,13 @@ on every POST form. That hidden input field has some random hash value, without
 which the form will not submit, i.e. if the CSRF token is missing, you will
 be greeted with a **403 Forbidden** page when submitting a form.
 
+![](images/backend/intermediate/csrf-protection-with-express-1.png)
+
+And here is what happens when you forget to include the hidden input field with
+CSRF value:
+
+![](images/backend/intermediate/csrf-protection-with-express-2.png)
+
 Luckily for us Express already comes with CSRF middleware. The CSRF middleware
 depends on `bodyParser` and `session` middleware, so you have to place it below
 those two middleware.
@@ -48,7 +55,7 @@ app.use(function(req, res, next) {
 ```
 
 **Note:** When implementing authentication, I usually use the middleware above
-for storing `res.locals.user = req.user;` reference, so that I don't have
+for storing `res.locals.user = req.user` reference, so that I don't have
 to pass `user: req.user` to every template.
 
 The last thing left to do is to add a hidden input element to your form:
@@ -57,20 +64,124 @@ The last thing left to do is to add a hidden input element to your form:
 input(type='hidden', name='_csrf', value=_csrf)
 ```
 
-For completeness here is an example of a Login form:
+Here is an example of a Login form with the CSRF input tag:
 
-```
+```jade
+h2 Login
+
 form(method='POST')
   input(type='hidden', name='_csrf', value=_csrf)
+
   .form-group
     label.control-label(for='email') Email
     input.form-control(type='text', name='email', id='email', placeholder='Email', autofocus=true)
+
   .form-group
     label.control-label(for='password') Password
     input.form-control(type='password', name='password', id='password', placeholder='Password')
+
   .form-group
-    button.btn.btn-primary(type='submit')
-      i.fa.fa-unlock-alt
-      | Login
-    a.btn.btn-link(href='/forgot') Forgot your password?
+    button.btn.btn-primary(type='submit') Login
+```
+
+![](images/backend/intermediate/csrf-protection-with-express-3.png)
+
+<div class="page-header">
+  <h1>Code Example</h1>
+</div>
+
+#### package.json
+```javascript
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "jade": "*"
+  }
+}
+```
+
+#### app.js
+```javascript
+var express = require('express');
+var path = require('path');
+
+var app = express();
+
+app.set('port', process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+app.use(express.favicon());
+app.use(express.logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded());
+app.use(express.cookieParser());
+app.use(express.session({ secret: 'session secret' }));
+app.use(express.csrf());
+app.use(function(req, res, next) {
+  res.locals._csrf = req.csrfToken();
+  next();
+});
+app.use(express.methodOverride());
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
+
+if ('development' == app.get('env')) {
+  app.use(express.errorHandler());
+}
+
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
+app.post('/login', function(req, res) {
+  res.send('Login Successful')
+});
+
+app.listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});
+```
+
+#### views/layout.jade
+
+```jade
+doctype html
+html
+  head
+    title CSRF Demo
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/foundation/5.2.1/css/foundation.min.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css')
+    style.
+      body { padding-top: 40px; }
+    body
+      block content
+```
+
+#### views/index.jade
+```jade
+extends layout
+
+block content
+  .row
+    .small-8.small-centered.columns
+      h3 Login Form
+      form(action='/login', method='POST')
+        input(type='hidden', name='_csrf', value=_csrf)
+        label Email
+        input(type='text', placeholder='Email', autofocus=true)
+        label Password
+        input(type='text', placeholder='Password')
+        button.success.button(type='submit')
+          i.fi-laptop
+          |  Login
+
+      .panel.callout.radius
+        strong CSRF Token
+        p= _csrf
 ```
