@@ -5111,12 +5111,30 @@ button.close {
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer; }
 
-.footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5; }
+.nav-tabs > li > a {
+  border-radius: 0; }
+
+html, body {
+  height: 100%; }
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -130px;
+  /* Pad bottom by footer height + (optional) extra spacing */
+  padding: 0 0 140px; }
+
+#footer {
+  border-top: #483b68;
+  color: #cdbfe3;
+  background-color: #7761a7;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+  padding-top: 35px;
+  height: 130px; }
+  #footer a {
+    color: #eeeaf6; }
 
 pre {
   color: #353535;
@@ -5739,117 +5757,6 @@ select.form-control, textarea.form-control {
 
 .alert-white-alt2.alert-primary .icon i {
   color: #7761a7; }
-
-/*TABS*/
-.nav-tabs {
-  border-bottom: 1px solid transparent; }
-
-.nav-tabs > li {
-  font-size: 14px;
-  margin-right: 2px; }
-
-.nav-tabs > li.active {
-  position: relative; }
-
-.nav-tabs.wall > li {
-  margin-bottom: 2px; }
-
-.nav-tabs > li > a {
-  padding: 9px 15px;
-  font-size: 13px;
-  margin-right: 0;
-  min-width: 80px;
-  text-align: center; }
-
-.nav-tabs.wall > li > a {
-  padding: 9px 15px;
-  font-size: 13px;
-  margin-right: 0;
-  min-width: 20px;
-  color: #555;
-  text-align: center;
-  border: none; }
-
-.nav-tabs.wall > li > a:hover, .nav-tabs.wall > li > a:active {
-  background: transparent;
-  border: none;
-  color: #7761a7;
-  border-radius: 2px;
-  -webkit-border-radius: 2px 2px 0 0; }
-
-.nav-tabs.wall > li.active > a:after, .nav-tabs.wall > li.active > a:hover:after, .nav-tabs.wall > li.active > a:focus:after {
-  content: "";
-  display: block;
-  height: 10px;
-  background: url('../images/menu-tail-up.png') no-repeat;
-  position: absolute;
-  bottom: -3px;
-  top: auto;
-  left: 50%;
-  margin-left: -8px;
-  width: 17px; }
-
-.nav-tabs.wall > li.active > a, .nav-tabs.wall > li.active > a:hover, .nav-tabs.wall > li.active > a:focus {
-  background: transparent;
-  color: #7761a7;
-  border: none;
-  border-radius: 2px;
-  -webkit-border-radius: 0;
-  border-bottom: 0;
-  padding-bottom: 10px;
-  padding-top: 9px;
-  box-shadow: none;
-  position: static; }
-
-.nav-tabs > li > a:hover, .nav-tabs > li > a:active {
-  background: transparent;
-  border: 1px solid transparent;
-  color: #634d93;
-  border-radius: 2px 2px 0 0;
-  -webkit-border-radius: 2px 2px 0 0; }
-
-.nav-tabs > li.active > a:after, .nav-tabs > li.active > a:hover:after, .nav-tabs > li.active > a:focus:after {
-  content: "";
-  display: block;
-  height: 2px;
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  border-top: 2px solid #7761a7;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  border-bottom: 0;
-  padding-bottom: 10px;
-  padding-top: 8px;
-  box-shadow: 1px -3px 4px -3px rgba(0, 0, 0, 0.08);
-  border-left: 1px solid #ECECEC;
-  border-right: 1px solid #ECECEC;
-  position: static; }
-
-.tab-content {
-  background: #fff;
-  padding: 20px;
-  border-bottom: 1px solid #E2E2E2;
-  border-left: 1px solid #ECECEC;
-  border-radius: 0 3px 3px;
-  -webkit-border-radius: 0 3px 3px;
-  border-right: 1px solid #ECECEC;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
-  margin-bottom: 40px; }
-
-.tab-content #picture .fileinput .thumbnail {
-  border: 2px dashed #ddd; }
-
-.tab-content #picture .fileinput .thumbnail h2 {
-  top: 30%;
-  position: relative; }
-
-.tab-content h3, h2, h1:first-child {
-  margin-top: 0; }
 
 /* Styling for the ngProgress itself */
 #ngProgress {
