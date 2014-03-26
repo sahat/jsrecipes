@@ -5155,6 +5155,9 @@ pre code {
 .container img {
   width: 100%; }
 
+.jumbotron h1 {
+  text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.35), 9px 8px 0 rgba(0, 0, 0, 0.15); }
+
 .jumbotron p {
   margin-bottom: 0;
   font-weight: 300;
