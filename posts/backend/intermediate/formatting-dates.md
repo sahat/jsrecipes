@@ -1,3 +1,9 @@
+<div class="alert alert-info">
+Moment.js is one of those universal libraries that works both in Browser
+and Node.js. Everything covered in this guide works exactly the same
+if you were to include moment.js in HTML.
+</div>
+
 Download and install moment.js:
 
 ```
