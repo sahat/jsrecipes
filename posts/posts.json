@@ -78,7 +78,7 @@
         "title": "Form Validation",
         "slug": "form-validation",
         "file": "backend/form-validation.md",
-        "description": "Validating forms for correct input"
+        "description": "Validating forms, or how not to trust the client with data input"
       },
       {
         "title": "Uploading files via form",
