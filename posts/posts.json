@@ -131,7 +131,8 @@
       {
         "title": "Formatting Dates",
         "slug": "formatting-dates",
-        "file": "backend/intermediate/formatting-dates.md"
+        "file": "backend/intermediate/formatting-dates.md",
+        "description": "Learn how to parse, validate and format dates using moment.js"
       },
       {
         "title": "Get User's Location from IP Address",
