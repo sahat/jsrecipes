@@ -86,9 +86,8 @@ form(method='POST')
 
 ![](images/backend/intermediate/csrf-protection-with-express-3.png)
 
-<div class="page-header">
-  <h1>Code Example</h1>
-</div>
+## Source Code
+<hr>
 
 #### package.json
 ```javascript
@@ -185,3 +184,8 @@ block content
         strong CSRF Token
         p= _csrf
 ```
+
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+
+1. [DailyJS: Express 3 Tutorial: Contact Forms with CSRF](http://dailyjs.com/2012/09/13/express-3-csrf-tutorial/)
