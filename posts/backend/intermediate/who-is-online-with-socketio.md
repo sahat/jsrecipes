@@ -49,6 +49,8 @@ socket.on('userCount', function (data) {
 });
 ```
 
+# TODO: Complete example
+
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
 

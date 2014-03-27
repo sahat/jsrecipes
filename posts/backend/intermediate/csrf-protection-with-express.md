@@ -67,7 +67,7 @@ input(type='hidden', name='_csrf', value=_csrf)
 Here is an example of a Login form with the CSRF input tag:
 
 ```jade
-h2 Login
+h2 Login Form
 
 form(method='POST')
   input(type='hidden', name='_csrf', value=_csrf)
