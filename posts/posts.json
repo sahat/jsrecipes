@@ -241,7 +241,8 @@
     {
       "title": "WebStorm IDE Tips",
       "slug": "webstorm-ide-tips",
-      "file": "/general/webstorm-ide-tips.md"
+      "file": "/general/webstorm-ide-tips.md",
+      "description": "A list of awesome WebStorm tips that make you more productive"
     }
   ]
 }
