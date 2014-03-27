@@ -248,3 +248,4 @@ User.aggregate({ $group: { _id: null, total: { $sum: '$votes' } } }, function(er
 
 1. [Quick-Start Guide to MongoLab](http://docs.mongolab.com)
 2. [Official Mongoose Guide](http://mongoosejs.com/docs/guide.html)
+3. [How to aggregate data from MongoDB with Node.js and Mongoose](http://www.kdelemme.com/2014/03/19/how-to-aggregate-data-from-mongodb-with-node-js-and-mongoose)
