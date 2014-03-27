@@ -12,7 +12,11 @@ angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'ngProgress'])
         controller: 'MainCtrl'
       })
       .when('/frontend/:name', {
-        templateUrl: 'views/frontend.html',
+        templateUrl: 'views/detail.html',
+        controller: 'MainCtrl'
+      })
+      .when('/general/:name', {
+        templateUrl: 'views/detail.html',
         controller: 'MainCtrl'
       })
       .when('/feedback', {
