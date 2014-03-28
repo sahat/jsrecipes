@@ -99,9 +99,9 @@
         "description": "Uploading user files"
       },
       {
-        "title": "Gravatar Support",
-        "slug": "gravatar-support",
-        "file": "backend/gravatar-support.md"
+        "title": "Gravatar Profile Images",
+        "slug": "gravatar-profile-images",
+        "file": "backend/intermediate/gravatar-profile-images.md"
       },
       {
         "title": "Sign in with Username and Password",
