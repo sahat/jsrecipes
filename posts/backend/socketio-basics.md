@@ -1,25 +1,29 @@
----
-layout: post
-title: Socket.IO Basics
-description: xxxx
-level: beginner
-categories: backend
----
+[Socket.io](http://socket.io) is a lightweight protocol that sits on top of
+HTTP which aims to make real-time communication between the server and client 
+possible. Typically, the client is a web browser: Chrome, Firefox,
+Safari and the web server: [node.js](http://nodejs.org). 
+Socket.io can also be used for server-to-server communication but we will
+not worry about that right now.
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
-Jekyll also offers powerful support for code snippets:
+Socket.IO embraces the [Event Emitter](http://sample.com) design pattern, something you 
+see quite often in node.js. In this pattern, there two objects we are concerned with:
+**Event Emitter** and **Event Listener**.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+An **Event Emitter** is an object that emits events such as 'connect', 'disconnect', and 'data'.
+An **Event Listener** is a function we register to a particular event, for example
+'connect', and executes itself when the described event is detected. 
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+In the context of socket.io, a server will typically listen for events emitted by the client,
+for example an 'incomingMessage' event, and the client will listen for events emitted by the server,
+say, 'dataFromServer'. So in short, both the client and server LISTEN for and EMIT events. 
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+
+
+
+
+
+Before we get started, I assume you are working in a UNIX environment: 
+Ubuntu, OSX, etc and have [node.js](http://nodejs.org) installed.
+
+
