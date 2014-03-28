@@ -130,11 +130,6 @@
         "file": "backend/sending-emails-via-nodemailer.md"
       },
       {
-        "title": "Formatting File Sizes",
-        "slug": "formatting-file-sizes",
-        "file": "backend/intermediate/formatting-file-sizes.md"
-      },
-      {
         "title": "Get User's Location from IP Address",
         "slug": "get-users-location-from-ip-address",
         "file": "backend/intermediate/get-users-location-from-ip-address.md"
