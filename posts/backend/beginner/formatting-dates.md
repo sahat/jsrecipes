@@ -20,7 +20,7 @@ Here is the screenshot that demonstrates some capabilities of moment.js. Using
 moment.js you can turn this date string **Thu Mar 27 2014 17:56:02 GMT-0400 (EDT)**
 into **March 27th 2014**, with or without time, depending on the format you use.
 
-![](images/backend/intermediate/formatting-dates-1.png)
+![](images/backend/beginner/formatting-dates-1.png)
 
 Here is a list of all formatting tokens:
 

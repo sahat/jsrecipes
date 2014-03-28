@@ -53,6 +53,12 @@
         "slug": "using-sass-and-less-in-express",
         "file": "backend/beginner/using-sass-and-less-in-express.md",
         "description": "Using LESS and/or Sass stylesheets in your application"
+      },
+      {
+        "title": "Formatting Dates",
+        "slug": "formatting-dates",
+        "file": "backend/beginner/formatting-dates.md",
+        "description": "Learn how to parse, validate and format dates using moment.js"
       }
     ],
     "intermediate": [
@@ -127,12 +133,6 @@
         "title": "Formatting File Sizes",
         "slug": "formatting-file-sizes",
         "file": "backend/intermediate/formatting-file-sizes.md"
-      },
-      {
-        "title": "Formatting Dates",
-        "slug": "formatting-dates",
-        "file": "backend/intermediate/formatting-dates.md",
-        "description": "Learn how to parse, validate and format dates using moment.js"
       },
       {
         "title": "Get User's Location from IP Address",
