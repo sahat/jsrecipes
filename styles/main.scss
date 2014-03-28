@@ -6,7 +6,6 @@ $brand-danger: #ea6152;
 $brand-info: #5dcff1;
 
 // General
-$body-bg: #f3f5f8;
 
 // Buttons
 $btn-default-bg: #fff;
@@ -46,6 +45,11 @@ $navbar-default-link-hover-bg: #f9f9f9;
 $navbar-default-toggle-icon-bar-bg: $brand-primary;
 $navbar-default-toggle-hover-bg: rgba($brand-primary, 0.1);
 $navbar-margin-bottom: 0;
+
+// Panels
+$panel-border-radius: 2px;
+$panel-default-border: #ebeff5;
+
 $panel-success-text: #fff;
 $panel-success-border: $brand-success;
 $panel-success-heading-bg: $brand-success;
@@ -67,12 +71,6 @@ $panel-danger-heading-bg: $brand-danger;
   cursor: pointer;
 }
 
-.nav-tabs > li > a {
-}
-
-.tab-content {
-  padding: 15px;
-}
 
 html, body {
   height: 100%;
@@ -83,21 +81,20 @@ html, body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -130px;
+  margin: 0 auto -150px;
   /* Pad bottom by footer height + (optional) extra spacing */
-  padding: 0 0 140px;
+  padding: 0 0 176px;
 }
 
 #footer {
-  border-top: darken($brand-primary, 20%);
-  color: #cdbfe3;
-  background-color: #7761a7;;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
-  padding-top: 35px;
-  height: 130px;
+  color: #c4c9d2;
+  background-color: #4c5566;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 45px;
+  height: 150px;
 
   a {
-    color: lighten(#cdbfe3, 12%);
+    color: lighten(#c4c9d2, 15%);
   }
 }
 
