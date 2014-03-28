@@ -7319,6 +7319,11 @@ html, body {
   background-size: contain;
 }
 
+.inverse {
+  color: #fff;
+  background-color: #333;
+}
+
 .social-bar {
   margin-top: -30px;
   padding-top: 10px;
@@ -7360,7 +7365,7 @@ html, body {
 }
 
 #footer a {
-  color: #d3d7df;
+  color: #cacfd8;
 }
 
 pre {
