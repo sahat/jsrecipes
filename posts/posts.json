@@ -125,9 +125,9 @@
         "file": "backend/intermediate/optimizing-assets-with-gulp.md"
       },
       {
-        "title": "Sending emails via Nodemailer",
-        "slug": "sending-emails-via-nodemailer",
-        "file": "backend/sending-emails-via-nodemailer.md"
+        "title": "Sending Emails with Nodemailer",
+        "slug": "sending-emails-with-nodemailer",
+        "file": "backend/intermediate/sending-emails-with-nodemailer.md"
       },
       {
         "title": "Get User's Location from IP Address",
