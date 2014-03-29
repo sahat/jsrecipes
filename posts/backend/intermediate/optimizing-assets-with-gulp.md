@@ -50,7 +50,7 @@ If you are interested in learning more about responsive image solutions, please
 check out [Imager.js](https://github.com/BBC-News/Imager.js/), it is an open-source
 project created by [BBC News](https://github.com/BBC-News).
 
-#### <i class="fa fa-picture-o text-danger"></i> Minify CSS
+#### <i class="fa fa-css3 text-danger"></i> Minify CSS
 
 CSS minification removes unnecessary comments, spaces, line breaks and indentation
 that typically serve no purpose in production.
@@ -75,7 +75,7 @@ gulp.task('default', function () {
 });
 ```
 
-#### <i class="fa fa-picture-o text-danger"></i> Remove Unused CSS
+#### <i class="fa fa-css3 text-danger"></i> Remove Unused CSS
 
 If you are using CSS frameworks like Boostrap or Foundation there is a good
 chance you don't use *all* styles from the framework, but only a small subset. You
@@ -105,7 +105,7 @@ gulp.task('default', function() {
 });
 ```
 
-#### <i class="fa fa-picture-o text-danger"></i> Minify JavaScript
+#### <i class="fa fa-code text-danger"></i> Minify JavaScript
 
 Given the amount of JavaScript on a modern website, it is important more than
 ever to minify JavaScript files in production. If you only have one small
@@ -140,6 +140,41 @@ gulp.task('compress', function() {
   plugin.
   </p>
 </div>
+
+#### <i class="fa fa-sitemap text-danger"></i> Concatenate JavaScript
+If you are using a ton of JavaScript files in your project, minifying them is
+the first step, but you still have to concatenate them into a single file. There
+is a big performance difference in making 30 small, separate HTTP requests vs 1
+large HTTP request. Always serve concatenated and minified JS in production.
+If you are using Require.js, it already concatenates and minifies files for you,
+but otherwise you will need a separate Gulp plugin to do that.
+
+[gulp-concat](https://github.com/wearefractal/gulp-concat) is a Gulp plugin for
+concatenating JavaScript.
+
+```
+npm install --save-dev gulp-concat
+```
+
+**Example**
+```
+var concat = require('gulp-concat');
+
+gulp.task('scripts', function() {
+  gulp.src('./lib/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./dist/'))
+});
+
+// or use an array instead
+
+gulp.task('scripts', function() {
+  gulp.src(['./lib/file3.js', './lib/file1.js', './lib/file2.js'])
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./dist/'))
+});
+```
+
 
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
