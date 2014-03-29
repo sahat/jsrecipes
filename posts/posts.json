@@ -120,9 +120,9 @@
         "description": "Add cross-site request forgery protection to your Express app"
       },
       {
-        "title": "Optimizing assets using Gulp",
-        "slug": "optimizing-assets-using-gulp",
-        "file": "backend/.md"
+        "title": "Optimizing Assets with Gulp",
+        "slug": "optimizing-assets-with-gulp",
+        "file": "backend/intermediate/optimizing-assets-with-gulp.md"
       },
       {
         "title": "Sending emails via Nodemailer",
