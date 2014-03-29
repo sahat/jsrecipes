@@ -54,4 +54,8 @@ I assume that you are working in a UNIX environment: Ubuntu, OSX, etc and have
 [node.js](http://nodejs.org) installed. If you do not, please follow these installion 
 instructions found here: [Link to install NodeJS](http://nodejs.org)
 
+First, let's create a directory where our sample socket.io chat application will exist.
 
+```
+mkdir socketio-chatapp && cd socketio-chatapp
+``` 
