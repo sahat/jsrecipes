@@ -29,7 +29,7 @@
         "title": "Useful Node.js Utilities",
         "slug": "useful-nodejs-utilities",
         "file": "backend/beginner/useful-nodejs-utilities.md",
-        "description": "List of amwesome node.js libraries that make you more productive"
+        "description": "List of awesome Node.js libraries that make you more productive"
       },
       {
         "title": "Socket.IO Basics",
@@ -83,13 +83,13 @@
       {
         "title": "Form Validation",
         "slug": "form-validation",
-        "file": "backend/form-validation.md",
+        "file": "backend/intermediate/form-validation.md",
         "description": "Validating forms, or how not to trust the client with data input"
       },
       {
-        "title": "Uploading files via form",
-        "slug": "uploading-files-via-form",
-        "file": "backend/uploading-files-via-form.md",
+        "title": "Uploading files via HTML Form",
+        "slug": "uploading-files-via-html-form",
+        "file": "backend/uploading-files-via-html-form.md",
         "description": "Uploading user files using an HTML form"
       },
       {
@@ -142,14 +142,14 @@
         "file": "backend/organizing-callbacks-with-async.md"
       },
       {
-        "title": "Asynchronous Control Flow with Promises",
-        "slug": "asynchronous-control-flow-with-promises",
-        "file": "backend/advanced/asynchronous-control-flow-with-promises.md"
+        "title": "Promises",
+        "slug": "promises",
+        "file": "backend/advanced/promises.md"
       },
       {
-        "title": "Error Handling Techniques",
-        "slug": "error-handling-techniques",
-        "file": "backend/advanced/error-handling-techniques.md"
+        "title": "Error Handling",
+        "slug": "error-handling",
+        "file": "backend/advanced/error-handling.md"
       }
     ]
   },
@@ -175,10 +175,6 @@
       {
         "title": "Creating a responsive grid of images",
         "slug": "creating-a-responsive-grid-of-images"
-      },
-      {
-        "title": "Using Underscore templates",
-        "slug": "using-underscore-templates"
       },
       {
         "title": "Growl-like notifications",
@@ -232,7 +228,8 @@
     {
       "title": "JavaScript Style Guide",
       "slug": "javascript-style-guide",
-      "file": "/general/javascript-style-guide.md"
+      "file": "/general/javascript-style-guide.md",
+      "description": "Brief overview of popular JavaScript style guides"
     },
     {
       "title": "WebStorm IDE Tips",
