@@ -12,7 +12,7 @@ angular.module('ngProgress.provider', ['ngProgress.directive'])
         this.autoStyle = true;
         this.count = 0;
         this.height = '2px';
-        this.color = '#6f5499';
+    this.color = '#33ccff';
 
         this.$get = ['$document',
             '$window',
