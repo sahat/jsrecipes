@@ -88,7 +88,7 @@ could easily reduce the file size of your styles by removing unused CSS.
 removing unused CSS.
 
 ```
-npm install gulp-uncss --save-dev
+npm install --save-dev gulp-uncss
 ```
 
 **Example**
@@ -97,13 +97,49 @@ var gulp = require('gulp');
 var uncss = require('gulp-uncss');
 
 gulp.task('default', function() {
-    gulp.src('site.css')
-        .pipe(uncss({
-            html: ['index.html', 'about.html']
-        }))
-        .pipe(gulp.dest('./out'));
+  gulp.src('site.css')
+    .pipe(uncss({
+        html: ['index.html', 'about.html']
+    }))
+    .pipe(gulp.dest('./out'));
 });
 ```
+
+#### <i class="fa fa-picture-o text-danger"></i> Minify JavaScript
+
+Given the amount of JavaScript on a modern website, it is important more than
+ever to minify JavaScript files in production. If you only have one small
+JavaScript file, you probably won't see any performance gain by minifying the file.
+On the other thand, if you have a Backbone.js app with 50 files, loaded via
+[Require.js](http://requirejs.org), you really **have to** to minify and
+concatenate all your JavaScript files.
+
+[gulp-uglify](https://github.com/terinjokes/gulp-uglify) is a Gulp plugin for
+minifying and compressing JavaScript.
+
+```
+npm install --save-dev gulp-uglify
+```
+
+**Example**
+```
+var uglify = require('gulp-uglify');
+
+gulp.task('compress', function() {
+  gulp.src('lib/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'))
+});
+```
+
+<div class="alert alert-info">
+  <h4>Gulp and Require.js</h4>
+  <p>Take a look at this <a href="https://github.com/sahat/requirejs-library/blob/master/gulpfile.js">gulpfile.js</a>
+  to see an example of <strong>Gulp + Require.js</strong> integration. Thr r.js optimizer already comes
+  with a minifier, so you don't need a separate <a href="https://github.com/terinjokes/gulp-uglify">gulp-uglify</a>
+  plugin.
+  </p>
+</div>
 
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
