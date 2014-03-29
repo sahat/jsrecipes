@@ -8,6 +8,12 @@
         "description": "Learn how to parse XML documents and turn them into JavaScript objects"
       },
       {
+        "title": "String Manipulation",
+        "slug": "string-manipulation",
+        "file": "backend/beginner/string-manipulation.md",
+        "description": "Using Case and underscore.string utilities for general purpose string manipulation"
+      },
+      {
         "title": "Parsing Query String, POST and URL Parameters",
         "slug": "parsing-query-string-post-and-url-parameters",
         "file": "backend/beginner/parsing-query-string-post-and-url-parameters.md",
@@ -104,14 +110,10 @@
         "file": "backend/intermediate/gravatar-profile-images.md"
       },
       {
-        "title": "Sign in with Username and Password",
-        "slug": "local-authentication",
-        "file": "backend/local-authentication.md"
-      },
-      {
         "title": "Sign in with Facebook",
         "slug": "sign-in-with-facebook",
-        "file": "backend/intermediate/sign-in-with-facebook.md"
+        "file": "backend/intermediate/sign-in-with-facebook.md",
+        "description": "Simple Facebook authentication with Passport.js"
       },
       {
         "title": "CSRF Protection with Express",
@@ -147,9 +149,9 @@
         "file": "backend/advanced/promises.md"
       },
       {
-        "title": "Error Handling",
-        "slug": "error-handling",
-        "file": "backend/advanced/error-handling.md"
+        "title": "Node.js Error Handling",
+        "slug": "nodejs-error-handling",
+        "file": "backend/advanced/nodejs-error-handling.md"
       }
     ]
   },
@@ -161,12 +163,25 @@
         "file": "frontend/beginner/autocompleting-text-fields.md"
       },
       {
+        "title": "CSS Animations in Seconds",
+        "slug": "autocompleting-text-fields",
+        "file": "frontend/beginner/autocompleting-text-fields.md"
+      },
+      {
+        "title": "Icon Fonts",
+        "slug": "icon-fonts"
+      },
+      {
+        "title": "Bootstrap Dropdown on Hover",
+        "slug": "bootstrap-dropdown-on-hover"
+      },
+      {
         "title": "Styling Bootstrap buttons",
         "slug": "styling-bootstrap-buttons"
       },
       {
-        "title": "Creating HTML email template",
-        "slug": "creating-html-email-template"
+        "title": "Mobile touch UI library",
+        "slug": "mobile-touch-ui-library"
       },
       {
         "title": "Animated progress bar",
@@ -180,9 +195,14 @@
         "title": "Growl-like notifications",
         "slug": "growl-like-notifications"
       },
+
       {
         "title": "Testing with Jasmine 2.0",
         "slug": "testing-with-jasmine-2"
+      },
+      {
+        "title": "Speed up your website with InstantClick",
+        "slug": "instantclick"
       }
     ],
     "intermediate": [
@@ -190,6 +210,10 @@
         "title": "Underscore Templates",
         "slug": "underscore-templates",
         "file": "frontend/beginner/underscore-templates.md"
+      },
+      {
+        "title": "Floating CSS Menu",
+        "slug": "floating-css-menu"
       },
       {
         "title": "Offline support",
@@ -236,6 +260,12 @@
       "slug": "webstorm-ide-tips",
       "file": "/general/webstorm-ide-tips.md",
       "description": "A list of awesome WebStorm tips that make you more productive"
+    },
+    {
+      "title": "Coding Like a Pro with Emmet",
+      "slug": "coding-like-a-pro-with-emmet",
+      "file": "/general/coding-like-a-pro-with-emmet.md",
+      "description": "Handy Emmet snippets for quick prototyping"
     }
   ]
 }
