@@ -8,6 +8,12 @@
         "description": "Learn how to parse XML documents and turn them into JavaScript objects"
       },
       {
+        "title": "String Manipulation",
+        "slug": "string-manipulation",
+        "file": "backend/beginner/string-manipulation.md",
+        "description": "Using Case and underscore.string utilities for general purpose string manipulation"
+      },
+      {
         "title": "Parsing Query String, POST and URL Parameters",
         "slug": "parsing-query-string-post-and-url-parameters",
         "file": "backend/beginner/parsing-query-string-post-and-url-parameters.md",
@@ -29,7 +35,7 @@
         "title": "Useful Node.js Utilities",
         "slug": "useful-nodejs-utilities",
         "file": "backend/beginner/useful-nodejs-utilities.md",
-        "description": "List of amwesome node.js libraries that make you more productive"
+        "description": "List of awesome Node.js libraries that make you more productive"
       },
       {
         "title": "Socket.IO Basics",
@@ -53,6 +59,12 @@
         "slug": "using-sass-and-less-in-express",
         "file": "backend/beginner/using-sass-and-less-in-express.md",
         "description": "Using LESS and/or Sass stylesheets in your application"
+      },
+      {
+        "title": "Formatting Dates",
+        "slug": "formatting-dates",
+        "file": "backend/beginner/formatting-dates.md",
+        "description": "Learn how to parse, validate and format dates using moment.js"
       }
     ],
     "intermediate": [
@@ -63,12 +75,6 @@
         "description": "Display how many users are online in real-time"
       },
       {
-        "title": "Storing Express sessions in Redis",
-        "slug": "storing-express-sessions-in-redis",
-        "file": "backend/intermediate/storing-express-sessions-in-redis.md",
-        "description": "By default Express stores sessions in-memory, but that approach does not scale well. Redis is an excellent choice for storing sessions in production-ready apps."
-      },
-      {
         "title": "Building a REST API",
         "slug": "building-a-rest-api",
         "file": "backend/intermediate/building-a-rest-api.md",
@@ -77,35 +83,31 @@
       {
         "title": "Form Validation",
         "slug": "form-validation",
-        "file": "backend/form-validation.md",
+        "file": "backend/intermediate/form-validation.md",
         "description": "Validating forms, or how not to trust the client with data input"
       },
       {
-        "title": "Uploading files via form",
-        "slug": "uploading-files-via-form",
-        "file": "backend/uploading-files-via-form.md",
+        "title": "Uploading Files via HTML Form",
+        "slug": "uploading-files-via-html-form",
+        "file": "backend/uploading-files-via-html-form.md",
         "description": "Uploading user files using an HTML form"
       },
       {
-        "title": "Uploading files via AJAX",
+        "title": "Uploading Files via AJAX",
         "slug": "uploading-files-via-ajax",
         "file": "backend/uploading-files-via-ajax.md",
         "description": "Uploading user files"
       },
       {
-        "title": "Gravatar Support",
-        "slug": "gravatar-support",
-        "file": "backend/gravatar-support.md"
-      },
-      {
-        "title": "Sign in with Username and Password",
-        "slug": "local-authentication",
-        "file": "backend/local-authentication.md"
+        "title": "Gravatar Profile Images",
+        "slug": "gravatar-profile-images",
+        "file": "backend/intermediate/gravatar-profile-images.md"
       },
       {
         "title": "Sign in with Facebook",
         "slug": "sign-in-with-facebook",
-        "file": "backend/intermediate/sign-in-with-facebook.md"
+        "file": "backend/intermediate/sign-in-with-facebook.md",
+        "description": "Simple Facebook authentication with Passport.js"
       },
       {
         "title": "CSRF Protection with Express",
@@ -114,25 +116,14 @@
         "description": "Add cross-site request forgery protection to your Express app"
       },
       {
-        "title": "Optimizing assets using Gulp",
-        "slug": "optimizing-assets-using-gulp",
-        "file": "backend/.md"
+        "title": "Optimizing Assets with Gulp",
+        "slug": "optimizing-assets-with-gulp",
+        "file": "backend/intermediate/optimizing-assets-with-gulp.md"
       },
       {
-        "title": "Sending emails via Nodemailer",
-        "slug": "sending-emails-via-nodemailer",
-        "file": "backend/sending-emails-via-nodemailer.md"
-      },
-      {
-        "title": "Formatting File Sizes",
-        "slug": "formatting-file-sizes",
-        "file": "backend/intermediate/formatting-file-sizes.md"
-      },
-      {
-        "title": "Formatting Dates",
-        "slug": "formatting-dates",
-        "file": "backend/intermediate/formatting-dates.md",
-        "description": "Learn how to parse, validate and format dates using moment.js"
+        "title": "Sending Emails with Nodemailer",
+        "slug": "sending-emails-with-nodemailer",
+        "file": "backend/intermediate/sending-emails-with-nodemailer.md"
       },
       {
         "title": "Get User's Location from IP Address",
@@ -147,14 +138,14 @@
         "file": "backend/organizing-callbacks-with-async.md"
       },
       {
-        "title": "Asynchronous Control Flow with Promises",
-        "slug": "asynchronous-control-flow-with-promises",
-        "file": "backend/advanced/asynchronous-control-flow-with-promises.md"
+        "title": "Promises",
+        "slug": "promises",
+        "file": "backend/advanced/promises.md"
       },
       {
-        "title": "Error Handling Techniques",
-        "slug": "error-handling-techniques",
-        "file": "backend/advanced/error-handling-techniques.md"
+        "title": "Node.js Error Handling",
+        "slug": "nodejs-error-handling",
+        "file": "backend/advanced/nodejs-error-handling.md"
       }
     ]
   },
@@ -166,12 +157,25 @@
         "file": "frontend/beginner/autocompleting-text-fields.md"
       },
       {
+        "title": "CSS Animations in Seconds",
+        "slug": "autocompleting-text-fields",
+        "file": "frontend/beginner/autocompleting-text-fields.md"
+      },
+      {
+        "title": "Icon Fonts",
+        "slug": "icon-fonts"
+      },
+      {
+        "title": "Bootstrap Dropdown on Hover",
+        "slug": "bootstrap-dropdown-on-hover"
+      },
+      {
         "title": "Styling Bootstrap buttons",
         "slug": "styling-bootstrap-buttons"
       },
       {
-        "title": "Creating HTML email template",
-        "slug": "creating-html-email-template"
+        "title": "Mobile touch UI library",
+        "slug": "mobile-touch-ui-library"
       },
       {
         "title": "Animated progress bar",
@@ -182,16 +186,17 @@
         "slug": "creating-a-responsive-grid-of-images"
       },
       {
-        "title": "Using Underscore templates",
-        "slug": "using-underscore-templates"
-      },
-      {
         "title": "Growl-like notifications",
         "slug": "growl-like-notifications"
       },
+
       {
         "title": "Testing with Jasmine 2.0",
         "slug": "testing-with-jasmine-2"
+      },
+      {
+        "title": "Speed up your website with InstantClick",
+        "slug": "instantclick"
       }
     ],
     "intermediate": [
@@ -199,6 +204,10 @@
         "title": "Underscore Templates",
         "slug": "underscore-templates",
         "file": "frontend/beginner/underscore-templates.md"
+      },
+      {
+        "title": "Floating CSS Menu",
+        "slug": "floating-css-menu"
       },
       {
         "title": "Offline support",
@@ -237,13 +246,20 @@
     {
       "title": "JavaScript Style Guide",
       "slug": "javascript-style-guide",
-      "file": "/general/javascript-style-guide.md"
+      "file": "/general/javascript-style-guide.md",
+      "description": "Brief overview of popular JavaScript style guides"
     },
     {
       "title": "WebStorm IDE Tips",
       "slug": "webstorm-ide-tips",
       "file": "/general/webstorm-ide-tips.md",
       "description": "A list of awesome WebStorm tips that make you more productive"
+    },
+    {
+      "title": "Coding Like a Pro with Emmet",
+      "slug": "coding-like-a-pro-with-emmet",
+      "file": "/general/coding-like-a-pro-with-emmet.md",
+      "description": "Handy Emmet snippets for quick prototyping"
     }
   ]
 }

@@ -3,50 +3,53 @@
 
   <p>Description placeholder, update later with a more meaningful website
     description.</p>
-  <br/>
-  <ul class="list-inline">
-    <li>
-      <iframe
-        src="http://ghbtns.com/github-btn.html?user=sahat&repo=fullstack&type=watch&count=true"
-        allowtransparency="true" frameborder="0" scrolling="0" width="95"
-        height="20"></iframe>
-    </li>
-    <li>
-      <iframe
-        src="http://ghbtns.com/github-btn.html?user=sahat&repo=fullstack&type=fork&count=true"
-        allowtransparency="true" frameborder="0" scrolling="0" width="95"
-        height="20"></iframe>
-    </li>
-    <li>
-      <iframe
-        src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width=85&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=633254040073197"
-        scrolling="no" frameborder="0"
-        style="border:none; overflow:hidden; width:95px; height:21px;"
-        allowTransparency="true"></iframe>
-    </li>
-    <li><a href="https://twitter.com/share" class="twitter-share-button"
-           data-via="EvNowAndForever">Tweet</a>
-      <script>!function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-          js = d.createElement(s);
-          js.id = id;
-          js.src = p + '://platform.twitter.com/widgets.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }
-      }(document, 'script', 'twitter-wjs');</script>
-    </li>
-  </ul>
-  <div class="hint"><i class="fa fa-star"></i> Don't forget to star the project
-    on GitHub!
   </div>
 </div>
+<div class="social-bar">
+  <div class="container">
+    <iframe
+      src="http://ghbtns.com/github-btn.html?user=sahat&repo=fullstack&type=watch&count=true"
+      allowtransparency="true" frameborder="0" scrolling="0" width="107"
+      height="20"></iframe>
+    <iframe
+      src="//www.facebook.com/plugins/like.php?href=http://sahatyalkabov.com&amp;width=85&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=633254040073197"
+      scrolling="no" frameborder="0"
+      style="border:none; overflow:hidden; width:107px; height:21px;"
+      allowTransparency="true"></iframe>
+    <a href="https://twitter.com/share" class="twitter-share-button"
+       data-via="EvNowAndForever">Tweet</a>
+    <script>!function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'twitter-wjs');</script>
+
+    <div class="g-plusone" data-size="medium"
+         data-href="http://sahatyalkabov.com/fullstack/"></div>
+    <script type="text/javascript">
+      (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </div>
+</div>
+<div class="text-center">
+</div>
+
 
 <div class="container">
 
-  <div class="page-header">
-    <h2 class="text-info"><span class="fa fa-hdd-o"></span> Backend</h2>
-  </div>
+  <h2><i class="fa fa-hdd-o"></i> Backend</h2>
+  <hr/>
 
   <div class="panel panel-success">
     <div class="panel-heading">
@@ -81,9 +84,8 @@
     </div>
   </div>
 
-  <div class="page-header">
-    <h2 class="text-info"><i class="fa fa-html5"></i> Frontend</h2>
-  </div>
+  <h2><i class="fa fa-html5"></i> Frontend</h2>
+  <hr/>
 
   <div class="panel panel-success">
     <div class="panel-heading">
@@ -118,27 +120,19 @@
     </div>
   </div>
 
-  <div class="page-header">
-    <h2 class="text-info"><span class="fa fa-star"></span> General</h2>
-  </div>
+  <h2><i class="fa fa-star"></i> General</h2>
+  <hr/>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Best Practices</h3>
-    </div>
+  <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">General</h3>
+  </div>
     <div class="list-group" ng-repeat="post in posts.general | orderBy:'title'">
       <a href="#/general/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <p class="lead">This simple sidebar template has a hint of JavaScript to
-        make the template responsive. It also includes Font Awesome icon
-        fonts.</p>
-    </div>
-  </div>
 </div>
 
 

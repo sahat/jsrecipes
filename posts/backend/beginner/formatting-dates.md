@@ -1,4 +1,5 @@
 <div class="alert alert-info">
+<i class="fa fa-info"></i><strong>Tip:</strong>
 Moment.js is one of those universal libraries that works both in Browser
 and Node.js. Everything covered in this guide works exactly the same
 if you were to include moment.js in HTML.
@@ -20,13 +21,13 @@ Here is the screenshot that demonstrates some capabilities of moment.js. Using
 moment.js you can turn this date string **Thu Mar 27 2014 17:56:02 GMT-0400 (EDT)**
 into **March 27th 2014**, with or without time, depending on the format you use.
 
-![](images/backend/intermediate/formatting-dates-1.png)
+![](images/backend/beginner/formatting-dates-1.png)
 
-Here is a list of all formatting tokens:
+Here is a list of all moment.js formatting tokens:
 
-<table class="table table-hover table-bordered table-condensed">
+<table class="table table-hover table-condensed">
   <thead>
-    <tr class="success">
+    <tr class="inverse">
       <th>Input</th>
       <th>Output</th>
     </tr>

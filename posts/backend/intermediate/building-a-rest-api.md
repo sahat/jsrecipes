@@ -6,7 +6,7 @@ guide by Apigee. It basically comes down to having the following URL structure.
 
 <table class="table table-hover">
   <thead>
-    <tr class="danger">
+    <tr class="inverse">
       <th>Resource</th>
       <th>POST (create)</th>
       <th>GET (read)</th>

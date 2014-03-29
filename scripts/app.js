@@ -24,6 +24,6 @@ angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'ngProgress'])
         controller: 'MainCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        templateUrl: 'views/404.html'
       });
   });

@@ -59,3 +59,33 @@ First, let's create a directory where our sample socket.io chat application will
 ```
 mkdir socketio-chatapp && cd socketio-chatapp
 ``` 
+
+Now, let's create a package.json file. this will tell our package manager npm the
+dependencies that are required for this project. Open up your favorite text editor and 
+enter this into 'socketio-chatapp/package.json'.
+
+```
+{
+  "name": "socketio-chatapp",
+  "description": "a sample chat application using socket.io",
+  "dependencies": {
+    "express": "3.5.0",
+    "socket.io": "^0.9.16"
+  }
+}
+```
+
+After you have done that, we can now tell npm we want install these dependencies for our project.
+
+```
+npm install
+```
+
+#### Setting up our Socket.io server
+
+Now that all our dependencies are installed, we can start writing our socket.io chat server. We will
+be using [express.js](http://sample.com), a minimal web framework that provides a bunch of features that will make our
+life a lot easier. If you are not familiar with [Express](http://sample.com), do not worry. It is very
+simple to setup and we will go through the entire process step-by-step.
+
+
