@@ -25,7 +25,7 @@ into **March 27th 2014**, with or without time, depending on the format you use.
 
 Here is a list of all moment.js formatting tokens:
 
-<table class="table table-hover table-bordered">
+<table class="table table-hover table-condensed">
   <thead>
     <tr class="inverse">
       <th>Input</th>
