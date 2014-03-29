@@ -75,12 +75,6 @@
         "description": "Display how many users are online in real-time"
       },
       {
-        "title": "Storing Express sessions in Redis",
-        "slug": "storing-express-sessions-in-redis",
-        "file": "backend/intermediate/storing-express-sessions-in-redis.md",
-        "description": "By default Express stores sessions in-memory, but that approach does not scale well. Redis is an excellent choice for storing sessions in production-ready apps."
-      },
-      {
         "title": "Building a REST API",
         "slug": "building-a-rest-api",
         "file": "backend/intermediate/building-a-rest-api.md",
@@ -93,13 +87,13 @@
         "description": "Validating forms, or how not to trust the client with data input"
       },
       {
-        "title": "Uploading files via HTML Form",
+        "title": "Uploading Files via HTML Form",
         "slug": "uploading-files-via-html-form",
         "file": "backend/uploading-files-via-html-form.md",
         "description": "Uploading user files using an HTML form"
       },
       {
-        "title": "Uploading files via AJAX",
+        "title": "Uploading Files via AJAX",
         "slug": "uploading-files-via-ajax",
         "file": "backend/uploading-files-via-ajax.md",
         "description": "Uploading user files"
