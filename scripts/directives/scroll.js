@@ -3,9 +3,9 @@ angular.module('MyApp')
     return function(scope, element, attrs) {
       angular.element($window).bind('scroll', function() {
         if (this.pageYOffset >= 150) {
-          $('.go-top').fadeIn(200);
+          $('.edit-on-github').fadeIn(200);
         } else {
-          $('.go-top').fadeOut(200);
+          $('.edit-on-github').fadeOut(200);
         }
       });
     }

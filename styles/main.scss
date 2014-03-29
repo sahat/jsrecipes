@@ -600,20 +600,18 @@ textarea.form-control {
   z-index: 99999;
 }
 
-.go-top {
+.edit-on-github {
   position: fixed;
   bottom: 2em;
   right: 2em;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.35);
   padding: 1em;
   display: none;
   text-shadow: 0px 0px 2px #111;
-  //  box-shadow: 0 0 0 2px rgba(187, 187, 187, 0.3), 0 6px 12px rgba(0, 0, 0, 0.3);
-
 }
 
-.go-top:hover {
+.edit-on-github:hover {
   background-color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   color: #fff;
