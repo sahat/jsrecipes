@@ -294,7 +294,7 @@ sometimes you have to use visible comments, as in the following example:
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [HTML to Jade / Jade to HTML Converter](http://html2jade.org/)
 2. [Jade Syntax Documentation by Example](http://naltatis.github.io/jade-syntax-docs)

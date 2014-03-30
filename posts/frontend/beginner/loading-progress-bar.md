@@ -70,7 +70,7 @@ $(document).ajaxComplete(function() {
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [ngProgress for Angular.js](http://victorbjelkholm.github.io/ngProgress)
 2. [pace - automatic page load progress bar](http://github.hubspot.com/pace/)

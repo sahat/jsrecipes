@@ -99,7 +99,7 @@ is to focus on plaintext e-mails first, since it's easier to work with, and enha
 with HTML later on as time and resources allow.
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [HTML Email Boilerplate](http://htmlemailboilerplate.com/)
 2. [Email Blueprints](https://github.com/mailchimp/Email-Blueprints)

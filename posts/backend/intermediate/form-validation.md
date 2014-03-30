@@ -306,7 +306,7 @@ block content
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Express Validator GitHub Project](https://github.com/ctavan/express-validator)
 

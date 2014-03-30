@@ -244,7 +244,7 @@ User.aggregate({ $group: { _id: null, total: { $sum: '$votes' } } }, function(er
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Quick-Start Guide to MongoLab](http://docs.mongolab.com)
 2. [Official Mongoose Guide](http://mongoosejs.com/docs/guide.html)

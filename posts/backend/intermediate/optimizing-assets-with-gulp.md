@@ -177,7 +177,7 @@ gulp.task('scripts', function() {
 
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Getting Started with Gulp](http://markgoodyear.com/2014/01/getting-started-with-gulp/)
 2. [Grunt and Gulp Tasks for Performance Optimization](http://yeoman.io/blog/performance-optimization.html)

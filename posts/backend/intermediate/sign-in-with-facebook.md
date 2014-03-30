@@ -619,7 +619,7 @@ function ensureAuthenticated(req, res, next) {
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Passport.js Guide](http://passportjs.org/guide/)
 2. [User Authentication with Passport.js](http://mherman.org/blog/2013/11/11/user-authentication-with-passport-dot-js/)

@@ -52,6 +52,6 @@ socket.on('userCount', function (data) {
 # TODO: Complete example
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [New Eden Faces](http://www.newedenfaces.com)

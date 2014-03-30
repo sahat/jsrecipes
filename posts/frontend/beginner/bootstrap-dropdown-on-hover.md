@@ -64,6 +64,6 @@ You can stil use original Bootstrap dropdowns that work on click, just don't inc
 `data-hover="dropdown"` attribute.
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [bootstrap-hover-dropdown](https://github.com/CWSpear/bootstrap-hover-dropdown)

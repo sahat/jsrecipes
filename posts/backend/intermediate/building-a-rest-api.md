@@ -311,7 +311,7 @@ http.createServer(app).listen(app.get('port'), function(){
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Backbone.js with Express REST API Project](https://github.com/sahat/newedenfaces)
 2. [Ember.js + Express Starter](https://github.com/sahat/ember-sass-express-starter)

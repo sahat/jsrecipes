@@ -235,6 +235,6 @@ $('#remote .typeahead').typeahead(null, {
 </div>
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [typeahead.js-bootstrap3.less](https://github.com/hyspace/typeahead.js-bootstrap3.less)

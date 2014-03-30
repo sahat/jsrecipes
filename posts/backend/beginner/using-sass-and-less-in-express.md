@@ -230,7 +230,7 @@ In my experience it roughly adds an extra ~500ms startup delay. While it's not m
 you can certainly feel it.
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Getting Started with Gulp](http://travismaynard.com/writing/getting-started-with-gulp)
 2. [LESS-Middleware: Using LESS with Node.js](http://blog.dylants.com/2013/03/16/less-middleware-using-less-with-node-js/)

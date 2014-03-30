@@ -51,6 +51,6 @@ scenario with Foursquare API latitude and longitude coordinates is all you
 actually need to list trending venues near that location.
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [GeoIP-lite GitHub Project](https://github.com/bluesmoon/node-geoip)

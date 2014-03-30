@@ -186,6 +186,6 @@ block content
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [DailyJS: Express 3 Tutorial: Contact Forms with CSRF](http://dailyjs.com/2012/09/13/express-3-csrf-tutorial/)

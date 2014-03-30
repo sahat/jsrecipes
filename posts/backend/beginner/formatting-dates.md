@@ -279,6 +279,6 @@ block content
 ```
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Moment.js Documentation](http://momentjs.com/docs/)

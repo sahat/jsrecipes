@@ -101,6 +101,6 @@ Then to access that input value from your `app.post` route your would use
 `req.body.INPUT_NAME_ATTRIBUTE`.
 
 <hr>
-#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Express API Reference on req.body](http://expressjs.com/3x/api.html#req.body)
