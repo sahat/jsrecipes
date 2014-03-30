@@ -9,18 +9,16 @@ Safari with the server being [node.js](http://nodejs.org).
 Socket.io can also be used for server-to-server communication but we will
 not worry about that right now. 
 
-Inspired by [Michael Mukhin's SocketIO tutorial](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/),
-this is intended for beginners node.js programmers that have never used the socket.io module and would 
-like to understand the basic mechanics of socket.io.
-
+Very much inspired by [Michael Mukhin's SocketIO tutorial](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/),
+this tutorial is intended to fill in the gap for beginner node.js programmers who have never used the socket.io and would like to
+gain a basic understanding of the mechanics behind socket.io that make it such a powerful tool.
 
 Socket.IO embraces the [EventEmitter](http://nodejs.org/api/events.html) design pattern, something you 
-see quite often in node.js. For this tutorial, the two [EventEmitter](http://nodejs.org/api/events.html)
-objects we are concerned with are:
-**Emitter** and **Listener**. An **Event Emitter** is an object that emits
-events such as _connect_, _disconnect_, and _data_.
-An **Event Listener** is a function we register to a particular event, for example
-'connect', and executes itself when the described event is detected. 
+see quite often in node.js. There are two [EventEmitter](http://nodejs.org/api/events.html)
+objects we are concerned with are: **Emitter** and **Listener**. An **Event Emitter** is an object that emits
+events such as _connect_, _disconnect_, and _data_. An **Event Listener** is a function we register to a particular emitted event,
+e.g. 'connect'. When a particular event is detected by the Event Listener, the function registered to that particular event gets executed.
+Socket.io is both an event emitter and event listener.
 
 In the context of socket.io, a server will typically listen for events emitted by the client,
 for example an _incomingMessage_ event, and the client will listen for events emitted by the server,
@@ -184,11 +182,70 @@ is passed in on a 'connection' event. When the server recieves a 'sendChat' even
 ```
 Finally, we create the event handler for 'disconnect'. When the server recieves a disconnect event,
 we delete the username from the usernames object, emit 'updateUsers' event which will update the
-current list of clients and then broadcast to all clients that a user has disconnected.
+current list of clients, and broadcast to all clients that a user has disconnected.
 
 We have finished writing the server portion of our socket.io powered chat application!
 
+#### Setting up socket.io client
 
+Javascript and html files 
+
+##### index.html
+```
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+    var socket = io.connect('http://localhost:8080');
+    // on connection to server, ask for user's name with an anonymous callback
+    socket.on('connect', function(){
+        // call the server-side function 'adduser' and send one parameter (value of prompt)
+        socket.emit('adduser', prompt("What's your name?"));
+    });
+
+    // listener, whenever the server emits 'updatechat', this updates the chat body
+    socket.on('updatechat', function (username, data) {
+        $('#conversation').append('<b>'+username + ':</b> ' + data + '<br>');
+    });
+
+    // listener, whenever the server emits 'updateusers', this updates the username list
+    socket.on('updateusers', function(data) {
+        $('#users').empty();
+        $.each(data, function(key, value) {
+            $('#users').append('<div>' + key + '</div>');
+        });
+    });
+
+    // on load of page
+    $(function(){
+        // when the client clicks SEND
+        $('#datasend').click( function() {
+            var message = $('#data').val();
+            $('#data').val('');
+            // tell server to execute 'sendchat' and send along one parameter
+            socket.emit('sendchat', message);
+        });
+
+        // when the client hits ENTER on their keyboard
+        $('#data').keypress(function(e) {
+            if(e.which == 13) {
+                $(this).blur();
+                $('#datasend').focus().click();
+            }
+        });
+    });
+
+</script>
+<div style="float:left;width:100px;border-right:1px solid black;height:300px;padding:10px;overflow:scroll-y;">
+    <b>USERS</b>
+    <div id="users"></div>
+</div>
+<div style="float:left;width:300px;height:250px;overflow:scroll-y;padding:10px;">
+    <div id="conversation"></div>
+    <input id="data" style="width:200px;" />
+    <input type="button" id="datasend" value="send" />
+</div>
+
+```
 
 
 
