@@ -1,18 +1,22 @@
 ## Add Socket.io banner image
 
 ### Introduction
-a
+
 [Socket.io](http://socket.io) is a lightweight protocol that sits on top of
 HTTP which aims to make real-time communication between the server and client 
 possible. Typically, the client is a web browser: Chrome, Firefox,
 Safari with the server being [node.js](http://nodejs.org). 
 Socket.io can also be used for server-to-server communication but we will
-not worry about that right now.
+not worry about that right now. 
+
+Inspired by [Michael Mukhin's SocketIO tutorial](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/),
+this is intended for beginners node.js programmers that have never used the socket.io module and would 
+like to understand the basic mechanics of socket.io.
 
 
 Socket.IO embraces the [EventEmitter](http://nodejs.org/api/events.html) design pattern, something you 
 see quite often in node.js. For this tutorial, the two [EventEmitter](http://nodejs.org/api/events.html)
-objects we are concerned with:
+objects we are concerned with are:
 **Emitter** and **Listener**. An **Event Emitter** is an object that emits
 events such as _connect_, _disconnect_, and _data_.
 An **Event Listener** is a function we register to a particular event, for example
@@ -182,6 +186,7 @@ Finally, we create the event handler for 'disconnect'. When the server recieves 
 we delete the username from the usernames object, emit 'updateUsers' event which will update the
 current list of clients and then broadcast to all clients that a user has disconnected.
 
+We have finished writing the server portion of our socket.io powered chat application!
 
 
 
@@ -193,4 +198,4 @@ current list of clients and then broadcast to all clients that a user has discon
 
 
 
-inspired by: http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/
+
