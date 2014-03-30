@@ -22,8 +22,8 @@ Socket.io is both an event emitter and event listener.
 
 In the context of socket.io, a server will typically listen for events emitted by the client,
 for example an _incomingMessage_ event, and the client will listen for events emitted by the server,
-say, _dataFromServer_. In short, both the client and server EMIT events and respond 
-accordingly by executing functions that are registered to LISTEN for that specific event.
+say, _dataFromServer_. Both the client and server EMIT events and respond 
+accordingly by executing functions that are registered to LISTEN for those specific event.
 
 A socket.io powered chat application's workflow may look something like this:
 
