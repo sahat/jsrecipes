@@ -94,8 +94,8 @@ it has the following structure:
 res.render(view, [locals], callback)
 ```
 
-This should at least get you started with sending e-mails in Node.js. I suggest
-focusing on plaintext e-mails first since it's easier to work with, and enhance it
+This should at least get you started with sending e-mails in Node.js. My avice
+is to focus on plaintext e-mails first, since it's easier to work with, and enhance it
 with HTML later on as time and resources allow.
 
 <hr>

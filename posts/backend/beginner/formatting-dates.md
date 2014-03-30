@@ -164,7 +164,7 @@ moment('October 2010').fromNow(); // "3 years ago"
 I have covered only a fraction of what moment.js can do, so I encourage you
 to look at [Moment.js Docs](http://momentjs.com/docs/) to learn more.
 
-### <i class="fa fa-code"></i> Source Code
+### <i class="fa fa-code text-danger"></i> Source Code
 <hr>
 
 #### package.json

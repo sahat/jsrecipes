@@ -485,7 +485,7 @@ app.get('/me', ensureAuthenticated, function(req, res) {
 Now if you visit `http://localhost:3000/me` without signing-in, you will
 be redirected to the login page.
 
-## Source Code
+### <i class="fa fa-code text-danger"></i> Source Code
 <hr>
 
 Since I have already included most of the source code above, I will only
