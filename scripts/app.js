@@ -1,7 +1,10 @@
 'use strict';
 
-angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'ngProgress'])
-  .config(function($routeProvider) {
+angular.module('MyApp', ['ngRoute', 'ui.bootstrap', 'ngProgress', 'ngDisqus'])
+  .config(function($routeProvider, $locationProvider, $disqusProvider) {
+    $disqusProvider.setShortname('jsrecipes');
+    $locationProvider.hashPrefix('!');
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
