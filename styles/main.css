@@ -4009,7 +4009,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   padding: 15px;
   margin-bottom: 21px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .alert h4 {
@@ -4055,17 +4055,17 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 .alert-info {
-  background-color: #d9edf6;
-  border-color: #bce8f2;
-  color: #31708e;
+  background-color: #e5f7fd;
+  border-color: #bcf8f3;
+  color: #25484e;
 }
 
 .alert-info hr {
-  border-top-color: #a7e1ee;
+  border-top-color: #a5f6ee;
 }
 
 .alert-info .alert-link {
-  color: #245268;
+  color: #15282b;
 }
 
 .alert-warning {
@@ -7293,6 +7293,10 @@ button.close {
 
 .method .hljs-id {
   color: #000;
+}
+
+.alert {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.09);
 }
 
 /* Angular UI */
