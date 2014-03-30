@@ -26,6 +26,10 @@ angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ngProgress', '
         templateUrl: 'views/feedback.html',
         controller: 'MainCtrl'
       })
+      .when('/contributing', {
+        templateUrl: 'views/contributing.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         templateUrl: 'views/404.html'
       });
