@@ -3,7 +3,7 @@
 
   <p>Description placeholder, update later with a more meaningful website
     description.</p>
-  </div>
+</div>
 </div>
 <div class="social-bar">
   <div class="container">
@@ -31,7 +31,7 @@
     <div class="g-plusone" data-size="medium"
          data-href="http://sahatyalkabov.com/fullstack/"></div>
     <script type="text/javascript">
-      (function () {
+      (function() {
         var po = document.createElement('script');
         po.type = 'text/javascript';
         po.async = true;
@@ -57,8 +57,9 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.backend.beginner | orderBy:'title'">
-      <a href="#/backend/{{ post.slug }}" class="list-group-item">{{ post.title
-        }}</a>
+      <a href="#!/backend/{{ post.slug }}" class="list-group-item">
+        {{ post.title }}
+      </a>
     </div>
   </div>
 
@@ -68,7 +69,7 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.backend.intermediate | orderBy:'title'">
-      <a href="#/backend/{{ post.slug }}" class="list-group-item">{{ post.title
+      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
@@ -79,7 +80,7 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.backend.advanced | orderBy:'title'">
-      <a href="#/backend/{{ post.slug }}" class="list-group-item">{{ post.title
+      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
@@ -93,7 +94,7 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.frontend.beginner | orderBy:'title'">
-      <a href="#/frontend/{{ post.slug }}" class="list-group-item">{{ post.title
+      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
@@ -104,7 +105,7 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.frontend.intermediate | orderBy:'title'">
-      <a href="#/frontend/{{ post.slug }}" class="list-group-item">{{ post.title
+      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
@@ -115,7 +116,7 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.frontend.advanced | orderBy:'title'">
-      <a href="#/frontend/{{ post.slug }}" class="list-group-item">{{ post.title
+      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
@@ -124,11 +125,11 @@
   <hr/>
 
   <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">General</h3>
-  </div>
+    <div class="panel-heading">
+      <h3 class="panel-title">General</h3>
+    </div>
     <div class="list-group" ng-repeat="post in posts.general | orderBy:'title'">
-      <a href="#/general/{{ post.slug }}" class="list-group-item">{{ post.title
+      <a href="#!/general/{{ post.slug }}" class="list-group-item">{{ post.title
         }}</a>
     </div>
   </div>
