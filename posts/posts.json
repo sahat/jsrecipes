@@ -87,16 +87,10 @@
         "description": "Validating forms, or how not to trust the client with data input"
       },
       {
-        "title": "Uploading Files via HTML Form",
-        "slug": "uploading-files-via-html-form",
-        "file": "backend/uploading-files-via-html-form.md",
-        "description": "Uploading user files using an HTML form"
-      },
-      {
-        "title": "Uploading Files via AJAX",
-        "slug": "uploading-files-via-ajax",
-        "file": "backend/uploading-files-via-ajax.md",
-        "description": "Uploading user files"
+        "title": "Uploading Files",
+        "slug": "uploading-files",
+        "file": "backend/intermediate/uploading-files.md",
+        "description": "File upload with a progress bar"
       },
       {
         "title": "Gravatar Profile Images",
@@ -145,7 +139,13 @@
       {
         "title": "Node.js Error Handling",
         "slug": "nodejs-error-handling",
-        "file": "backend/advanced/nodejs-error-handling.md"
+        "file": "backend/advanced/nodejs-error-handling.md",
+        "description": "Best practices for dealing with errors in Node.js"
+      },
+      {
+        "title": "Generating short hashes (like YouTube and Bitly)",
+        "slug": "generating-short-hashes-like-youtube-and-bitly",
+        "file": "backend/advanced/generating-short-hashes-like-youtube-and-bitly.md"
       }
     ]
   },
@@ -168,12 +168,10 @@
         "description": "Collapse Bootstrap dropdown menu on mouse over"
       },
       {
-        "title": "Styling Bootstrap buttons",
-        "slug": "styling-bootstrap-buttons"
-      },
-      {
-        "title": "Mobile touch UI library",
-        "slug": "mobile-touch-ui-library"
+        "title": "Image Carousel with Slick",
+        "slug": "image-carousel-with-slick",
+        "file": "frontend/beginner/image-carousel-with-slick.md",
+        "description": "Slick is fast, responsive, touch-compatible carousel"
       },
       {
         "title": "Loading Progress Bar",
@@ -186,8 +184,10 @@
         "slug": "creating-a-responsive-grid-of-images"
       },
       {
-        "title": "Growl-like notifications",
-        "slug": "growl-like-notifications"
+        "title": "Growl-like Notifications",
+        "slug": "growl-like-notifications",
+        "file": "frontend/beginner/growl-like-notifications.md",
+        "description": "Compiled list of notification plugins based on Growl"
       },
 
       {
@@ -195,11 +195,18 @@
         "slug": "testing-with-jasmine-2"
       },
       {
-        "title": "Speed up your website with InstantClick",
-        "slug": "instantclick"
+        "title": "Stylable Select Elements",
+        "slug": "stylable-select-elements",
+        "file": "frontend/beginner/stylable-select-elements.md"
       }
+
     ],
     "intermediate": [
+      {
+        "title": "Speed Up Your Website with InstantClick",
+        "slug": "speed-up-your-website-with-instantclick",
+        "file": "frontend/intermediate/speed-up-your-website-with-instantclick.md"
+      },
       {
         "title": "Underscore Templates",
         "slug": "underscore-templates",
@@ -210,12 +217,14 @@
         "slug": "floating-css-menu"
       },
       {
-        "title": "Offline support",
-        "slug": "offline-support"
+        "title": "Offline Status Notification",
+        "slug": "offline-status-notification",
+        "file": "frontend/intermediate/offline-status-notification.md"
       },
       {
-        "title": "Creating a star rating",
-        "slug": "creating-a-star-rating"
+        "title": "Star Rating Plugin",
+        "slug": "star-rating-plugin",
+        "file": "frontend/intermediate/star-rating-plugin.md"
       },
       {
         "title": "Detecting client's platform",
@@ -228,6 +237,10 @@
       {
         "title": "Parallax Effect",
         "slug": "parallax-effect"
+      },
+      {
+        "title": "Search, Filter and Sort Tables or Lists",
+        "slug": "search-filter-and-sort-tables-or-lists"
       }
     ],
     "advanced": [
@@ -235,6 +248,11 @@
         "title": "Organizing code with Require.js",
         "slug": "organizing-code-with-requirejs",
         "file": "frontend/advanced/organizing-code-with-requirejs.md"
+      },
+      {
+        "title": "Split Pane",
+        "slug": "split-pane",
+        "file": "frontend/advanced/split-pane.md"
       },
       {
         "title": "Bootstrap Sidebar Menu",

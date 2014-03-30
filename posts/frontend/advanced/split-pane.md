@@ -1,0 +1,1 @@
+https://github.com/shagstrom/split-pane
