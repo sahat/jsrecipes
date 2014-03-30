@@ -278,6 +278,12 @@
       "slug": "coding-like-a-pro-with-emmet",
       "file": "/general/coding-like-a-pro-with-emmet.md",
       "description": "Handy Emmet snippets for quick prototyping"
+    },
+    {
+      "title": "Development Workflow",
+      "slug": "development-workflow",
+      "file": "/general/development-workflow.md",
+      "description": "Workflow of a modern JavaScript Developer "
     }
   ]
 }
