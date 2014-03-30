@@ -262,36 +262,6 @@ label {
   box-shadow: none;
 }
 
-.input-group .btn {
-  margin: 0 !important;
-  margin-left: -1px !important;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  box-shadow: none;
-  line-height: 20px;
-}
-
-.input-group-btn > .btn + .btn {
-  margin-left: -5px !important;
-}
-
-.input-group-lg > .input-group-addon {
-  line-height: 0.33;
-  border-radius: 3px 0 0 3px;
-  -webkit-border-radius: 3px 0 0 3px;
-}
-
-.input-group-addon {
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  padding: 6px 11px;
-}
-
-.input-group-addon.primary {
-  background-color: #7761a7;
-  color: #fff;
-}
-
 .form-control:focus {
   border-color: #ccc;
   box-shadow: none;
