@@ -152,11 +152,6 @@
   "frontend": {
     "beginner": [
       {
-        "title": "Autocompleting text fields",
-        "slug": "autocompleting-text-fields",
-        "file": "frontend/beginner/autocompleting-text-fields.md"
-      },
-      {
         "title": "Autocomplete Text Fields",
         "slug": "autocomplete-text-fields",
         "file": "frontend/beginner/autocomplete-text-fields.md",
@@ -168,7 +163,9 @@
       },
       {
         "title": "Bootstrap Dropdown on Hover",
-        "slug": "bootstrap-dropdown-on-hover"
+        "slug": "bootstrap-dropdown-on-hover",
+        "file": "frontend/beginner/bootstrap-dropdown-on-hover.md",
+        "description": "Collapse Bootstrap dropdown menu on mouse over"
       },
       {
         "title": "Styling Bootstrap buttons",
