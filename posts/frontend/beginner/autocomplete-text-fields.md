@@ -130,7 +130,7 @@
 
 [Typeahead](http://twitter.github.io/typeahead.js/) is better explained using an example than with words.
 <div class="row">
-  <div class="col-xs-5">
+  <div class="col-sm-6 col-sm-offset-3">
     <input type="text" class="typeahead form-control" placeholder="States of USA">
     <div class="help-block"></div>
     <button id="initialize" class="btn btn-block btn-success" type="button"><i class="fa fa-code"></i> Initialize</button>
