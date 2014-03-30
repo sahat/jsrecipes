@@ -157,9 +157,10 @@
         "file": "frontend/beginner/autocompleting-text-fields.md"
       },
       {
-        "title": "CSS Animations in Seconds",
-        "slug": "autocompleting-text-fields",
-        "file": "frontend/beginner/autocompleting-text-fields.md"
+        "title": "Autocomplete Text Fields",
+        "slug": "autocomplete-text-fields",
+        "file": "frontend/beginner/autocomplete-text-fields.md",
+        "description": "Using Typeahead to provide search results as you type"
       },
       {
         "title": "Icon Fonts",
