@@ -1,7 +1,7 @@
 ## Add Socket.io banner image
 
 ### Introduction
-
+a
 [Socket.io](http://socket.io) is a lightweight protocol that sits on top of
 HTTP which aims to make real-time communication between the server and client 
 possible. Typically, the client is a web browser: Chrome, Firefox,
@@ -11,7 +11,7 @@ not worry about that right now.
 
 
 Socket.IO embraces the [EventEmitter](http://nodejs.org/api/events.html) design pattern, something you 
-see quite often in node.js. For this tutorial, there two [EventEmitter](http://nodejs.org/api/events.html)
+see quite often in node.js. For this tutorial, the two [EventEmitter](http://nodejs.org/api/events.html)
 objects we are concerned with:
 **Emitter** and **Listener**. An **Event Emitter** is an object that emits
 events such as _connect_, _disconnect_, and _data_.
@@ -83,9 +83,114 @@ npm install
 
 #### Setting up our Socket.io server
 
-Now that all our dependencies are installed, we can start writing our socket.io chat server. We will
-be using [express.js](http://sample.com), a minimal web framework that provides a bunch of features that will make our
+Now that all our dependencies are installed, we can start writing the server portion of our chat application. We will
+be using [Express.js](http://sample.com), a minimal web framework that provides a bunch of features that will make our
 life a lot easier. If you are not familiar with [Express](http://sample.com), do not worry. It is very
 simple to setup and we will go through the entire process step-by-step.
 
+Using your text editor, create another file called 'app.js'. This will serve as our socket.io server, and of course
+this file will be located in the root directory of our project 'socketio-chatapp/app.js'.
+Instead of 'app.js' spanning one large code block, it will be broken up in to smaller snippets.
+This will make the code easier to digest and keep me from having to reference line numbers.
+In this tutorial, code snippets are broken up in a contiguous manner allowing you to direct copy
+code snippets without generating syntax errors.
 
+##### app.js
+
+```javascript
+  var express = require('express');
+  var http = require('http');
+  var app = express();
+```
+We tell node that we would like to require these external modules: _express_ and _http_. After that,
+we create an express server called _app_.
+
+
+```javascript
+  app.set('port', process.env.port || 8080);
+  app.get('/', function(req, res) {
+    res.sendfile(__dirname + '/index.html');
+  });
+``` 
+
+Then, we set the express value of _port_ to the environment variable PORT. If that does not exist, we set it to 8080.
+After that, we tell express we want to route all GET requests to the root directory of our server to
+return the file, index.html.
+
+
+```
+  var server = http.createServer(app).listen(app.get('port'), function() {
+    console.log('Server is listening on port: ' + app.get('port'));
+  });
+```
+If you are new to Express, the snippet above may seem complex but it's asking the HTTP module 
+to create a web server object with the express application as it's parameter to which we can use respond to requests.
+The server object then binds itself to the value stored in _app.get('port')_. At this point,
+we have a fully functioning web server that responds to all requests with the index.html file.
+
+
+```
+  var io = require('socket.io').listen(server);
+  io.set('log level', 3);
+
+```
+
+Next, we import the socket.io module and bind it to the HTTP server we just created. We set the
+log level of socket.io to 3 which will give us debug information. 0 - error, 1 - warn, 2 - info, 3 - debug.
+Now that we have socket.io working together with our express server, we can now tell 
+socket.io to listen for, and emit events.
+
+```javascript
+ 
+  var usernames = {};
+ 
+  io.sockets.on('connection', function(socket) {
+    
+    socket.on('addUser', function(username) {
+      // store the username attribute in the socket object.
+      socket.username = username;
+      // store the username attribute in the usernames object.
+      usernames[username] = username;
+      socket.emit('updateChat', 'Server', 'you have connected');
+    });
+
+    socket.on('sendChat', function(data) {
+      // broadcast to all clients the data recieved on the 'sendChat' event
+      io.sockets.emit('updateChat', socket.username, data);
+    });
+  });
+```
+
+We create an object called usernames that will store the usernames of all connected clients.
+Then we tell socket.io after a 'connection' event, we should listen for a 'addUser' and 'sendChat' event.
+When the server recieves 'addUser' event from the client, we store the username sent from 
+the client into our usernames object and we also store it as an attribute of the socket. The socket object 
+is passed in on a 'connection' event. When the server recieves a 'sendChat' event, the server broadcasts an 
+'updateChat' event to all connected clients with data sent to the server in the 'sendChat' event. 
+
+
+```
+  socket.on('disconnect', function() {
+    delete usernames[socket.username];
+    io.sockets.emit('updateUsers', usernames);
+    socket.broadcast.emit('updateChat', 'Server', socket.username + ' has disconnected.');
+  });
+});
+  
+```
+Finally, we create the event handler for 'disconnect'. When the server recieves a disconnect event,
+we delete the username from the usernames object, emit 'updateUsers' event which will update the
+current list of clients and then broadcast to all clients that a user has disconnected.
+
+
+
+
+
+
+
+
+
+
+
+
+inspired by: http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/
