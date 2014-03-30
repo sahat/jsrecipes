@@ -178,8 +178,10 @@
         "slug": "mobile-touch-ui-library"
       },
       {
-        "title": "Animated progress bar",
-        "slug": "animated-progress-bar"
+        "title": "Loading Progress Bar",
+        "slug": "loading-progress-bar",
+        "file": "frontend/beginner/loading-progress-bar.md",
+        "description": "YouTube-like slim progress bar"
       },
       {
         "title": "Creating a responsive grid of images",
