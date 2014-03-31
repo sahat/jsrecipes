@@ -189,19 +189,25 @@
         "file": "frontend/beginner/growl-like-notifications.md",
         "description": "Compiled list of notification plugins based on Growl"
       },
-
-      {
-        "title": "Testing with Jasmine 2.0",
-        "slug": "testing-with-jasmine-2"
-      },
       {
         "title": "Stylable Select Elements",
         "slug": "stylable-select-elements",
         "file": "frontend/beginner/stylable-select-elements.md"
       }
-
     ],
     "intermediate": [
+      {
+        "title": "Keyboard Shortcuts",
+        "slug": "keyboard-shortcuts",
+        "file": "frontend/intermediate/keyboard-shortcuts.md",
+        "description": "Page interaction using keyboard shortcuts"
+      },
+      {
+        "title": "Infinite Scroll",
+        "slug": "infinite-scroll",
+        "file": "frontend/intermediate/infinite-scroll.md",
+        "description": "Infinite scrolling similar to Facebook, Tumblr, Pinterest and others"
+      },
       {
         "title": "Speed Up Your Website with InstantClick",
         "slug": "speed-up-your-website-with-instantclick",
