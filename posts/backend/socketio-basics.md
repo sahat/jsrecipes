@@ -18,7 +18,7 @@ see quite often in node.js. There are two [EventEmitter](http://nodejs.org/api/e
 objects we are concerned with are: **Emitter** and **Listener**. An **Event Emitter** is an object that emits
 events such as _connect_, _disconnect_, and _data_. An **Event Listener** is a function we register to a particular emitted event,
 e.g. 'connect'. When a particular event is detected by the Event Listener, the function registered to that particular event gets executed.
-Socket.io is both an event emitter and event listener.
+Socket.io is an event emitter and listener.
 
 In the context of socket.io, a server will typically listen for events emitted by the client,
 for example an _incomingMessage_ event, and the client will listen for events emitted by the server,
@@ -173,8 +173,11 @@ is passed in on a 'connection' event. When the server recieves a 'sendChat' even
 
 ```
   socket.on('disconnect', function() {
+    // delete username from usernames object.
     delete usernames[socket.username];
+    // tell the client to update it's user list.
     io.sockets.emit('updateUsers', usernames);
+    // broadcast a message to all clients that a user has disconnected.
     socket.broadcast.emit('updateChat', 'Server', socket.username + ' has disconnected.');
   });
 });
@@ -188,9 +191,38 @@ We have finished writing the server portion of our socket.io powered chat applic
 
 #### Setting up socket.io client
 
-Javascript and html files 
+In the same directory as 'app.js', create a file called index.html. We will store both javascript and HTML
+inside this file. [Jquery](http://jquery.com/) is used to expedite the data registration process.
 
 ##### index.html
+
+```
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+  var socket = io.connect('http://localhost:8080');
+
+  socket.on('connect', function() {
+    socket.emit('addUser', prompt("What is your name?"));
+  });
+
+  socket.on('updateChat', function(username, data) {
+    $('#conversation').append('<b>' + username + ':</b> ' + data + '<br>');
+  });
+
+  socket.on('updateUsers', function(data) {
+    $('#users').empty();
+    $.each(data, function(key, value) {
+      $('#users').append('<div>' + key + '</div>');
+    });
+  });
+
+```
+Just like app.js, we register three event listener functions: 'connect', 'updateChat' and 'updateUsers'.
+
+
+
+
 ```
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
