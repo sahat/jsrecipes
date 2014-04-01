@@ -1,3 +1,10 @@
+<div class="alert alert-info">
+  <h4>When would I use this?</h4>
+  You will use Mongoose whenever you need to store and retrieve data to/from the
+  database, namely MongoDB. Most web applications, except trivial ones, use
+  some kind of database to store data, e.g. users, blog posts, items.
+</div>
+
 [Mongoose](http://mongoosejs.com) is a Node.js library for interfacing with
 [MongoDB](http://mongodb.org) database. It sits on a higher abstraction
 layer than [Mongo DB Native NodeJS Driver](https://github.com/mongodb/node-mongodb-native),
