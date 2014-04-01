@@ -13,6 +13,11 @@
   font-weight: 100;
   margin-top: -20px;
 }
+ @media (max-width: 720px) {
+    .mongoose {
+      letter-spacing: -6px;
+      font-size: 75px;
+  }
 </style>
 <div class="mongoose">mongoose</div>
 
