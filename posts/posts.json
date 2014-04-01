@@ -190,9 +190,9 @@
         "description": "Compiled list of notification plugins based on Growl"
       },
       {
-        "title": "Stylable Select Elements",
-        "slug": "stylable-select-elements",
-        "file": "frontend/beginner/stylable-select-elements.md"
+        "title": "Customizable Select Dropdown",
+        "slug": "customizable-select-dropdown",
+        "file": "frontend/beginner/customizable-select-dropdown.md"
       }
     ],
     "intermediate": [
@@ -235,10 +235,6 @@
       {
         "title": "Detecting client's platform",
         "slug": "detecting-clients-platform"
-      },
-      {
-        "title": "Customizing select dropdown",
-        "slug": "customizing-select-dropdown"
       },
       {
         "title": "Parallax Effect",
