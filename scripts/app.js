@@ -26,8 +26,8 @@ angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ngProgress', '
         templateUrl: 'views/feedback.html',
         controller: 'MainCtrl'
       })
-      .when('/contributing', {
-        templateUrl: 'views/contributing.html',
+      .when('/contribute', {
+        templateUrl: 'views/contribute.html',
         controller: 'MainCtrl'
       })
       .otherwise({
