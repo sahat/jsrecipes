@@ -9,7 +9,8 @@ angular.module('MyApp')
             $window.document.title = $scope.post.title + " - " + 'JS Recipes'
 
             // Get last commit date
-            GitHub.lastCommit(post.file, function(data) {
+            GitHub.lastCommit(post.file, function(data, status, headers, config) {
+              if (status === 0) return $scope.lastUpdated = 'Unknown';
               $scope.lastUpdated = new Date(data[0].commit.committer.date).toLocaleString();
             });
           });
