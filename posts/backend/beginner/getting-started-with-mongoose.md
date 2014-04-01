@@ -5,12 +5,26 @@
   some kind of database to store data, e.g. users, blog posts, items.
 </div>
 
+<style>
+.mongoose {
+  color: #800;
+  letter-spacing: -8px;
+  font-size: 120px;
+  font-weight: 100;
+  margin-top: -20px;
+}
+</style>
+<div class="mongoose">mongoose</div>
+
+
 [Mongoose](http://mongoosejs.com) is a Node.js library for interfacing with
 [MongoDB](http://mongodb.org) database. It sits on a higher abstraction
 layer than [Mongo DB Native NodeJS Driver](https://github.com/mongodb/node-mongodb-native),
 which Mongoose uses under the hood anyway. If you do not plan on defining a
 schema or using any of Mongoose's fancy features, then you might be better off with the native MongoDB driver. For most
 cases Mongoose is a solid choice.
+
+
 
 I assume you have already installed MongoDB. Alternatively you may use a remote
 MongoDB database on the cloud via [MongoLab](https://mongolab.com/welcome/) or
