@@ -1,3 +1,12 @@
+<div class="alert alert-info">
+  <h4>When would I use this?</h4>
+  If you are building a website using a client-side framework like Angular, Backbone,
+  Ember or Knockout, you will need RESTful API for managing data. The beautiful
+  thing about REST API is decoupled architecture: client doesn't need to know anything
+  about the server and server couldn't care less about the client. You can basically
+  build REST API once and re-use it accross multiple clients - web, mobile and even desktop.
+</div>
+
 This guide will show you how to build a book library service that lets users perform
 basic CRUD operations: create, update, read, delete.
 

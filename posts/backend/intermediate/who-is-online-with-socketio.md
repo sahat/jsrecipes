@@ -1,3 +1,9 @@
+<div class="alert alert-info">
+  <h4>When would I use this?</h4>
+  You want to know how many active online visitors are on your site in
+  real-time.
+</div>
+
 I am sure you have seen plenty of online visitor counters that display how many
 users are online on that website. Using websockets we can monitor in real-time
 how many connected users are currently online on the website.
