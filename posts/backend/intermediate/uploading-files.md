@@ -208,6 +208,77 @@ Also, by using this new <strong>XMLHttpRequest</strong> you are restricting your
 Chrome 7.0+, Safari 5+ and Opera 12+. If you are still interested, check out links below.
 </div>
 
+### <i class="fa fa-code text-danger"></i> Source Code
+<hr>
+
+**app.js**
+```javascript
+var express = require('express');
+var http = require('http');
+var path = require('path');
+
+var app = express();
+
+app.set('port', process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+app.use(express.logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded());
+app.use(express.multipart({ uploadDir: __dirname + '/uploads', limit: '50mb' }));
+app.use(express.methodOverride());
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
+app.post('/upload', function(req, res) {
+  console.log(req.files.file.name + ' has been uploaded');
+  res.send(200);
+});
+
+
+app.listen(app.get('port'), function() {
+  console.log('Express server listening on port ' + app.get('port'));
+});
+```
+
+**layout.jade**
+```jade
+doctype html
+html
+  head
+    title Uploading Files
+    link(rel='stylesheet', href='http://bootswatch.com/flatly/bootstrap.min.css')
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/jquery.fileupload/9.5.2/css/jquery.fileupload.css')
+    style.
+      body { padding-top: 50px; }
+  body
+    block content
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js')
+    script(src='//cdn.jsdelivr.net/jquery.fileupload/9.5.2/js/vendor/jquery.ui.widget.js')
+    script(src='//cdn.jsdelivr.net/jquery.fileupload/9.5.2/js/jquery.fileupload.js')
+    script(src='/javascripts/main.js')
+```
+
+**index.jade**
+```jade
+extends layout
+
+block content
+  .container
+    span.btn.btn-success.fileinput-button
+      span + Upload Files
+      input#fileupload(type='file', name='file', data-url='/upload', multiple)
+    br
+    br
+    .progress.progress-striped.active
+      .progress-bar.progress-bar-success
+```
+
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
