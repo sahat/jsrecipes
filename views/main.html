@@ -6,39 +6,26 @@
 </div>
 <div class="social-bar">
   <div class="container">
+    <!--GitHub Star Button-->
     <iframe
       src="http://ghbtns.com/github-btn.html?user=sahat&repo=fullstack&type=watch&count=true"
       allowtransparency="true" frameborder="0" scrolling="0" width="107"
       height="20"></iframe>
+
+    <!--Facebook Like Button-->
     <iframe
-      src="//www.facebook.com/plugins/like.php?href=http://sahatyalkabov.com&amp;width=85&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=633254040073197"
+      src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fjsrecipes.org&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=621491837925521"
       scrolling="no" frameborder="0"
       style="border:none; overflow:hidden; width:107px; height:21px;"
       allowTransparency="true"></iframe>
-    <a href="https://twitter.com/share" class="twitter-share-button"
-       data-via="EvNowAndForever">Tweet</a>
-    <script>!function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-      if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = p + '://platform.twitter.com/widgets.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }
-    }(document, 'script', 'twitter-wjs');</script>
 
-    <div class="g-plusone" data-size="medium"
-         data-href="http://sahatyalkabov.com/fullstack/"></div>
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script');
-        po.type = 'text/javascript';
-        po.async = true;
-        po.src = 'https://apis.google.com/js/platform.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
-      })();
-    </script>
+    <!--Twitter Share Button-->
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jsrecipes.org" data-via="EvNowAndForever">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <!--Google +1 Button-->
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+    <div class="g-plusone" data-size="medium" data-href="http://jsrecipes.org"></div>
   </div>
 </div>
 
@@ -53,7 +40,8 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.backend.beginner | orderBy:'title'">
-      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title
+        }}</a>
     </div>
   </div>
 
@@ -63,7 +51,8 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.backend.intermediate | orderBy:'title'">
-      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title
+        }}</a>
     </div>
   </div>
 
@@ -73,7 +62,8 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.backend.advanced | orderBy:'title'">
-      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/backend/{{ post.slug }}" class="list-group-item">{{ post.title
+        }}</a>
     </div>
   </div>
 
@@ -86,7 +76,8 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.frontend.beginner | orderBy:'title'">
-      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{
+        post.title }}</a>
     </div>
   </div>
 
@@ -96,7 +87,8 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.frontend.intermediate | orderBy:'title'">
-      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{
+        post.title }}</a>
     </div>
   </div>
 
@@ -106,7 +98,8 @@
     </div>
     <div class="list-group"
          ng-repeat="post in posts.frontend.advanced | orderBy:'title'">
-      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/frontend/{{ post.slug }}" class="list-group-item">{{
+        post.title }}</a>
     </div>
   </div>
 
@@ -118,7 +111,8 @@
       <h3 class="panel-title">Best Practices</h3>
     </div>
     <div class="list-group" ng-repeat="post in posts.general | orderBy:'title'">
-      <a href="#!/general/{{ post.slug }}" class="list-group-item">{{ post.title }}</a>
+      <a href="#!/general/{{ post.slug }}" class="list-group-item">{{ post.title
+        }}</a>
     </div>
   </div>
 
