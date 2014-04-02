@@ -127,14 +127,9 @@
     ],
     "advanced": [
       {
-        "title": "Organizing Callbacks with Async",
-        "slug": "organizing-callbacks-with-async",
-        "file": "backend/organizing-callbacks-with-async.md"
-      },
-      {
-        "title": "Promises",
-        "slug": "promises",
-        "file": "backend/advanced/promises.md"
+        "title": "Organizing Callbacks with Async.js",
+        "slug": "organizing-callbacks-with-asyncjs",
+        "file": "backend/organizing-callbacks-with-asyncjs.md"
       },
       {
         "title": "Node.js Error Handling",
@@ -143,7 +138,7 @@
         "description": "Best practices for dealing with errors in Node.js"
       },
       {
-        "title": "Generating short hashes (like YouTube and Bitly)",
+        "title": "Generating Short Hashes (like YouTube and Bitly)",
         "slug": "generating-short-hashes-like-youtube-and-bitly",
         "file": "backend/advanced/generating-short-hashes-like-youtube-and-bitly.md"
       }
@@ -252,9 +247,9 @@
         "file": "frontend/advanced/organizing-code-with-requirejs.md"
       },
       {
-        "title": "Split Pane",
-        "slug": "split-pane",
-        "file": "frontend/advanced/split-pane.md"
+        "title": "Resizable Split Pane Layout",
+        "slug": "resizable-split-pane-layout",
+        "file": "frontend/advanced/resizable-split-pane-layout.md"
       },
       {
         "title": "Bootstrap Sidebar Menu",
