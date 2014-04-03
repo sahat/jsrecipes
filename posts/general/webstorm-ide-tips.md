@@ -1,12 +1,16 @@
 #### What is WebStorm?
 
-[WebStorm](http://www.jetbrains.com/webstorm/) is a modern JavaScript IDE that has
-no rivals. Unlike Vim, you don't have to spend months learning the tool to be
+[WebStorm](http://www.jetbrains.com/webstorm/) is a modern JavaScript IDE
+developed by JetBrains. Unlike Vim, you don't have to spend months learning the tool to be
 productive. Simply opening your project in WebStorm instantly makes you far
 more productive than any other text editor thanks to auto-completion,
 smart inspections that can detect dead code, syntax errors, unreachable code,
 references to local files that don't exist (likely due ot misspelling).
 
+Let me get something out of the way first. If you use Vim that's okay,
+stick with it. If you use Sublime Text, that's alright too. Use
+whichever tool that makes you more productive. That's all that matters at the
+end of the day.
 
 #### 1. Create a `<script>` tag with `src` attribute
 If you have used WebStorm then you are probably aware of built-in snippets and
