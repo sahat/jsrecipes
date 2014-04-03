@@ -261,25 +261,25 @@
     {
       "title": "JavaScript Style Guide",
       "slug": "javascript-style-guide",
-      "file": "/general/javascript-style-guide.md",
+      "file": "general/javascript-style-guide.md",
       "description": "Brief overview of popular JavaScript style guides"
     },
     {
       "title": "WebStorm IDE Tips",
       "slug": "webstorm-ide-tips",
-      "file": "/general/webstorm-ide-tips.md",
+      "file": "general/webstorm-ide-tips.md",
       "description": "A list of awesome WebStorm tips that make you more productive"
     },
     {
       "title": "Coding Like a Pro with Emmet",
       "slug": "coding-like-a-pro-with-emmet",
-      "file": "/general/coding-like-a-pro-with-emmet.md",
+      "file": "general/coding-like-a-pro-with-emmet.md",
       "description": "Handy Emmet snippets for quick prototyping"
     },
     {
       "title": "Development Workflow",
       "slug": "development-workflow",
-      "file": "/general/development-workflow.md",
+      "file": "general/development-workflow.md",
       "description": "Workflow of a modern JavaScript Developer "
     }
   ]
