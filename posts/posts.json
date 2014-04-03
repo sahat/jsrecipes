@@ -147,14 +147,16 @@
   "frontend": {
     "beginner": [
       {
-        "title": "Autocomplete Text Fields",
-        "slug": "autocomplete-text-fields",
-        "file": "frontend/beginner/autocomplete-text-fields.md",
+        "title": "Text Field Autocomplete",
+        "slug": "text-field-autocomplete",
+        "file": "frontend/beginner/text-field-autocomplete.md",
         "description": "Using Typeahead to provide search results as you type"
       },
       {
         "title": "Icon Fonts",
-        "slug": "icon-fonts"
+        "slug": "icon-fonts",
+        "file": "frontend/beginner/icon-fonts.md",
+        "description": "Using scalable font icons like Font Awesome and Elusive"
       },
       {
         "title": "Bootstrap Dropdown on Hover",
@@ -175,8 +177,10 @@
         "description": "YouTube-like slim progress bar"
       },
       {
-        "title": "Creating a responsive grid of images",
-        "slug": "creating-a-responsive-grid-of-images"
+        "title": "Bin-Packing Layout using Packery.js",
+        "slug": "bin-packing-layout-using-packeryjs",
+        "file": "frontend/beginner/bin-packing-layout-using-packeryjs.md",
+        "description": "Responsive grid layout similar to Pinterest"
       },
       {
         "title": "Growl-like Notifications",
@@ -187,26 +191,28 @@
       {
         "title": "Customizable Select Dropdown",
         "slug": "customizable-select-dropdown",
-        "file": "frontend/beginner/customizable-select-dropdown.md"
+        "file": "frontend/beginner/customizable-select-dropdown.md",
+        "description": "Shows you how to add custom styles to <select> element"
       }
     ],
     "intermediate": [
       {
-        "title": "Keyboard Shortcuts",
-        "slug": "keyboard-shortcuts",
-        "file": "frontend/intermediate/keyboard-shortcuts.md",
+        "title": "Handling Keyboard Shortcuts in JavaScript",
+        "slug": "handling-keyboard-shortcuts-in-javascript",
+        "file": "frontend/intermediate/handling-keyboard-shortcuts-in-javascript.md",
         "description": "Page interaction using keyboard shortcuts"
       },
       {
         "title": "Infinite Scroll",
         "slug": "infinite-scroll",
         "file": "frontend/intermediate/infinite-scroll.md",
-        "description": "Infinite scrolling similar to Facebook, Tumblr, Pinterest and others"
+        "description": "Infinite scrolling similar to Facebook, Tumblr, Pinterest"
       },
       {
-        "title": "Speed Up Your Website with InstantClick",
-        "slug": "speed-up-your-website-with-instantclick",
-        "file": "frontend/intermediate/speed-up-your-website-with-instantclick.md"
+        "title": "Instant Page Load with InstantClick",
+        "slug": "instant-page-load-with-instantclick",
+        "file": "frontend/intermediate/instant-page-load-with-instantclick.md",
+        "description": "InstantClick prefetches pages on mouse hover, right before you click on the link"
       },
       {
         "title": "Underscore Templates",
