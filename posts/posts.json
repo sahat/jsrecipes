@@ -242,7 +242,7 @@
     ],
     "advanced": [
       {
-        "title": "Organizing code with Require.js",
+        "title": "Organizing Code with Require.js",
         "slug": "organizing-code-with-requirejs",
         "file": "frontend/advanced/organizing-code-with-requirejs.md"
       },
