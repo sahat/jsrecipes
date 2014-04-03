@@ -1,4 +1,13 @@
-Last Summer, in 2013, I decided to learn Backbone.js. The best way to learn a
+<div class="alert alert-info">
+  <h4>When would I use this?</h4>
+  You have a large monolithic client-side code that needs to be modularized. Unlike
+  Node.js, front-end developers don't have an ability to #include/import/require
+  a module, and that's what Require.js is trying to solve. If you are still not
+  convinced on why you should use Require.js for your project, head over to
+  <a href="https://gist.github.com/desandro/4686136">Can you help me understand the benefit of require.js?</a>
+</div>
+
+In the Summer 2013, I decided to learn Backbone.js. The best way to learn any
 new technology is to build a side-project with it. And so I did - [New Eden Faces](http://newedenfaces.com).
 Projects that I used a reference  had all their JavaScript code located either in a
 single **app.js** file or accross multiple scripts that were then loaded separately in
@@ -6,6 +15,37 @@ single **app.js** file or accross multiple scripts that were then loaded separat
 believed that Require.js syntax was so idiotic that I couldn't help but wonder
 why anyone in the right mind would use it. The benefits of Require.js didn't come
 to my realization until much later.
+
+<div class="alert alert-success">
+  <h4>New to Require.js?</h4>
+  Check out this amazing 16-minute screencast by Jeffrey Way that will teach you
+  the basics you need to know in order to use Require.js. I highly recommend
+  to watch it.
+</div>
+
+<style>
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="//www.youtube.com/embed/USk1ie30z5k" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<br>
 
 Once you get past the difficult syntax, Require.js is actually pretty nice. One
 of the biggest benefits you get with Require.js is modular application design.
@@ -129,9 +169,111 @@ define([
 The only thing of importance here is that we can use `CharacterView` module that
 we just defined inside another module. Ignoring all that repetitive ceremony of
 `define`, this approach allows us to organize code into individual modules. Also
-it is worth noting that you won't run into scoping issues or name conflicts since
+it is worth mentioning that you won't run into scoping issues or name conflicts since
 each module is in its own scope, whereas having all your code in a single file,
 in the same scope, increases the likelihood of name collision somewhere in your
-code. It is also easier to debug individual modules when there is a problem.
+code. It is also easier to debug individual modules when a problem arises.
 
+I would like to briefly mention how to configure Require.js. (Where do you think
+**underscore**, **jQuery** and **Backbone** modules were coming from inside
+those views we defined above?)
 
+For *New Eden Faces* I have used [Backbone Boilerplate](https://github.com/backbone-boilerplate/backbone-boilerplate)
+project that separates **main.js** and **config.js** into separate files. Many
+examples you find on the internet will include `require.config` inside **main.js**.
+Use whatever approach that makes sense to you, you can always refactor later.
+
+**config.js**
+```javascript
+require.config({
+  paths: {
+    'vendor': './vendor',
+    'almond': 'vendor/almond',
+    'underscore': 'vendor/lodash.underscore.min',
+    'jquery': 'vendor/jquery.min',
+    'backbone': 'vendor/backbone-min',
+    'text': 'vendor/requirejs-text',
+    'alertify': 'vendor/alertify.min',
+    'magnific-popup': 'vendor/jquery.magnific-popup.min',
+    'bootstrap-dropdown': 'vendor/bootstrap-dropdown',
+    'chart': 'vendor/Chart.min',
+    'photoset': 'vendor/jquery.photoset-grid.min',
+    'PageableCollection': 'vendor/backbone-pageable'
+  },
+
+  shim: {
+    'backbone': {
+      deps: ['jquery', 'underscore'],
+      exports: 'Backbone'
+    },
+    'magnific-popup': {
+      deps: ['jquery']
+    },
+    'typeahead': {
+      deps: ['jquery']
+    },
+    'bootstrap-dropdown': {
+      deps: ['jquery']
+    },
+    'toastr': {
+      deps: ['jquery']
+    },
+    'chart': {
+      exports: 'Chart'
+    },
+    'photoset': {
+      deps: ['jquery']
+    },
+    'PageableCollection': {
+      deps: ['underscore', 'backbone'],
+      exports: 'PageableCollection'
+    }
+  }
+});
+```
+
+Everything that is specified in `paths` can be accessed from within `define` in your
+modules. You could have skipped creating `paths` for some modules, but would
+you really want to type `vendor/lodash.underscore.min` for underscore path in
+every single module? All other files that are not defined here can still be
+accessed using relative path, where relative path is related to `baseUrl`. If
+`baseUrl` is not specified it defaults to the location of **main.js**.
+
+![](images/frontend/advanced/organizing-code-with-requirejs-2.png)
+
+That's how we were able to access `CharacterView` by specifying its relative
+path at **views/Character**, and as you may have already noticed `.js` extension
+is implied:
+
+```javascript
+define([
+  'underscore',
+  'jquery',
+  'backbone',
+  'views/Character',
+  'text!templates/menu-leaderboard.html'
+], function(_, $, Backbone, CharacterView, MenuLeaderboardTpl) {
+
+});
+```
+
+### Final Note
+There are so many examples of Require.js + Backbone that it might give you
+a false impression that Require.js works only with Backbone. Take a look at
+[CloudBucket Source Code](https://github.com/sahat/cloudbucket/tree/master/public/js) -
+another one of my projects that uses Require.js + jQuery + jQuery Plugins and
+third-party libraries. In *CloudBucket*, each Require.js module corresponds to
+a page.
+
+Oh, one last thing. As an alternative to Require.js there is also [Browserify](http://browserify.org/).
+I don't have any experience with it, but I am putting it out there for you to check
+out. Require.js is not the only module loader out there. And if you wait long
+enough for ECMAScript 6 to roll out for general public, you will be able to use
+JavaScript modules natively without any libraries or special compilers. I have
+added a link below that talks more about ECMAScript 6 modules.
+
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
+
+1. [Organizing your Backbone application using modules](http://backbonetutorials.com/organizing-backbone-using-modules/)
+2. [ECMAScript 6 Modules: What Are They and How to Use Them Today](http://www.infoq.com/news/2013/08/es6-modules)
