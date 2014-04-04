@@ -193,6 +193,12 @@
         "slug": "customizable-select-dropdown",
         "file": "frontend/beginner/customizable-select-dropdown.md",
         "description": "Shows you how to add custom styles to <select> element"
+      },
+      {
+        "title": "Bootstrap Sidebar Menu",
+        "slug": "bootstrap-sidebar-menu",
+        "file": "frontend/beginner/bootstrap-sidebar-menu.md",
+        "description": "Creating a sidebar menu with Bootstrap"
       }
     ],
     "intermediate": [
@@ -256,10 +262,6 @@
         "title": "Resizable Split Pane Layout",
         "slug": "resizable-split-pane-layout",
         "file": "frontend/advanced/resizable-split-pane-layout.md"
-      },
-      {
-        "title": "Bootstrap Sidebar Menu",
-        "slug": "bootstrap-sidebar-menu"
       }
     ]
   },
