@@ -1,6 +1,4 @@
-'use strict';
-
-angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ngProgress', 'ngDisqus', 'ngTable'])
+angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ngProgress', 'ngDisqus', 'ngTable'])
   .config(['$routeProvider', '$locationProvider', '$disqusProvider', function($routeProvider, $locationProvider, $disqusProvider) {
     $disqusProvider.setShortname('jsrecipes');
     $locationProvider.hashPrefix('!');

@@ -3,7 +3,6 @@
 @import "mixins";
 // Reset
 @import "normalize";
-@import "print";
 // Core CSS
 @import "scaffolding";
 @import "type";
@@ -19,11 +18,7 @@
 @import "input-groups";
 @import "navs";
 @import "navbar";
-@import "breadcrumbs";
-@import "pagination";
-@import "pager";
 @import "labels";
-@import "badges";
 @import "jumbotron";
 @import "thumbnails";
 @import "alerts";
@@ -36,8 +31,6 @@
 // Components w/ JavaScript
 @import "modals";
 @import "tooltip";
-@import "popovers";
-@import "carousel";
 // Utility classes
 @import "utilities";
 @import "responsive-utilities";
