@@ -4,9 +4,9 @@ It allows you to quickly expand simple abbreviations into snippets of code with
 a <kbd>Tab</kbd> key.
 
 #### Create new HTML document
-<button class="btn btn-primary">html:5</button>
-<div ui-codemirror="{ mode: 'html' }">
 ```
+html:5 →
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,12 +17,9 @@ a <kbd>Tab</kbd> key.
 
 </body>
 </html>
-</div>
 ```
-</div>
 
-
-#### Add class or id to an element
+#### Add .class or #id to an element
 ```
 button.btn.btn-primary →
 
@@ -84,9 +81,12 @@ ul>li.item$*3 →
   <li class="item3"></li>
 </ul>
 ```
+<hr>
 
+For more HTML and CSS snippets refer to the Emmet Cheat Sheet.
 
-
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Emmet Cheat Sheet](http://docs.emmet.io/cheat-sheet/)
+
 
