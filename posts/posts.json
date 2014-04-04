@@ -153,10 +153,10 @@
         "description": "Using Typeahead to provide search results as you type"
       },
       {
-        "title": "Icon Fonts",
-        "slug": "icon-fonts",
-        "file": "frontend/beginner/icon-fonts.md",
-        "description": "Using scalable font icons like Font Awesome and Elusive"
+        "title": "Comparing Icon Fonts",
+        "slug": "comparing-icon-fonts",
+        "file": "frontend/beginner/comparing-icon-fonts.md",
+        "description": "Comparison of popular icon fonts"
       },
       {
         "title": "Bootstrap Dropdown on Hover",
@@ -177,10 +177,10 @@
         "description": "YouTube-like slim progress bar"
       },
       {
-        "title": "Bin-Packing Layout using Packery.js",
-        "slug": "bin-packing-layout-using-packeryjs",
-        "file": "frontend/beginner/bin-packing-layout-using-packeryjs.md",
-        "description": "Responsive grid layout similar to Pinterest"
+        "title": "Pinterest Grid Layout using Packery.js",
+        "slug": "pinterest-grid-layout-using-packeryjs",
+        "file": "frontend/beginner/pinterest-grid-layout-using-packeryjs.md",
+        "description": "Dynamic grid layout similar to Pinterest"
       },
       {
         "title": "Growl-like Notifications",
