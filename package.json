@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "devDependencies": {
     "gulp": "~3.5.5",
-    "gulp-sass": "~0.7.1"
+    "gulp-sass": "~0.7.1",
+    "gulp-uglify": "~0.2.1"
   },
   "engines": {
     "node": ">=0.10.0"
