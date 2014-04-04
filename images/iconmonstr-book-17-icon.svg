@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
-You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
-
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" fill="#3d4452" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<path id="book-17-icon" d="M441.418,158.455v195.167l-12.445,2V158.455V118.97c-66.856,2.04-130.146,12.788-173,39.466
-	c-42.856-26.678-106.144-37.426-173-39.466v39.485v197.167l-12.445-2V158.455h-20.5v219.001h155.45
-	c25.376,0,28.161,15.574,50.495,15.574c22.376,0,25.071-15.574,50.496-15.574h155.504V158.455H441.418z M238.982,352.892
-	c-33.402-13.253-73.892-21.78-123.029-25.474V154.9c40.354,3.386,88.635,11.587,123.029,32.984V352.892z M395.992,327.418
-	c-49.138,3.693-89.628,12.221-123.029,25.474V187.885c34.394-21.397,82.675-29.599,123.029-32.984V327.418z"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" fill="#3d4452" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path id="book-17-icon" d="M441.418 158.455v195.167l-12.445 2V158.455V118.97c-66.856 2.04-130.146 12.788-173 39.5 c-42.856-26.678-106.144-37.426-173-39.466v39.485v197.167l-12.445-2V158.455h-20.5v219.001h155.45 c25.376 0 28.2 15.6 50.5 15.574c22.376 0 25.071-15.574 50.496-15.574h155.504V158.455H441.418z M238.982 352.9 c-33.402-13.253-73.892-21.78-123.029-25.474V154.9c40.354 3.4 88.6 11.6 123 32.984V352.892z M395.992 327.4 c-49.138 3.693-89.628 12.221-123.029 25.474V187.885c34.394-21.397 82.675-29.599 123.029-32.984V327.418z"/>
 </svg>
