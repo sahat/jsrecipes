@@ -3,8 +3,6 @@ var sass = require('gulp-sass');
 var csso = require('gulp-csso');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var templates = require('gulp-angular-templatecache');
-var minifyHTML = require('gulp-minify-html');
 
 gulp.task('sass', function() {
   gulp.src('./styles/styles.scss')
@@ -13,19 +11,12 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('styles'));
 });
 
-gulp.task('templates', function () {
-  gulp.src('views/*.html')
-    .pipe(minifyHTML({ quotes: true }))
-    .pipe(templates('templates.js'))
-    .pipe(gulp.dest('tmp'));
-});
-
 gulp.task('compress', function() {
   gulp.src(['scripts/**/*.js', '!scripts/lib/**'])
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('dist'))
+    .pipe(concat('compiled.js'))
+    .pipe(gulp.dest('scripts'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('scripts'));
 });
 
 gulp.task('watch', function() {
@@ -33,4 +24,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['sass', 'watch']);
-gulp.task('build', ['compress', 'templates']);
+gulp.task('build', ['compress']);
