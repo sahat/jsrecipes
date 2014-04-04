@@ -17,8 +17,12 @@ angular.module('MyApp')
       } else {
         $rootScope.title = $route.current.title;
 
-        Posts.getPosts(function(data) {
-          $scope.posts = data;
+        Posts.getPosts(function(posts) {
+          $scope.posts = posts;
+        });
+
+        GitHub.getContributors(function(contributors) {
+          $scope.contributors = contributors.slice(0,10);
         });
       }
     });

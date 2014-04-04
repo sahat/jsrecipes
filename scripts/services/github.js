@@ -6,8 +6,8 @@ angular.module('MyApp')
           .success(callback)
           .error(callback)
       },
-      contributors: function(callback) {
-        $http.get('https://api.github.com/repos/sahat/hackathon-starter/contributors')
+      getContributors: function(callback) {
+        $http.get('https://api.github.com/repos/sahat/jsrecipes/contributors')
           .success(callback)
           .error(callback)
       }

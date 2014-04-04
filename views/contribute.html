@@ -22,26 +22,10 @@
 
   <h3>Top Contributors</h3>
   <table class="table">
-    <tr>
-      <td><img
-        src="http://www.gravatar.com/avatar/00000000000000000000000000000000?s=25">
-      </td>
-      <td>User 1</td>
-      <td>54 commits</td>
-    </tr>
-    <tr>
-      <td><img
-        src="http://www.gravatar.com/avatar/00000000000000000000000000000000?s=25">
-      </td>
-      <td>User 2</td>
-      <td>49 commits</td>
-    </tr>
-    <tr>
-      <td><img
-        src="http://www.gravatar.com/avatar/00000000000000000000000000000000?s=25">
-      </td>
-      <td>User 3</td>
-      <td>23 commits</td>
+    <tr ng-repeat="user in contributors">
+      <td class="col-xs-1"><img src="{{ user.avatar_url }}"></td>
+      <td><a href="{{ user.html_url }}">{{ user.login }}</a></td>
+      <td>{{ user.contributions }} commits</td>
     </tr>
   </table>
 </div>
