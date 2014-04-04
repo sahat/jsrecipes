@@ -13,15 +13,15 @@ whichever tool that makes you more productive. That's all that matters at the
 end of the day.
 
 #### 1. Create a `<script>` tag with `src` attribute
-If you have used WebStorm then you are probably aware of built-in snippets and
-live templates. For example you can type `link`, press *TAB* and it will expand into:
+If you have used WebStorm then you are probably aware of built-in Emmet snippets and
+live templates. For example you can type `link`, press <kbd>Tab</kbd> and it will expand into:
 
 ```html
 <link rel="stylesheet" href=""/>
 ```
 
 For the longest time I didn't know (and never bothered to look it up) how to create
-a `<script>` tag with `src` attribute. Here is what I mean: type `script`, press *TAB* and
+a `<script>` tag with `src` attribute. Here is what I mean: type `script`, press <kbd>Tab</kbd> and
 it will expand into:
 
 ```html
@@ -47,10 +47,10 @@ styles yet, so inside **index.html** you add:
 ```
 
 WebStorm will immediately tell you that **style.css** does not exist. If your place
-a cursor over *css* in `css/style.css` and press `Alt + Enter`, it will prompt
+a cursor over *css* in `css/style.css` and press <kbd>Alt</kbd> + <kbd>Enter</kbd>, it will prompt
 you to create `css` directory. After doing that the yellow highlight will go away from
 `css`, meaning there are no problems. Now moe your cursor to *style.css*, press
-`Alt + Enter` and it will prompt you to create `style.css` file inside `css` folder.
+<kbd>Alt</kbd> + <kbd>Enter</kbd> and it will prompt you to create `style.css` file inside `css` folder.
 I think that's pretty neat!
 
 ![](images/general/webstorm-ide-tips-1.png)
@@ -62,7 +62,7 @@ same code style. This is especially true for open-source GitHub projects. There
 is an easy way to fix.
 
 
-To reformat code press `Alt + Command + L`, it will format your code according to
+To reformat code press <kbd>Alt</kbd> + <kbd>Command</kbd> + <kbd>L</kbd>, it will format your code according to
 the code style defined in **Preferences > Code Style**.
 
 ![](images/general/webstorm-ide-tips-2.png)
