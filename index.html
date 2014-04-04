@@ -1,14 +1,15 @@
 <!doctype html>
+<html ng-app="MyApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
+  <title ng-bind="$root.title ? $root.title + ' - JS Recipes' : 'JS Recipes'">JS Recipes</title>
+  <meta name="description" content="JS Recipes">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body ng-app="MyApp">
+<body>
 <div id="wrap">
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container-fluid">
@@ -87,6 +88,7 @@
 
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/contribute.js"></script>
 <script src="scripts/directives/markdown.js"></script>
 <script src="scripts/directives/scroll.js"></script>
 <script src="scripts/services/posts.js"></script>

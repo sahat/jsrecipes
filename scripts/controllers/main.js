@@ -1,24 +1,25 @@
 angular.module('MyApp')
-  .controller('MainCtrl', function($scope, $window, Posts, GitHub, $routeParams, ngProgress) {
+  .controller('MainCtrl', function($scope, $rootScope, $route, $window, Posts, GitHub, $routeParams, ngProgress) {
     $scope.$on('$routeChangeSuccess', function($currentRoute, $previousRoute) {
-        if ($routeParams.name) {
-          ngProgress.start();
-          Posts.getBySlug($routeParams.name, function(post) {
-            $scope.post = post;
-            ngProgress.complete();
-            $window.document.title = $scope.post.title + " - " + 'JS Recipes'
+      if ($routeParams.name) {
+        ngProgress.start();
+        Posts.getBySlug($routeParams.name, function(post) {
+          $scope.post = post;
+          ngProgress.complete();
+          $window.document.title = $scope.post.title + " - " + 'JS Recipes'
 
-            // Get last commit date
-            GitHub.lastCommit(post.file, function(data, status, headers, config) {
-              if (status === 0) return $scope.lastUpdated = 'Unknown';
-              $scope.lastUpdated = new Date(data[0].commit.committer.date).toLocaleString();
-            });
+          // Get last commit date
+          GitHub.lastCommit(post.file, function(data, status, headers, config) {
+            if (status === 0) return $scope.lastUpdated = 'Unknown';
+            $scope.lastUpdated = new Date(data[0].commit.committer.date).toLocaleString();
           });
-        } else {
-          $window.document.title = 'JS Recipes' + " - " + 'Site Description';
-          Posts.getPosts(function(data) {
-            $scope.posts = data;
-          });
-        }
-      });
+        });
+      } else {
+        $rootScope.title = $route.current.title;
+
+        Posts.getPosts(function(data) {
+          $scope.posts = data;
+        });
+      }
+    });
   });

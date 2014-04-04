@@ -24,13 +24,17 @@ angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ngProgress', '
       })
       .when('/feedback', {
         templateUrl: 'views/feedback.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        title: 'Feedback'
       })
       .when('/contribute', {
         templateUrl: 'views/contribute.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        title: 'Contribute'
       })
       .otherwise({
-        templateUrl: 'views/404.html'
+        templateUrl: 'views/404.html',
+        controller: 'MainCtrl',
+        title: 'Not Found'
       });
   });
