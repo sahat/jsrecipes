@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .directive('scroll', function($window) {
+  .directive('scroll', ['$window', function($window) {
     return function(scope, element, attrs) {
       angular.element($window).bind('scroll', function() {
         if (this.pageYOffset >= 150) {
@@ -9,4 +9,4 @@ angular.module('MyApp')
         }
       });
     }
-  });
+  }]);

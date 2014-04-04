@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .factory('Posts', function($http) {
+  .factory('Posts', ['$http', function($http) {
     return {
       getPosts: function(callback) {
         $http.get('posts/posts.json').success(callback);
@@ -25,4 +25,4 @@ angular.module('MyApp')
         })
       }
     }
-  });
+  }]);

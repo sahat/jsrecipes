@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .directive('markdown', function($http, $compile) {
+  .directive('markdown', ['$http', '$compile', function($http, $compile) {
     var converter = new Showdown.converter();
     return {
       link: function(scope, element, attrs) {
@@ -17,4 +17,4 @@ angular.module('MyApp')
         });
       }
     }
-  });
+  }]);

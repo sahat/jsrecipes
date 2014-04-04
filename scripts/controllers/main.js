@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .controller('MainCtrl', function($scope, $rootScope, $route, $window, Posts, GitHub, $routeParams, ngProgress) {
+  .controller('MainCtrl', ['$scope', '$rootScope', '$route', '$window', 'Posts', 'GitHub', '$routeParams', 'ngProgress' ,function($scope, $rootScope, $route, $window, Posts, GitHub, $routeParams, ngProgress) {
     $scope.$on('$routeChangeSuccess', function($currentRoute, $previousRoute) {
       if ($routeParams.name) {
         ngProgress.start();
@@ -26,4 +26,4 @@ angular.module('MyApp')
         });
       }
     });
-  });
+  }]);

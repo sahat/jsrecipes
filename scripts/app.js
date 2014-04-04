@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ngProgress', 'ngDisqus', 'ngTable'])
-  .config(function($routeProvider, $locationProvider, $disqusProvider) {
+  .config(['$routeProvider', '$locationProvider', '$disqusProvider', function($routeProvider, $locationProvider, $disqusProvider) {
     $disqusProvider.setShortname('jsrecipes');
     $locationProvider.hashPrefix('!');
 
@@ -37,4 +37,4 @@ angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ngProgress', '
         controller: 'MainCtrl',
         title: 'Not Found'
       });
-  });
+  }]);
