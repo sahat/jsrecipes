@@ -23,7 +23,7 @@
   <h3>Top Contributors</h3>
   <table class="table">
     <tr ng-repeat="user in contributors">
-      <td class="col-xs-1"><img src="{{ user.avatar_url }}"></td>
+      <td class="col-xs-1"><img ng-src="{{ user.avatar_url }}"></td>
       <td><a href="{{ user.html_url }}">{{ user.login }}</a></td>
       <td>{{ user.contributions }} commits</td>
     </tr>
