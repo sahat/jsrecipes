@@ -191,8 +191,9 @@ We have finished writing the server portion of our socket.io powered chat applic
 
 #### Setting up socket.io client
 
-In the same directory as 'app.js', create a file called index.html. We will store both javascript and HTML
-inside this file. [Jquery](http://jquery.com/) is used to expedite the data registration process.
+In the same directory as 'app.js', create a file called *index.html*. We will store both javascript and HTML
+inside this file. [JQuery](http://jquery.com/) is used to expedite the data & click registration process.
+Just like our SocketIO server, our client will emit and respond to events.
 
 ##### index.html
 
@@ -218,7 +219,9 @@ inside this file. [Jquery](http://jquery.com/) is used to expedite the data regi
   });
 
 ```
-Just like app.js, we register three event listener functions: 'connect', 'updateChat' and 'updateUsers'.
+We register three events : 'connect', 'updateChat' and 'updateUsers'. When our client connects to the server,
+the client will emit an 'addUser' event which will send the value of the prompt to the server. When the server
+recieves the name, it will be added to the servers list of usernames.
 
 
 
