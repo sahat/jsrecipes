@@ -267,7 +267,15 @@ display the data.
 #### Final Thoughts
 
 SocketIO is a very powerful tool when you need easy real-time communication between the server and client.
+SocketIO attempts to use the WebSocket protocol, a full-duplex communication channel over TCP. If the WebSocket
+protocol is not supported by the browser, it will fallback to less efficient communication methods: Adobe Flash Socket,
+AJAX Long Polling, AJAX Multipart Streaming, Forever IFrame, and JSONP Polling. As a developer, this is awesome
+because you have don't have to ask yourself "Will this work on browser x?" because the answer is most likely yes.
 
+Another cool feature of SocketIO are **volatile messages**. Volatile messages are messages that can be droppped
+without any significant reprecussions. Say you are pushing non mission-critical incremental updates to a client 
+every 5 seconds. You might choose volatile messaging as losing a couple message won't break your app.
+ 
 If you are looking for something that can do server to server interprocess communication, you can definitely
 use SocketIO but there are better tools availiable. For example, [ZeroMQ](http://zeromq.org/) is great for
 fast and easy communication. Like SocketIO and many other node libraries, [node-zmq](https://github.com/JustinTulloss/zeromq.node)
