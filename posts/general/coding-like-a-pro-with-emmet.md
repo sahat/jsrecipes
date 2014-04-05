@@ -1,86 +1,27 @@
 Emmet is a plugin for many popular text editors like Vim, Sublime Text,
-Eclipse, WebStorm, Esresso. which greatly improves HTML & CSS workflow.
+Eclipse, WebStorm, Esresso, which greatly improves HTML and CSS workflow.
 It allows you to quickly expand simple abbreviations into snippets of code with
 a <kbd>Tab</kbd> key.
 
+<div class="alert alert-info">
+Press <kbd>Tab</kbd> to expand abbreviations.
+</div>
+
 #### Create new HTML document
-```
-html:5 →
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
-</html>
-```
+<a class="jsbin-embed" href="http://jsbin.com/suzul/1/embed?html">Document</a>
 
 #### Add .class or #id to an element
-```
-button.btn.btn-primary →
-
-<button class="btn btn-primary"></button>
-```
-
-```
-div#footer →
-
-<div id="footer"></div>
-```
-
-You can also use both at the same time:
-```
-table#items.table.table-hover →
-
-<table id="items" class="table table-hover"></table>
-```
-
-If you omit element, div tag will be created:
-
-```
-.well →
-
-<div class="well"></div>
-```
+<a class="jsbin-embed" href="http://jsbin.com/cazuv/3/embed?html">JS Bin</a>
 
 #### Child Nesting
-```
-nav>ul>li →
-
-<nav>
-  <ul>
-    <li></li>
-  </ul>
-</nav>
-```
+<a class="jsbin-embed" href="http://jsbin.com/rorof/1/embed?html">JS Bin</a>
 
 #### Multiplication
-```
-ul>li*5 →
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-```
+<a class="jsbin-embed" href="http://jsbin.com/xowuc/1/embed?html">JS Bin</a>
 
 #### Numbering
-```
-ul>li.item$*3 →
+<a class="jsbin-embed" href="http://jsbin.com/wuqic/1/embed?html">JS Bin</a>
 
-<ul>
-  <li class="item1"></li>
-  <li class="item2"></li>
-  <li class="item3"></li>
-</ul>
-```
 <hr>
 
 For more HTML and CSS snippets refer to the Emmet Cheat Sheet.
@@ -88,5 +29,7 @@ For more HTML and CSS snippets refer to the Emmet Cheat Sheet.
 #### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
 1. [Emmet Cheat Sheet](http://docs.emmet.io/cheat-sheet/)
+2. [Faster Workflow: Mastering Emmet](http://www.sitepoint.com/faster-workflow-mastering-emmet-part-1/)
+3. [Using Emmet to Speed Up Front-End Web Development](http://blog.teamtreehouse.com/using-emmet-speed-front-end-web-development)
 
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
