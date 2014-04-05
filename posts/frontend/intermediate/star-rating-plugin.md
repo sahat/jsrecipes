@@ -1,0 +1,1 @@
+![](images/frontend/intermediate/star-rating-plugin-1.png)

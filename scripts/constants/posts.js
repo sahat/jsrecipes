@@ -41,7 +41,8 @@ angular.module('MyApp')
         {
           "title": "Socket.IO Basics",
           "slug": "socketio-basics",
-          "file": "backend/socketio-basics.md"
+          "file": "backend/socketio-basics.md",
+          "description": "A brief introduction to Socket.IO"
         },
         {
           "title": "Getting Started with Mongoose",
@@ -96,7 +97,8 @@ angular.module('MyApp')
         {
           "title": "Gravatar Profile Images",
           "slug": "gravatar-profile-images",
-          "file": "backend/intermediate/gravatar-profile-images.md"
+          "file": "backend/intermediate/gravatar-profile-images.md",
+          "description": "Obtaining Gravatar images from user's e-mail address"
         },
         {
           "title": "Sign in with Facebook",
@@ -113,24 +115,28 @@ angular.module('MyApp')
         {
           "title": "Optimizing Assets with Gulp",
           "slug": "optimizing-assets-with-gulp",
-          "file": "backend/intermediate/optimizing-assets-with-gulp.md"
+          "file": "backend/intermediate/optimizing-assets-with-gulp.md",
+          "description": "Using Gulp to optimize, concatenate, minify your assets and source files"
         },
         {
           "title": "Sending Emails with Nodemailer",
           "slug": "sending-emails-with-nodemailer",
-          "file": "backend/intermediate/sending-emails-with-nodemailer.md"
+          "file": "backend/intermediate/sending-emails-with-nodemailer.md",
+          "description": "Easy as cake e-mail sending from your Node.js applications using Nodemailer"
         },
         {
           "title": "Get User's Location from IP Address",
           "slug": "get-users-location-from-ip-address",
-          "file": "backend/intermediate/get-users-location-from-ip-address.md"
+          "file": "backend/intermediate/get-users-location-from-ip-address.md",
+          "description": "Determine geolocation coordinates from an IP Address"
         }
       ],
       "advanced": [
         {
           "title": "Organizing Callbacks with Async.js",
           "slug": "organizing-callbacks-with-asyncjs",
-          "file": "backend/organizing-callbacks-with-asyncjs.md"
+          "file": "backend/organizing-callbacks-with-asyncjs.md",
+          "description": "Learn about series, parallel, waterfall and other control flows to help you organize callbacks"
         },
         {
           "title": "Node.js Error Handling",
@@ -161,9 +167,9 @@ angular.module('MyApp')
           "description": "Comparison of popular icon fonts"
         },
         {
-          "title": "Bootstrap Dropdown on Hover",
-          "slug": "bootstrap-dropdown-on-hover",
-          "file": "frontend/beginner/bootstrap-dropdown-on-hover.md",
+          "title": "Activate Bootstrap Dropdown on Hover",
+          "slug": "activate-bootstrap-dropdown-on-hover",
+          "file": "frontend/beginner/activate-bootstrap-dropdown-on-hover.md",
           "description": "Collapse Bootstrap dropdown menu on mouse over"
         },
         {
@@ -179,9 +185,9 @@ angular.module('MyApp')
           "description": "YouTube-like slim progress bar"
         },
         {
-          "title": "Pinterest Grid Layout using Packery.js",
-          "slug": "pinterest-grid-layout-using-packeryjs",
-          "file": "frontend/beginner/pinterest-grid-layout-using-packeryjs.md",
+          "title": "Pinterest Grid Layout with Packery.js",
+          "slug": "pinterest-grid-layout-with-packeryjs",
+          "file": "frontend/beginner/pinterest-grid-layout-with-packeryjs.md",
           "description": "Dynamic grid layout similar to Pinterest"
         },
         {
@@ -211,9 +217,9 @@ angular.module('MyApp')
           "description": "Page interaction using keyboard shortcuts"
         },
         {
-          "title": "Infinite Scroll",
-          "slug": "infinite-scroll",
-          "file": "frontend/intermediate/infinite-scroll.md",
+          "title": "Infinite Scrolling",
+          "slug": "infinite-scrolling",
+          "file": "frontend/intermediate/infinite-scrolling.md",
           "description": "Infinite scrolling similar to Facebook, Tumblr, Pinterest"
         },
         {
@@ -225,45 +231,46 @@ angular.module('MyApp')
         {
           "title": "Underscore Templates",
           "slug": "underscore-templates",
-          "file": "frontend/beginner/underscore-templates.md"
-        },
-        {
-          "title": "Floating CSS Menu",
-          "slug": "floating-css-menu"
+          "file": "frontend/beginner/underscore-templates.md",
+          "description": "Using jQuery with Underscore templates"
         },
         {
           "title": "Offline Status Notification",
           "slug": "offline-status-notification",
-          "file": "frontend/intermediate/offline-status-notification.md"
+          "file": "frontend/intermediate/offline-status-notification.md",
+          "description": "Alerting users when they've lost internet connectivity"
         },
         {
           "title": "Star Rating Plugin",
           "slug": "star-rating-plugin",
-          "file": "frontend/intermediate/star-rating-plugin.md"
-        },
-        {
-          "title": "Detecting client's platform",
-          "slug": "detecting-clients-platform"
+          "file": "frontend/intermediate/star-rating-plugin.md",
+          "description": "jQuery Raty is a plugin that generates a customizable star rating"
         },
         {
           "title": "Parallax Effect",
-          "slug": "parallax-effect"
+          "slug": "parallax-effect",
+          "file": "frontend/intermediate/parallax-effect.md",
+          "description": "Add parallax scrolling to your website"
         },
         {
-          "title": "Search, Filter and Sort Tables or Lists",
-          "slug": "search-filter-and-sort-tables-or-lists"
+          "title": "Search, Filter, Sort Lists or Tables",
+          "slug": "search-filter-sort-list-or-tables",
+          "file": "search-filter-sort-list-or-tables",
+          "description": "List.js is tiny library for adding search, sort and filters to existing HTML tables, lists"
         }
       ],
       "advanced": [
         {
-          "title": "Organizing Code with Require.js",
+          "title": "Organizing Code with RequireJS",
           "slug": "organizing-code-with-requirejs",
-          "file": "frontend/advanced/organizing-code-with-requirejs.md"
+          "file": "frontend/advanced/organizing-code-with-requirejs.md",
+          "description": "Writing modular JavaScript with RequireJS"
         },
         {
           "title": "Resizable Split Pane Layout",
           "slug": "resizable-split-pane-layout",
-          "file": "frontend/advanced/resizable-split-pane-layout.md"
+          "file": "frontend/advanced/resizable-split-pane-layout.md",
+          "description": "Creating a split pane layout similar to JSBin and JSFiddle websites"
         }
       ]
     },
