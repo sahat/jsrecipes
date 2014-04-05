@@ -272,9 +272,10 @@ protocol is not supported by the browser, it will fallback to less efficient com
 AJAX Long Polling, AJAX Multipart Streaming, Forever IFrame, and JSONP Polling. As a developer, this is awesome
 because you have don't have to ask yourself "Will this work on browser x?" because the answer is most likely yes.
 
-Another cool feature of SocketIO are **volatile messages**. Volatile messages are messages that can be droppped
-without any significant reprecussions. Say you are pushing non mission-critical incremental updates to a client 
-every 5 seconds. You might choose volatile messaging as losing a couple message won't break your app.
+Another cool feature of SocketIO is **volatile messages**. Volatile messages are messages that can be droppped
+without any significant reprecussions. Say you are pushing non mission-critical updates to a client 
+every 5 seconds. You might choose volatile messaging as losing a couple message won't break your app. You can
+read more about SocketIO's features [here](http://socket.io/#how-to-use).
  
 If you are looking for something that can do server to server interprocess communication, you can definitely
 use SocketIO but there are better tools availiable. For example, [ZeroMQ](http://zeromq.org/) is great for
@@ -283,8 +284,6 @@ follows the Event Emitter pattern so learning zmq is quick and painless. ZeroMQ 
 messaging patterns: PUB/SUB, REQ/REP, PUSH/PULL. ZeroMQ makes no assumption about your architecture so you
 if you are planning on doing anything relatively complex, you will have to handle everything yourself.
 ZeroMQ could be considered 'TCP Socket on Steroids'.
-
-
 
 
 ### <i class="fa fa-code"></i> Source Code</i>
