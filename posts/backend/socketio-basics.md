@@ -1,5 +1,4 @@
-## Add Socket.io banner image
-
+![](images/backend/beginner/socketIObanner.png)
 ### Introduction
 
 [SocketIO](http://socket.io) is a lightweight protocol that sits on top of
@@ -48,7 +47,7 @@ leaves the page or closes their browser which emits a _disconnect_ event.
 of connected clients. The server then broadcasts a _data_ event which lets tells 
 the clients that a user has left the chatroom.
 
-
+<hr> 
 ### Getting Started
 
 Now with all the formalities out of the way, we can finally get started! Before we jump right in,
@@ -263,7 +262,6 @@ display the data.
     <input type="button" id="datasend" value="send" />
 </div>
 ```
-
 #### Final Thoughts
 
 SocketIO is a very powerful tool when you need easy real-time communication between the server and client.
@@ -401,6 +399,9 @@ io.sockets.on('connection', function(socket) {
 
 1. [Michael Mukhin's SocketIO tutorial](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/)
 2. [Sample Chat App in AngularJS and ExpressJS](https://github.com/brianwu02/MEAN-chat)
+3. [SocketIO](http://socket.io)
+4. [ZeroMQ](http://zeromq.org/)
+5. [node-zeromq](https://github.com/JustinTulloss/zeromq.node)
 
 
 
