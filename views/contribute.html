@@ -1,31 +1,30 @@
 <div class="container">
-  <h3>Contributing Guidelines</h3>
+  <br/>
+
+  <h4>Contributing Guidelines</h4>
 
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer leo est,
-    tincidunt placerat elit eu, feugiat rhoncus odio. Maecenas augue sem,
-    eleifend
-    et sapien sodales, semper mattis odio. Interdum et malesuada fames ac ante
-    ipsum primis in faucibus. Ut vestibulum nisi tincidunt, elementum quam nec,
-    dapibus eros. Quisque at augue sed dui fringilla tempus imperdiet eu nulla.
-    Etiam euismod est augue, laoreet eleifend lorem consequat porta. Proin
-    blandit
-    ante volutpat augue adipiscing, id convallis sem vulputate. Nullam et congue
-    sapien, nec euismod purus. Etiam suscipit eleifend libero, quis tempus lorem
-    viverra nec. Suspendisse ultrices nisi eu erat tristique, sed interdum lorem
-    rutrum. Nulla dapibus, eros vel iaculis rhoncus, quam risus elementum magna,
-    ac tincidunt metus nunc ac lorem. Donec placerat tristique ipsum. Vestibulum
-    hendrerit tristique nisl, eget pulvinar magna aliquam ut. Nam vulputate
-    augue
-    sem, eget feugiat mauris molestie at. Aliquam erat volutpat.
+    If you find a bug in the code examples or a mistake in documentation, I
+    would
+    really appreciate if you could <a
+    href="github.com/sahat/jsrecipes/issues/new">submit an issue</a> on Github.
   </p>
 
-  <h3>Top Contributors</h3>
+  <p>
+    You can request a new tutorial by <a href="mailto:sahat@me.com">sending me
+    an email</a>
+    or opening a new issue on GitHub. I will to add it based on my availability
+    schedule.
+  </p>
+
+  <br/>
+
+  <h4>Top Contributors</h4>
   <table class="table">
     <tr ng-repeat="user in contributors">
       <td class="col-xs-1"><img ng-src="{{ user.avatar_url }}"></td>
       <td><a href="{{ user.html_url }}">{{ user.login }}</a></td>
-      <td>{{ user.contributions }} commits</td>
+      <td><strong>{{ user.contributions }}</strong> commits</td>
     </tr>
   </table>
 </div>
