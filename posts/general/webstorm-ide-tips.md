@@ -104,6 +104,24 @@ the code style defined in **Preferences > Code Style**.
   </tbody>
 </table>
 
+#### 5. CSS Auto-completion and Auto-suggestions
+I was trying to convert an image icon to Base64 using this [Base64 Converter](http://webcodertools.com/imagetobase64converter).
+I coped the `background-image` source code and pasted into my stylesheet. If
+you just paste that code, image will be repeated in all directions. Obviously
+that's not what I wanted. I then start typing `background-repeat:`, but I forgot
+the exact syntax to prevent background image from repeating. Thankfully,
+WebStorm can display auto-completion popup with <kbd>Control</kbd> + <kbd>Space</kbd>.
+
+![](images/general/webstorm-ide-tips-3.png)
+
+After I added `background-repeat` and `background-position` properties, WebStorm
+highlighted all those properties with a squigly line, suggesting me to merge
+them into a single `background` property.
+
+![](images/general/webstorm-ide-tips-4.png)
+
+
+
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
