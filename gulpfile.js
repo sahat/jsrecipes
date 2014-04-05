@@ -22,14 +22,13 @@ gulp.task('compress', function() {
     'scripts/services/*.js'
   ])
     .pipe(concat('compiled.js'))
-//    .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('scripts'));
-
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./styles/*.scss', ['sass']);
-//  gulp.watch('./scripts/*.js', ['compress']);
+  gulp.watch('styles/*.scss', ['sass']);
+  gulp.watch(['scripts/**/*.js', '!scripts/compiled.js'], ['compress']);
 });
 
 gulp.task('default', ['sass', 'watch']);
