@@ -1,18 +1,17 @@
 ![](images/backend/beginner/socketIObanner.png)
-### Introduction
 
 [SocketIO](http://socket.io) is a lightweight protocol that sits on top of
 HTTP which aims to make real-time communication between the server and client 
 possible. Typically, the client is a web browser: Chrome, Firefox,
 Safari with the server being [node.js](http://nodejs.org). 
-Socket.io can also be used for server-to-server communication but we will
+SocketIO can also be used for server-to-server communication but we will
 not worry about that right now. 
 
 Very much inspired by [Michael Mukhin's SocketIO tutorial](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/),
 this tutorial is intended to fill in the gap for beginner node.js programmers who have never used the socket.io and would like to
 gain a basic understanding of the mechanics behind socket.io that make it such a powerful tool.
 
-Socket.IO embraces the [EventEmitter](http://nodejs.org/api/events.html) design pattern, something you 
+SocketIO embraces the [EventEmitter](http://nodejs.org/api/events.html) design pattern, something you 
 see quite often in node.js. There are two [EventEmitter](http://nodejs.org/api/events.html)
 objects we are concerned with are: **Emitter** and **Listener**. An **Event Emitter** is an object that emits
 events such as _connect_, _disconnect_, and _data_. An **Event Listener** is a function we register to a particular emitted event,
@@ -26,36 +25,36 @@ accordingly by executing functions that are registered to LISTEN for those speci
 
 A SocketIO powered chat application's workflow may look something like this:
 
-1. Client connects to a server and a _connection_ event is registered by the server.
+1. Client connects to a server and a **connection** event is registered by the server.
 
-2. On _connection_ event, the server adds the socket connection to an array which
+2. On **connection** event, the server adds the socket connection to an array which
 contains a pool of all connected sockets.
 
-3. The server emits a _data_ event to all connected clients (broadcast) which tells
+3. The server emits a **data** event to all connected clients (broadcast) which tells
 all connected clients that a new user has joined the chat. 
 
-4. Clients listening for the _data_ event parse and render data sent from the server.
+4. Clients listening for the **data** event parse and render data sent from the server.
 
-5. User enters text in to textboxarea and clicks submit. The client emits a _message_
+5. User enters text in to textboxarea and clicks submit. The client emits a **message**
 event containing data entered by the user. 
 
-6. Server listening for _message_ event parses data sent by the client and broadcasts
-a _data_ event containing the text entered by the user. GOTO step 4 until the user
-leaves the page or closes their browser which emits a _disconnect_ event.
+6. Server listening for **message** event parses data sent by the client and broadcasts
+a **data** event containing the text entered by the user. GOTO step 4 until the user
+leaves the page or closes their browser which emits a **disconnect** event.
 
-7. Server recieves the _disconnect_ event and removes the socket connection from the pool
-of connected clients. The server then broadcasts a _data_ event which lets tells 
+7. Server recieves the **disconnect** event and removes the socket connection from the pool
+of connected clients. The server then broadcasts a **data** event which lets tells 
 the clients that a user has left the chatroom.
 
 <hr> 
 ### Getting Started
 
-Now with all the formalities out of the way, we can finally get started! Before we jump right in,
+With all the formalities out of the way, we can finally get started!
 I assume that you are working in a UNIX environment: Ubuntu, OSX, etc and have
 [node.js](http://nodejs.org) installed. If you do not, please follow these installion 
 instructions found here: [Link to install NodeJS](http://nodejs.org)
 
-First, let's create a directory where our sample socket.io chat application will exist.
+First, let's create a directory where our sample SocketIO chat application will exist.
 
 ```
 mkdir socketio-chatapp && cd socketio-chatapp
@@ -85,8 +84,8 @@ npm install
 #### Setting up our SocketIO server
 
 Now that all our dependencies are installed, we can start writing the server portion of our chat application. We will
-be using [Express.js](http://sample.com), a minimal web framework that provides a bunch of features that will make our
-life a lot easier. If you are not familiar with [Express](http://sample.com), do not worry. It is very
+be using [Express.js](http://expressjs.com/), a minimal web framework that provides a bunch of features that will make our
+life a lot easier. If you are not familiar with [Express](http://expressjs.com/), do not worry. It is very
 simple to setup and we will go through the entire process step-by-step.
 
 Using your text editor, create another file called 'app.js'. This will serve as our socket.io server, and of course
@@ -180,8 +179,8 @@ is passed in on a 'connection' event. When the server recieves a 'sendChat' even
     socket.broadcast.emit('updateChat', 'Server', socket.username + ' has disconnected.');
   });
 });
-  
 ```
+
 Finally, we create the event handler for 'disconnect'. When the server recieves a disconnect event,
 we delete the username from the usernames object, emit 'updateUsers' event which will update the
 current list of clients, and broadcast to all clients that a user has disconnected.
@@ -402,6 +401,9 @@ io.sockets.on('connection', function(socket) {
 3. [SocketIO](http://socket.io)
 4. [ZeroMQ](http://zeromq.org/)
 5. [node-zeromq](https://github.com/JustinTulloss/zeromq.node)
+
+#### About
+Written by Brian Wu brianwu02@gmail.com
 
 
 
