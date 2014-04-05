@@ -115,5 +115,6 @@ from:
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
-1. [IcoMoon](http://icomoon.io)
-2. [Fontrello - icon fonts generator](http://fontello.com)
+1. [GitHub Icon Fonts Showcase](https://github.com/showcases/icon-fonts)
+2. [IcoMoon](http://icomoon.io)
+3. [Fontrello - icon fonts generator](http://fontello.com)
