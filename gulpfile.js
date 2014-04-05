@@ -32,5 +32,5 @@ gulp.task('watch', function() {
   gulp.watch(['scripts/**/*.js', '!scripts/compiled.js'], ['compress']);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'compress', 'watch']);
 gulp.task('build', ['compress']);
