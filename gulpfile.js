@@ -17,6 +17,7 @@ gulp.task('compress', function() {
     'scripts/lib/angular.min.js',
     'scripts/lib/*.js',
     'scripts/app.js',
+    'scripts/constants/*.js',
     'scripts/controllers/*.js',
     'scripts/directives/*.js',
     'scripts/services/*.js'

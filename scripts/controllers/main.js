@@ -1,9 +1,9 @@
 angular.module('MyApp')
-  .controller('MainCtrl', ['$scope', '$rootScope', '$route', '$window', 'Posts', 'GitHub', '$routeParams', 'ngProgress' ,function($scope, $rootScope, $route, $window, Posts, GitHub, $routeParams, ngProgress) {
+  .controller('MainCtrl', ['$scope', '$rootScope', '$route', '$window', 'Post', 'GitHub', '$routeParams', 'ngProgress' ,function($scope, $rootScope, $route, $window, Post, GitHub, $routeParams, ngProgress) {
     $scope.$on('$routeChangeSuccess', function($currentRoute, $previousRoute) {
       if ($routeParams.name) {
         ngProgress.start();
-        Posts.getBySlug($routeParams.name, function(post) {
+        Post.getBySlug($routeParams.name, function(post) {
           $scope.post = post;
           ngProgress.complete();
           $window.document.title = $scope.post.title + " - " + 'JS Recipes'
@@ -17,7 +17,7 @@ angular.module('MyApp')
       } else {
         $rootScope.title = $route.current.title;
 
-        Posts.getPosts(function(posts) {
+        Post.getPosts(function(posts) {
           $scope.posts = posts;
         });
 
