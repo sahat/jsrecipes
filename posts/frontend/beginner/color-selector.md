@@ -1,0 +1,1 @@
+http://bootstrap-colorselector.flaute.com

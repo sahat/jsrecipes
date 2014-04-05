@@ -161,6 +161,12 @@ angular.module('MyApp')
           "description": "Using Typeahead to provide search results as you type"
         },
         {
+          "title": "Color Selector",
+          "slug": "color-selector",
+          "file": "frontend/beginner/color-selector.md",
+          "description": "Creating a color picker dropdown"
+        },
+        {
           "title": "Custom Select Boxes and Input Tags",
           "slug": "custom-select-boxes-and-input-tags",
           "file": "frontend/beginner/custom-select-boxes-and-input-tags.md",
@@ -271,6 +277,12 @@ angular.module('MyApp')
           "slug": "resizable-split-pane-layout",
           "file": "frontend/advanced/resizable-split-pane-layout.md",
           "description": "Creating a split pane layout similar to JSBin and JSFiddle websites"
+        },
+        {
+          "title": "Tables with Remote Data",
+          "slug": "tables-with-remote-data",
+          "file": "frontend/advanced/tables-with-remote-data.md",
+          "description": "Powerful tables with sorting, filtering, pagination and remote data support"
         }
       ]
     },
