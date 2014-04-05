@@ -155,9 +155,9 @@ angular.module('MyApp')
     "frontend": {
       "beginner": [
         {
-          "title": "Text Field Autocomplete",
-          "slug": "text-field-autocomplete",
-          "file": "frontend/beginner/text-field-autocomplete.md",
+          "title": "Typeahead",
+          "slug": "typeahead",
+          "file": "frontend/beginner/typeahead.md",
           "description": "Using Typeahead to provide search results as you type"
         },
         {
