@@ -219,12 +219,10 @@ Just like our SocketIO server, our client will emit and respond to events.
   });
 
 ```
-We register three events : 'connect', 'updateChat' and 'updateUsers'. When our client connects to the server,
-the client will emit an 'addUser' event which will send the value of the prompt to the server. When the server
-recieves the name, it will be added to the servers list of usernames.
-
-
-
+We register three events : *connect*, *updateChat* and *updateUsers*. When our client connects,
+it will emit an *addUser* event which  the server is listening for. The user is prompted for
+their username and the value is sent to the server. When the server recieves the clients username, 
+it will be added to the list of usernames.
 
 ```
 <script src="/socket.io/socket.io.js"></script>
