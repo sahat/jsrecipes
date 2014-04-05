@@ -161,6 +161,12 @@ angular.module('MyApp')
           "description": "Using Typeahead to provide search results as you type"
         },
         {
+          "title": "Custom Select Boxes and Input Tags",
+          "slug": "custom-select-boxes-and-input-tags",
+          "file": "frontend/beginner/custom-select-boxes-and-input-tags.md",
+          "description": "Custom <select> and <input> boxes for tagging, contact lists, country selectors using selectize.js"
+        },
+        {
           "title": "Comparing Icon Fonts",
           "slug": "comparing-icon-fonts",
           "file": "frontend/beginner/comparing-icon-fonts.md",
@@ -195,12 +201,6 @@ angular.module('MyApp')
           "slug": "growl-like-notifications",
           "file": "frontend/beginner/growl-like-notifications.md",
           "description": "Compiled list of notification plugins based on Growl"
-        },
-        {
-          "title": "Customizable Select Dropdown",
-          "slug": "customizable-select-dropdown",
-          "file": "frontend/beginner/customizable-select-dropdown.md",
-          "description": "Shows you how to add custom styles to <select> element"
         },
         {
           "title": "Bootstrap Sidebar Menu",
@@ -301,5 +301,3 @@ angular.module('MyApp')
       }
     ]
   });
-
-
