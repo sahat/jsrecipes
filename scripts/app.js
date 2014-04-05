@@ -1,4 +1,4 @@
-angular.module('MyApp', ['ngRoute', 'ngAnimate', 'ngProgress', 'ngDisqus', 'ngTable'])
+angular.module('MyApp', ['ngRoute', 'ngProgress', 'ngDisqus', 'ngTable'])
   .config(['$routeProvider', '$locationProvider', '$disqusProvider', function($routeProvider, $locationProvider, $disqusProvider) {
     $disqusProvider.setShortname('jsrecipes');
     $locationProvider.hashPrefix('!');
