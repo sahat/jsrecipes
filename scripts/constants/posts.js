@@ -140,8 +140,9 @@ angular.module('MyApp')
         },
         {
           "title": "Generating Short Hashes (like YouTube and Bitly)",
-          "slug": "generating-short-hashes-like-youtube-and-bitly",
-          "file": "backend/advanced/generating-short-hashes-like-youtube-and-bitly.md"
+          "slug": "generating-short-hashes",
+          "file": "backend/advanced/generating-short-hashes.md",
+          "description": "Learn how to create unique short hashes like b9iLXiAa or Aaco9cy5."
         }
       ]
     },
