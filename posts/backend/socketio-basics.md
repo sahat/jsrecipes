@@ -2,7 +2,7 @@
 
 ### Introduction
 
-[Socket.io](http://socket.io) is a lightweight protocol that sits on top of
+[SocketIO](http://socket.io) is a lightweight protocol that sits on top of
 HTTP which aims to make real-time communication between the server and client 
 possible. Typically, the client is a web browser: Chrome, Firefox,
 Safari with the server being [node.js](http://nodejs.org). 
@@ -83,7 +83,7 @@ After you have done that, we can now tell npm we want install these dependencies
 npm install
 ```
 
-#### Setting up our Socket.io server
+#### Setting up our SocketIO server
 
 Now that all our dependencies are installed, we can start writing the server portion of our chat application. We will
 be using [Express.js](http://sample.com), a minimal web framework that provides a bunch of features that will make our
@@ -97,7 +97,7 @@ This will make the code easier to digest and keep me from having to reference li
 In this tutorial, code snippets are broken up in a contiguous manner allowing you to direct copy
 code snippets without generating syntax errors.
 
-##### app.js
+**app.js**
 
 ```javascript
   var express = require('express');
@@ -189,14 +189,13 @@ current list of clients, and broadcast to all clients that a user has disconnect
 
 We have finished writing the server portion of our socket.io powered chat application!
 
-#### Setting up socket.io client
+#### Setting up SocketIO client
 
 In the same directory as 'app.js', create a file called *index.html*. We will store both javascript and HTML
 inside this file. [JQuery](http://jquery.com/) is used to expedite the data & click registration process.
 Just like our SocketIO server, our client will emit and respond to events.
 
-##### index.html
-
+**index.html**
 ```
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -219,11 +218,27 @@ Just like our SocketIO server, our client will emit and respond to events.
   });
 
 ```
-We register three events : *connect*, *updateChat* and *updateUsers*. When our client connects,
-it will emit an *addUser* event which  the server is listening for. The user is prompted for
-their username and the value is sent to the server. When the server recieves the clients username, 
-it will be added to the list of usernames.
+We register three events: **connect**, **updateChat** and **updateUsers**. 
+On **connect** event, signifying the client sucessfully connects to the server, the connect event handler is executed and our client
+will emit an *addUser* event. We are then prompted for a username
+which will be sent to the server. When the server recieves the username, it will be added to the global 
+list of usernames.
+An **updateChat** event occurs when our server recieves a chat message that needs to be broadcasted
+to all listening clients. On updateChat, we append the received message to the *conversation* div specified by JQuery.
+Finally, the **updateUsers** event occurs whenever a client connects or disconnects to the SocketIO server. Our server
+updates the global list of usernames and sends them to all the clients. 
+Annnnd thats it, we successfuly implemented all the required functionality for real-time client to server communcation!
 
+The remaining code Javascript and HTML are JQuery functions that allow us to extra data from inputs and HTML to
+display the data.
+
+
+
+
+
+### <i class="fa fa-code"></i> Source Code</i>
+
+**index.html**
 ```
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -277,8 +292,13 @@ it will be added to the list of usernames.
     <input id="data" style="width:200px;" />
     <input type="button" id="datasend" value="send" />
 </div>
-
 ```
+
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources</i>
+
+1. Stuff
+2. Stuff Again
 
 
 
