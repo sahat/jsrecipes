@@ -220,7 +220,7 @@ angular.module('MyApp')
           "title": "Handling Keyboard Shortcuts in JavaScript",
           "slug": "handling-keyboard-shortcuts-in-javascript",
           "file": "frontend/intermediate/handling-keyboard-shortcuts-in-javascript.md",
-          "description": "Page interaction using keyboard shortcuts"
+          "description": "Controlling page interaction with keyboard shortcuts"
         },
         {
           "title": "Infinite Scrolling",
