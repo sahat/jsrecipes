@@ -12,15 +12,24 @@ gulp.task('sass', function() {
 });
 
 gulp.task('compress', function() {
-  gulp.src(['scripts/**/*.js', '!scripts/lib/**'])
+  gulp.src([
+    'scripts/lib/jquery-2.1.0.min.js',
+    'scripts/lib/angular.min.js',
+    'scripts/lib/*.js',
+    'scripts/app.js',
+    'scripts/controllers/*.js',
+    'scripts/directives/*.js',
+    'scripts/services/*.js'
+  ])
     .pipe(concat('compiled.js'))
-    .pipe(gulp.dest('scripts'))
-    .pipe(uglify())
+//    .pipe(uglify())
     .pipe(gulp.dest('scripts'));
+
 });
 
 gulp.task('watch', function() {
   gulp.watch('./styles/*.scss', ['sass']);
+//  gulp.watch('./scripts/*.js', ['compress']);
 });
 
 gulp.task('default', ['sass', 'watch']);
