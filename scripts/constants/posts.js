@@ -133,9 +133,9 @@ angular.module('MyApp')
       ],
       "advanced": [
         {
-          "title": "Organizing Callbacks with Async.js",
-          "slug": "organizing-callbacks-with-asyncjs",
-          "file": "backend/organizing-callbacks-with-asyncjs.md",
+          "title": "Organizing Callbacks with Async",
+          "slug": "organizing-callbacks-with-async",
+          "file": "backend/advanced/organizing-callbacks-with-async.md",
           "description": "Learn about series, parallel, waterfall and other control flows to help you organize callbacks"
         },
         {
