@@ -1,4 +1,4 @@
-<script src="masonry.pkgd.min.js"></script>
+<script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
 <style>
 .item { width: 200px; }
 </style>
