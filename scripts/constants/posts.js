@@ -185,22 +185,16 @@ angular.module('MyApp')
           "description": "Collapse Bootstrap dropdown menu on mouse over"
         },
         {
-          "title": "Image Carousel with Slick",
-          "slug": "image-carousel-with-slick",
-          "file": "frontend/beginner/image-carousel-with-slick.md",
-          "description": "Slick is fast, responsive, touch-compatible carousel"
-        },
-        {
           "title": "Loading Progress Bar",
           "slug": "loading-progress-bar",
           "file": "frontend/beginner/loading-progress-bar.md",
           "description": "YouTube-like slim progress bar"
         },
         {
-          "title": "Pinterest Grid Layout with Packery.js",
-          "slug": "pinterest-grid-layout-with-packeryjs",
-          "file": "frontend/beginner/pinterest-grid-layout-with-packeryjs.md",
-          "description": "Dynamic grid layout similar to Pinterest"
+          "title": "Pinterest Grid Layout",
+          "slug": "pinterest-grid-layout",
+          "file": "frontend/beginner/pinterest-grid-layout.md",
+          "description": "Using Masonry.js to create a dynamic grid layout inspired by Pinterest"
         },
         {
           "title": "Growl-like Notifications",
