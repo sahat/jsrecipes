@@ -197,12 +197,6 @@ angular.module('MyApp')
           "description": "Using Masonry.js to create a dynamic grid layout inspired by Pinterest"
         },
         {
-          "title": "Growl-like Notifications",
-          "slug": "growl-like-notifications",
-          "file": "frontend/beginner/growl-like-notifications.md",
-          "description": "Compiled list of notification plugins based on Growl"
-        },
-        {
           "title": "Bootstrap Sidebar Menu",
           "slug": "bootstrap-sidebar-menu",
           "file": "frontend/beginner/bootstrap-sidebar-menu.md",
