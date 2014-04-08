@@ -59,6 +59,8 @@ var msnry = new Masonry(container, {
   itemSelector: '.item'
 });
 
+/** OR **/
+
 // jQuery
 $('#container').masonry({
   gutter: 10,
@@ -68,14 +70,7 @@ $('#container').masonry({
 ```
 
 #### Demo
-<div id="container" class="js-masonry" data-masonry-options='{ "gutter": 10, "columnWidth": 200, "itemSelector": ".item" }'>
-  <div class="item alert alert-info">Each Masonry element is 200px wide</div>
-  <div class="item alert alert-danger">For Masonry to work, each item must have a common class name such as .item</div>
-  <div class="item alert alert-success">As you resize the browser window, grid layout will adjust automatically</div>
-  <div class="item alert alert-warning">You can also specify the gutter width between each element via gutter option</div>
-  <div class="item alert alert-info">Masonry can be initialized using JavaScript or in HTML</div>
-</div>
-
+<iframe width="100%" height="300" src="http://jsfiddle.net/sahat/yhXLb/embedded/result,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 #### Final Notes
 If you are planning on doing something more complex with this grid layout,
 take a look at [Masonry Methods](http://masonry.desandro.com/methods.html).
