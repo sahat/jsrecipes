@@ -214,7 +214,7 @@ angular.module('MyApp')
           "title": "Instant Page Load with InstantClick",
           "slug": "instant-page-load-with-instantclick",
           "file": "frontend/intermediate/instant-page-load-with-instantclick.md",
-          "description": "InstantClick prefetches pages on mouse hover, right before you click on the link"
+          "description": "InstantClick prefetches pages on mouseoover, right before you click on the link"
         },
         {
           "title": "Offline Status Notification",
