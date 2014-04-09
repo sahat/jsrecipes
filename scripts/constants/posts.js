@@ -237,7 +237,7 @@ angular.module('MyApp')
         {
           "title": "Search, Filter, Sort Lists or Tables",
           "slug": "search-filter-sort-list-or-tables",
-          "file": "search-filter-sort-list-or-tables",
+          "file": "frontend/intermediate/search-filter-sort-list-or-tables.md",
           "description": "List.js is tiny library for adding search, sort and filters to existing HTML tables, lists"
         }
       ],
