@@ -1,8 +1,7 @@
-## Add Socket.io banner image
-
+![](images/backend/beginner/socketIObanner.png)
 ### Introduction
 
-[Socket.io](http://socket.io) is a lightweight protocol that sits on top of
+[SocketIO](http://socket.io) is a lightweight protocol that sits on top of
 HTTP which aims to make real-time communication between the server and client 
 possible. Typically, the client is a web browser: Chrome, Firefox,
 Safari with the server being [node.js](http://nodejs.org). 
@@ -25,7 +24,7 @@ for example an _incomingMessage_ event, and the client will listen for events em
 say, _dataFromServer_. Both the client and server EMIT events and respond 
 accordingly by executing functions that are registered to LISTEN for those specific event.
 
-A socket.io powered chat application's workflow may look something like this:
+A SocketIO powered chat application's workflow may look something like this:
 
 1. Client connects to a server and a _connection_ event is registered by the server.
 
@@ -48,7 +47,7 @@ leaves the page or closes their browser which emits a _disconnect_ event.
 of connected clients. The server then broadcasts a _data_ event which lets tells 
 the clients that a user has left the chatroom.
 
-
+<hr> 
 ### Getting Started
 
 Now with all the formalities out of the way, we can finally get started! Before we jump right in,
@@ -83,7 +82,7 @@ After you have done that, we can now tell npm we want install these dependencies
 npm install
 ```
 
-#### Setting up our Socket.io server
+#### Setting up our SocketIO server
 
 Now that all our dependencies are installed, we can start writing the server portion of our chat application. We will
 be using [Express.js](http://sample.com), a minimal web framework that provides a bunch of features that will make our
@@ -97,7 +96,7 @@ This will make the code easier to digest and keep me from having to reference li
 In this tutorial, code snippets are broken up in a contiguous manner allowing you to direct copy
 code snippets without generating syntax errors.
 
-##### app.js
+**app.js**
 
 ```javascript
   var express = require('express');
@@ -189,13 +188,13 @@ current list of clients, and broadcast to all clients that a user has disconnect
 
 We have finished writing the server portion of our socket.io powered chat application!
 
-#### Setting up socket.io client
+#### Setting up SocketIO client
 
-In the same directory as 'app.js', create a file called index.html. We will store both javascript and HTML
-inside this file. [Jquery](http://jquery.com/) is used to expedite the data registration process.
+In the same directory as 'app.js', create a file called *index.html*. We will store both javascript and HTML
+inside this file. [JQuery](http://jquery.com/) is used to expedite the data & click registration process.
+Just like our SocketIO server, our client will emit and respond to events.
 
-##### index.html
-
+**index.html**
 ```
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -218,11 +217,128 @@ inside this file. [Jquery](http://jquery.com/) is used to expedite the data regi
   });
 
 ```
-Just like app.js, we register three event listener functions: 'connect', 'updateChat' and 'updateUsers'.
+We register three events: **connect**, **updateChat** and **updateUsers**. 
+On **connect** event, signifying the client sucessfully connects to the server, the connect event handler is executed and our client
+will emit an *addUser* event. We are then prompted for a username
+which will be sent to the server. When the server recieves the username, it will be added to the global 
+list of usernames.
+An **updateChat** event occurs when our server recieves a chat message that needs to be broadcasted
+to all listening clients. On updateChat, we append the received message to the *conversation* div specified by JQuery.
+Finally, the **updateUsers** event occurs whenever a client connects or disconnects to the SocketIO server. Our server
+updates the global list of usernames and sends them to all the clients. 
+Annnnd thats it, we successfuly implemented all the required functionality for real-time client to server communcation!
+
+The remaining code Javascript and HTML are JQuery functions that allow us to extra data from inputs and HTML to
+display the data.
+
+```
+// on load of page
+  $(function(){
+    // when the client clicks SEND
+    $('#datasend').click( function() {
+      var message = $('#data').val();
+      $('#data').val('');
+      // tell server to execute 'sendchat' and send along one parameter
+      socket.emit('sendchat', message);
+    });
+
+    // when the client hits ENTER on their keyboard
+    $('#data').keypress(function(e) {
+      if(e.which == 13) {
+        $(this).blur();
+          $('#datasend').focus().click();
+        }
+    });
+});
+
+</script>
+<div style="float:left;width:100px;border-right:1px solid black;height:300px;padding:10px;overflow:scroll-y;">
+    <b>USERS</b>
+    <div id="users"></div>
+</div>
+<div style="float:left;width:300px;height:250px;overflow:scroll-y;padding:10px;">
+    <div id="conversation"></div>
+    <input id="data" style="width:200px;" />
+    <input type="button" id="datasend" value="send" />
+</div>
+```
+#### Final Thoughts
+
+SocketIO is a very powerful tool when you need easy real-time communication between the server and client.
+SocketIO attempts to use the WebSocket protocol, a full-duplex communication channel over TCP. If the WebSocket
+protocol is not supported by the browser, it will fallback to less efficient communication methods: Adobe Flash Socket,
+AJAX Long Polling, AJAX Multipart Streaming, Forever IFrame, and JSONP Polling. As a developer, this is awesome
+because you have don't have to ask yourself "Will this work on browser x?" because the answer is most likely yes.
+
+Another cool feature of SocketIO is **volatile messages**. Volatile messages are messages that can be droppped
+without any significant reprecussions. Say you are pushing non mission-critical updates to a client 
+every 5 seconds. You might choose volatile messaging as losing a couple message won't break your app. You can
+read more about SocketIO's features [here](http://socket.io/#how-to-use).
+ 
+If you are looking for something that can do server to server interprocess communication, you can definitely
+use SocketIO but there are better tools availiable. For example, [ZeroMQ](http://zeromq.org/) is great for
+fast and easy communication. Like SocketIO and many other node libraries, [node-zmq](https://github.com/JustinTulloss/zeromq.node)
+follows the Event Emitter pattern so learning zmq is quick and painless. ZeroMQ out of the box offers basic
+messaging patterns: PUB/SUB, REQ/REP, PUSH/PULL. ZeroMQ makes no assumption about your architecture so you
+if you are planning on doing anything relatively complex, you will have to handle everything yourself.
+ZeroMQ could be considered 'TCP Socket on Steroids'.
 
 
+### <i class="fa fa-code"></i> Source Code</i>
 
 
+**app.js**
+```
+var express = require('express');
+var http = require('http');
+var app = express();
+
+// configuration settings for PORT
+app.set('port', process.env.PORT || 8080);
+
+// configure routing
+app.get('/', function(req, res) {
+  res.sendfile(__dirname + '/index.html');
+});
+
+var server = http.createServer(app).listen(app.get('port'), function() {
+  console.log("Express listening on port: " + app.get('port'));
+});
+
+var io = require('socket.io').listen(server);
+io.set('log level', 0);
+
+var usernames = {};
+
+io.sockets.on('connection', function(socket) {
+  socket.on('sendChat', function(data) {
+    io.sockets.emit('updateChat', socket.username, data);
+  });
+
+  socket.on('addUser', function(username) {
+    // store the username in the sockets session for the client
+    socket.username = username;
+    // add the client's username to the global list
+    usernames[username] = username;
+    socket.emit('updateChat', 'Server', 'you have connected');
+    // echo globally (all clients) that a person has connected
+    socket.broadcast.emit('updateChat', 'Server', username + ' has connected');
+    // update the list of users in the chat, client side
+    io.sockets.emit('updateUsers', usernames);
+  });
+
+  socket.on('disconnect', function() {
+    // remove the username from the global list of usernames
+    delete usernames[socket.username];
+    // update the list of users in the chat, client side
+    io.sockets.emit('updateUsers', usernames);
+    // echo globally that this client has left
+    socket.broadcast.emit('updateChat', 'Server', socket.username + ' has disconnected.');
+  });
+});
+```
+
+**index.html**
 ```
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -276,9 +392,16 @@ Just like app.js, we register three event listener functions: 'connect', 'update
     <input id="data" style="width:200px;" />
     <input type="button" id="datasend" value="send" />
 </div>
-
 ```
 
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Related Resources</i>
+
+1. [Michael Mukhin's SocketIO tutorial](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/)
+2. [Sample Chat App in AngularJS and ExpressJS](https://github.com/brianwu02/MEAN-chat)
+3. [SocketIO](http://socket.io)
+4. [ZeroMQ](http://zeromq.org/)
+5. [node-zeromq](https://github.com/JustinTulloss/zeromq.node)
 
 
 
