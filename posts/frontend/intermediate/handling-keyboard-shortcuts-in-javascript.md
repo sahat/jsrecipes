@@ -4,3 +4,5 @@
   user experience. A perfect use case for keyboard shortcuts interaction
    would be single page applications like Gmail, Cloud9 IDE , JSFiddle.
 </div>
+
+insert jsfiddle of infinite scrolls and add TODO: revise coming soon

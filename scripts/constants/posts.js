@@ -167,12 +167,6 @@ angular.module('MyApp')
           "description": "Creating a color picker dropdown"
         },
         {
-          "title": "Custom Select Boxes and Input Tags",
-          "slug": "custom-select-boxes-and-input-tags",
-          "file": "frontend/beginner/custom-select-boxes-and-input-tags.md",
-          "description": "Custom <select> and <input> boxes for tagging, contact lists, country selectors using selectize.js"
-        },
-        {
           "title": "Comparing Icon Fonts",
           "slug": "comparing-icon-fonts",
           "file": "frontend/beginner/comparing-icon-fonts.md",
@@ -221,12 +215,6 @@ angular.module('MyApp')
           "slug": "instant-page-load-with-instantclick",
           "file": "frontend/intermediate/instant-page-load-with-instantclick.md",
           "description": "InstantClick prefetches pages on mouse hover, right before you click on the link"
-        },
-        {
-          "title": "Underscore Templates",
-          "slug": "underscore-templates",
-          "file": "frontend/beginner/underscore-templates.md",
-          "description": "Using jQuery with Underscore templates"
         },
         {
           "title": "Offline Status Notification",
