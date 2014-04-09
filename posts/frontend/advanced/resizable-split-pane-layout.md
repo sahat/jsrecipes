@@ -1,5 +1,5 @@
 <div class="alert alert-warning">
-  Full guide coming in June 2014.
+  Full guide coming in Juneq 2014.
 </div>
 
 #### <i class="fa fa-magic text-danger"></i> Demo
