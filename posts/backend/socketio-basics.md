@@ -1,4 +1,4 @@
-![](images/backend/beginner/socketIObanner.png)
+![](images/backend/beginner/socketio-basics-1.png)
 ### Introduction
 
 [SocketIO](http://socket.io) is a lightweight protocol that sits on top of
