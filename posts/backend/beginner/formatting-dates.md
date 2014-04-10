@@ -1,8 +1,8 @@
 <div class="alert alert-info">
-<i class="fa fa-info"></i><strong>Tip:</strong>
+<i class="fa fa-info-circle"></i>
 Moment.js is one of those universal libraries that works both in Browser
 and Node.js. Everything covered in this guide works exactly the same
-if you were to include moment.js in HTML.
+if you were to include Moment.js in HTML.
 </div>
 
 Download and install moment.js:
@@ -19,7 +19,8 @@ var moment = require('moment');
 
 Here is the screenshot that demonstrates some capabilities of moment.js. Using
 moment.js you can turn this date string **Thu Mar 27 2014 17:56:02 GMT-0400 (EDT)**
-into **March 27th 2014**, with or without time, depending on the format you use.
+into **March 27th 2014**, with or without time, depending on the formatting token
+you use.
 
 ![](images/backend/beginner/formatting-dates-1.png)
 
@@ -136,10 +137,10 @@ Here is a list of all moment.js formatting tokens:
   </tbody>
 </table>
 
-One of my favorite features of moment.js is calendar time. Instead of displaying
-a date string like **03/21/2014**, you could instead use **Last Friday at 6:11 PM**.
-Blog posts would be an excellent use case for this. It also works with future
-dates.
+One of my favorite features of moment.js is the *calendar time*. Instead of
+displaying a date string like **03/21/2014**, you could instead display it as
+**Last Friday at 6:11 PM**. Blog posts would be an excellent use case for this.
+It also works with future dates, e.g. **Tomorrow at 6:14 PM**.
 
 ```
 moment().subtract('days', 10).calendar(); // "03/17/2014"
@@ -152,7 +153,7 @@ moment().add('days', 3).calendar(); // "Sunday at 6:14 PM"
 moment().add('days', 10).calendar(); // "04/06/2014"
 ```
 
-Another really cool feature of Moment.js is *time ago*:
+Another really awesome feature of Moment.js is *time ago* format:
 
 ```
 moment().add('days', 3).fromNow(); // "in 3 days"
@@ -161,8 +162,9 @@ moment('October 2010').fromNow(); // "3 years ago"
 ```
 
 
-I have covered only a fraction of what moment.js can do, so I encourage you
-to look at [Moment.js Docs](http://momentjs.com/docs/) to learn more.
+I have only covered a fraction of what Moment.js can do for you, so I encourage
+you to look at [Moment.js Documentation](http://momentjs.com/docs/) to learn
+more.
 
 ### <i class="fa fa-code text-danger"></i> Source Code
 <hr>
