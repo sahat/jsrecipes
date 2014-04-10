@@ -1,8 +1,9 @@
 <div class="alert alert-info">
-<i class="fa fa-info-circle"></i>
-Moment.js is one of those universal libraries that works both in Browser
-and Node.js. Everything covered in this guide works exactly the same
-if you were to include Moment.js in HTML.
+  <h4>When would I use this?</h4>
+  You could use Moment.js when you need highly customizable date strings with
+  a built-in internationalization support. Moment.js is leaps and bounds better
+  than default Date methods such as <strong>toLocaleString</strong> or <strong>toDateString</strong> for displaying date
+  information.
 </div>
 
 Download and install moment.js:
@@ -165,6 +166,13 @@ moment('October 2010').fromNow(); // "3 years ago"
 I have only covered a fraction of what Moment.js can do for you, so I encourage
 you to look at [Moment.js Documentation](http://momentjs.com/docs/) to learn
 more.
+
+<div class="alert alert-info">
+  <i class="fa fa-info-circle"></i>
+  Moment.js is one of those universal libraries that works both in Browser
+  and Node.js. Everything covered in this guide works exactly the same
+  if you were to include Moment.js in HTML.
+</div>
 
 ### <i class="fa fa-code text-danger"></i> Source Code
 <hr>
