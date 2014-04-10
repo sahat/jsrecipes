@@ -108,10 +108,10 @@ third-party logging tools, this is where you could trigger error events. It's
 totally up to you in deciding what to do with those errors. Or perhaps this
 is where you would display a generic custom error page with the error message.
 
-http://www.nodewiz.biz/nodejs-error-handling-pattern/
+<hr>
+#### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
-http://www.joyent.com/blog/best-practices-for-error-handling-in-node-js
-
-http://machadogj.com/2013/4/error-handling-in-nodejs.html
-
-https://gist.github.com/balupton/5560110
+1. [Node.js Error Handling Patterns](http://www.nodewiz.biz/nodejs-error-handling-pattern)
+2. [Best Practices for Error Handling in Node.js](http://www.joyent.com/blog/best-practices-for-error-handling-in-node-js)
+3. [Error handling in node.js](http://machadogj.com/2013/4/error-handling-in-nodejs.html)
+4. [Node.js Best Practice Exception Handling](https://gist.github.com/balupton/5560110)
