@@ -13,33 +13,37 @@
   font-weight: 100;
   margin-top: -20px;
 }
- @media (max-width: 720px) {
-    .mongoose {
-      letter-spacing: -6px;
-      font-size: 75px;
+@media (max-width: 720px) {
+  .mongoose {
+    letter-spacing: -6px;
+    font-size: 75px;
   }
+}
 </style>
 <div class="mongoose">mongoose</div>
 
 
 [Mongoose](http://mongoosejs.com) is a Node.js library for interfacing with
 [MongoDB](http://mongodb.org) database. It sits on a higher abstraction
-layer than [Mongo DB Native NodeJS Driver](https://github.com/mongodb/node-mongodb-native),
-which Mongoose uses under the hood anyway. If you do not plan on defining a
-schema or using any of Mongoose's fancy features, then you might be better off with the native MongoDB driver. For most
-cases Mongoose is a solid choice.
+layer than [MongoDB Native NodeJS Driver](https://github.com/mongodb/node-mongodb-native),
+which Mongoose uses under the hood anyway. If you don't plan on defining a
+schema and would rather work with MongoDB documents and collections directly,
+then you might be better off with the native MongoDB driver. But for most
+cases Mongoose is a solid choice; I never had any problems with it, nor did I
+ever need to use native MongoDB driver.
 
+I assume you have already installed MongoDB. If you didn't install, or can't
+install MongoDB for whatever reason, as an alternative you may use a remote
+database on the cloud via [MongoLab](https://mongolab.com/welcome/) or
+[MongoHQ](http://www.mongohq.com/). Both services offer a *free tier*. It works
+exactly the same way as a local MongoDB database.
 
-
-I assume you have already installed MongoDB. Alternatively you may use a remote
-MongoDB database on the cloud via [MongoLab](https://mongolab.com/welcome/) or
-[MongoHQ](http://www.mongohq.com/). Both services offer a *free tier*.
-
-Before we get started make sure you have installed Mongoose by running
-`npm install mongoose`. You are getting errors during installation, make sure
-you have command line tools installed on your machine. To learn more, check out
+Before we get started, make sure you have installed Mongoose NPM module by
+running `npm install mongoose`. If you are getting errors during installation,
+make sure you have command line tools installed on your machine. To learn more, check out
 [Hackathon Starter Prerequisites](https://github.com/sahat/hackathon-starter#prerequisites).
-
+There is a small number of NPM modules out there that require *gcc/g++ toolchain*
+to correctly compile.
 
 ### Connecting to MongoDB
 
@@ -47,17 +51,19 @@ Connecting to database is incredibly simple:
 
 ```
 var mongoose = require('mongoose');
+
 mongoose.connect('localhost');
 ```
 
-**Note**: Mongoose will try to connect to local `test` database on port on **27017**.
-You can also specify a full path - `mongodb://localhost/test`, which
-would have the same effect as `localhost` in this case.
+**Note**: By default, Mongoose will try to connect to local **test** database on
+port **27017**. You can also specify full path `mongodb://localhost:27017/test`,
+which would have the same effect as `localhost` in this case.
 
 ### Defining a schema
-Before you can do anything, first you have to defina a schema. A schema
+Before you can do anything, you first have to defina a Mongoose schema. If you
+are familiar with SQL, it is the same concept here. A schema
 is just a structural representation of your MongoDB document. For example,
-here is what a `Comment` schema might look like:
+here is what a `Comment` schema might potentially look like:
 
 ```
 var CommentSchema = new Schema({
@@ -85,9 +91,9 @@ var BlogSchema = new Schema({
 });
 ```
 
-And here is yet another example of a `User` schema. Here I specified
-`required` and `unique` constraints. If those constrains are violated, a MongoDB
-error will be raised.
+And here is yet another example of a `User` schema. In this example, I specified
+`required` and `unique` constraints and if those constrains are violated,
+operation will fail and an error will be raised.
 
 ```
 var UserSchema = new mongoose.Schema({
