@@ -92,7 +92,7 @@ var BlogSchema = new Schema({
 ```
 
 And here is yet another example of a `User` schema. In this example, I specified
-`required` and `unique` constraints and if those constrains are violated,
+`required` and `unique` constraints, if those constrains are violated,
 operation will fail and an error will be raised.
 
 ```
@@ -105,7 +105,7 @@ var UserSchema = new mongoose.Schema({
 
 Each schema maps to a MongoDB collection. And each key - username, email,
 password, defines a property in a MongoDB document. For example, this is how a
-User document would look in a database:
+user document would look in our database:
 
 ```
 > db.users.findOne()
@@ -118,20 +118,20 @@ User document would look in a database:
 }
 ```
 
-Here is the list of all valid Schema types, plus optional properties:
+Here is the list of all valid Schema types, as well as some optional properties:
 
 - **String**
-  - **lowercase** = adds a lowercase setter.
+  - *lowercase* = adds a lowercase setter.
      - If set to `true`, it will save **MyEmail@gmail.COM** as **myemail@gmail.com**.
-  - **match** = sets a regular expression validator.
+  - *match* = sets a regular expression validator.
      - For example, `match: /^a/`, will successfully validate only if string starts with letter '*a*'.
-  - **trim** = adds a trim setter.
+  - *trim* = adds a trim setter.
      - If set to `true`, this string **' some name '** will be saved as **'some name'**, without leading and trailing spaces.
-  - **uppercase** = adds an uppercase setter.
+  - *uppercase* = adds an uppercase setter.
      - If set to `true`, it will save **an example** as **AN EXAMPLE**.
 - **Number**
-  - **max** = sets a maximum number validator.
-  - **min** = sets a minimum number validator.
+  - *max* = sets a maximum number validator.
+  - *min* = sets a minimum number validator.
 - **Date**
 - **Buffer**
 - **Boolean**
@@ -151,8 +151,8 @@ var User = mongoose.model('User', UserSchema);
 ```
 
 **Note**: The actual MongoDB collection name will be *pluralized* and *lowercased* string
-of the name you specified inside mongoose.model, e.g. `User` will become
-`users`. Then to retrieve all users in a Mongo Shell you would simply run
+of the name you specified in `mongoose.model()`, e.g. `User` will become
+`users`. Then, to retrieve all users from a MongoDB shell, you would simply run
 `db.users.find()`.
 
 ### CRUD Operations
