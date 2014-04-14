@@ -1,5 +1,18 @@
 <img src="https://dl.dropboxusercontent.com/u/14131013/jsrecipes-logo.png" height="40">
 
+
+## Built Using
+- Angular.JS
+- Gulp
+- Bootstrap Sass
+- jQuery
+- Showdown
+- angular-route
+- angular-disqus
+- ngProgress
+- highlight.js
+
+## License
 The MIT License (MIT)
 
 Copyright (c) 2014 Sahat Yalkabov
