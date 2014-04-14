@@ -1,5 +1,4 @@
-fullstack
-=========
+<img src="https://dl.dropboxusercontent.com/u/14131013/jsrecipes-logo.png" height="40">
 
 The MIT License (MIT)
 
