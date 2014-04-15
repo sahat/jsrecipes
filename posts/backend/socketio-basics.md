@@ -43,7 +43,7 @@ event containing data entered by the user.
 a _data_ event containing the text entered by the user. GOTO step 4 until the user
 leaves the page or closes their browser which emits a _disconnect_ event.
 
-7. Server recieves the _disconnect_ event and removes the socket connection from the pool
+7. Server receives the _disconnect_ event and removes the socket connection from the pool
 of connected clients. The server then broadcasts a _data_ event which lets tells 
 the clients that a user has left the chatroom.
 
@@ -271,7 +271,7 @@ AJAX Long Polling, AJAX Multipart Streaming, Forever IFrame, and JSONP Polling. 
 because you have don't have to ask yourself "Will this work on browser x?" because the answer is most likely yes.
 
 Another cool feature of SocketIO is **volatile messages**. Volatile messages are messages that can be droppped
-without any significant reprecussions. Say you are pushing non mission-critical updates to a client 
+without any significant repercussions. Say you are pushing non mission-critical updates to a client 
 every 5 seconds. You might choose volatile messaging as losing a couple message won't break your app. You can
 read more about SocketIO's features [here](http://socket.io/#how-to-use).
  
