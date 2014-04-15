@@ -41,7 +41,7 @@ angular.module('MyApp')
         {
           "title": "Socket.IO Basics",
           "slug": "socketio-basics",
-          "file": "backend/socketio-basics.md",
+          "file": "backend/beginner/socketio-basics.md",
           "description": "A brief introduction to Socket.IO"
         },
         {
