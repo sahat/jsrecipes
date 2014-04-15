@@ -15,6 +15,8 @@ angular.module('MyApp')
           });
         });
       } else {
+        $window.document.title = $route.current.title ? $route.current.title + " - " + 'JS Recipes' : 'JS Recipes';
+
         $rootScope.title = $route.current.title;
 
         Post.getPosts(function(posts) {
