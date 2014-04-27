@@ -2,7 +2,7 @@
 
 Sometimes you need to open Bootstrap dropdowns on mouse over, however it is not
 always the case, but when you need you **really** need it. If you look around
-on the internet, you might stumble upon StackOverflor posts that require
+on the internet, you might stumble upon StackOverflow posts that require
 [crazy css hacks](http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click)
 to get it done. Thankfully there is a nice library called [bootstrap-hover-dropdown](https://github.com/CWSpear/bootstrap-hover-dropdown).
 
