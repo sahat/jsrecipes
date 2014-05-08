@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "devDependencies": {
     "gulp": "~3.5.5",
+    "gulp-concat": "^2.2.0",
+    "gulp-csso": "^0.2.8",
     "gulp-sass": "~0.7.1",
-    "gulp-uglify": "~0.2.1",
-    "gulp-concat": "^2.2.0"
+    "gulp-uglify": "~0.2.1"
   },
   "engines": {
     "node": ">=0.10.0"
