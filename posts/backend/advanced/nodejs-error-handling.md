@@ -108,6 +108,10 @@ third-party logging tools, this is where you could trigger error events. It's
 totally up to you in deciding what to do with those errors. Or perhaps this
 is where you would display a generic custom error page with the error message.
 
+#### Bonus: Error Handling in Node.js by Jamund Ferguson
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/p-2fzgfk9AA" frameborder="0" allowfullscreen></iframe>
+
 <hr>
 #### <i class="fa fa-lightbulb-o text-danger"></i> Additional Resources
 
