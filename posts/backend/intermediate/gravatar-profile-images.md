@@ -40,7 +40,7 @@ So, what is this MD5 hash anyway? From [MD5 Hash Generator](http://www.md5hashge
 <div class="alert alert-warning">
 <h4>Mongoose Integration</h4>
 You can use the following helper method to simplify the process of
-retrieve gravatar images.
+retrieve Gravatar images.
 </div>
 
 Add the following instance method to your User schema.

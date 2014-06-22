@@ -1,4 +1,4 @@
-Many third-party APIs return JSON data these days, but on some occassions
+Many third-party APIs return JSON data these days, but on some occasions
 you will have no choice but to work with XML.
 
 To get started, you will need to install `xml2js` library. For the purposes of

@@ -100,7 +100,7 @@ app.use(expressValidator());
 // ... other middleware below
 ```
 
-Here is how our updated POST handler would look with form vallidation:
+Here is how our updated POST handler would look with form validation:
 
 ```
 app.post('/', function(req, res) {

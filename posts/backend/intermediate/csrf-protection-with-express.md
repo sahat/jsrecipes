@@ -2,7 +2,7 @@ Why should you worry about preventing cross-site request forgery attacks? For to
 or hackathon apps it probably doesn't matter as much, but if you are running a
 production website there is no reason not to have CSRF protection.
 
-Consider thie following scenario: a banking web app hasn't been properly
+Consider the following scenario: a banking web app hasn't been properly
 protected against CSRF attacks, so then a malicious hacker could convince
 the user to visit another website while logged
 in to their banking website. This website could then run a POST request

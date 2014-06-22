@@ -10,7 +10,7 @@ how many connected users are currently online on the website.
 
 ![](images/backend/intermediate/who-is-online-with-socketio-1.png)
 
-For this example I will assume you are using Expres web framework. Add the
+For this example I will assume you are using Express web framework. Add the
 following code somewhere in your app, after `var app = express()`.
 
 **Server**

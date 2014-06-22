@@ -1,4 +1,4 @@
-Javascript lacks complete string manipulation operations. This an attempt to fill that gap. List of build-in methods can be found for example from Dive Into JavaScript.
+JavaScript lacks complete string manipulation operations. This an attempt to fill that gap. List of build-in methods can be found for example from Dive Into JavaScript.
 
 ### <i class="fa fa-text-height text-danger"></i> Case
 
@@ -28,7 +28,7 @@ Case.sentence('"foo!" said bar', ['Bar'])   -> '"Foo!" said Bar'
 
 Another useful method is `of`. With it you can actually identify the case of a
 given string. When processing uploaded files, you could use this as a first step
-in helping you tp identify the string case, and only then proceed to string case
+in helping you to identify the string case, and only then proceed to string case
 manipulations such as *camel*, *snake*, etc.
 
 ```javascript
@@ -112,7 +112,7 @@ _.slugify("Un éléphant à l'orée du bois")
 **Real-world Example:** Consider this website for example. The post you are
 reading right now is titled *String Manipulation*, but I can't use that
 string for URL (well, technically I could, but it would look pretty ugly as *String%20Manipulation*).
-Instead I use the slugified version - *string-manipulation*,
+Instead I use the sluggified version - *string-manipulation*,
 which works really nicely in browsers. No matter how weird or complex a title
 may be, sluggified string would always be simple and contain only dashes instead
 of punctuation and special characters.

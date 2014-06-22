@@ -21,7 +21,7 @@ block content
       input(type='file', name='file')
 ```
 
-**Note:** Don't forget to include `enctype='multipart/form-data'` form attriburte
+**Note:** Don't forget to include `enctype='multipart/form-data'` form attribute
 otherwise `req.files` will return `undefined` in your Express route.
 
 In the example above, I am using [Flatly](http://bootswatch.com/flatly/) theme
@@ -113,7 +113,7 @@ html
     script(src='/javascripts/main.js')
 ```
 
-Before you can use *jQuery File Upload*, you have to initalize it first:
+Before you can use *jQuery File Upload*, you have to initialize it first:
 `$('#fileupload').fileupload()`, but this library can do so much more.
 Below I initialize it and define two callback handlers in one step:
 

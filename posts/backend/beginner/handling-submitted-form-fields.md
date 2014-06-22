@@ -51,7 +51,7 @@ app.post('/signup', function(req, res) {
 });
 ```
 
-In the case of radio buttons, keep the same **name** attribute on logically groupped
+In the case of radio buttons, keep the same **name** attribute on logically grouped
 radio buttons, but different **value** attributes to differentiate them from
 each other.
 

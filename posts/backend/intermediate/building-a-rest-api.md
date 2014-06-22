@@ -4,7 +4,7 @@
   Ember or Knockout, you will need RESTful API for managing data. The beautiful
   thing about REST API is decoupled architecture: client doesn't need to know anything
   about the server and server couldn't care less about the client. You can basically
-  build REST API once and re-use it accross multiple clients - web, mobile and even desktop.
+  build REST API once and re-use it across multiple clients - web, mobile and even desktop.
 </div>
 
 This guide will show you how to build a book library service that lets users perform
@@ -227,7 +227,7 @@ document.
 This last route deletes a book by ObjectId. Again, I am just following URL
 convention outlined in the table above. Only status code `200` is sent back
 to the client, since most of the time a client just wants to know if delete
-operation was successfull.
+operation was successful.
 
 app.del('/api/books/:id', function(req, res) {
   Book.findById(req.params.id).remove(function(err) {
