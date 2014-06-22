@@ -10,7 +10,7 @@
 In the Summer 2013, I decided to learn Backbone.js. The best way to learn any
 new technology is to build a side-project with it. And so I did - [New Eden Faces](http://newedenfaces.com).
 Projects that I used a reference  had all their JavaScript code located either in a
-single **app.js** file or accross multiple scripts that were then loaded separately in
+single **app.js** file or across multiple scripts that were then loaded separately in
 **index.html**. It was a simple concept and I could understand that code. I strongly
 believed that Require.js syntax was so idiotic that I couldn't help but wonder
 why anyone in the right mind would use it. The benefits of Require.js didn't come
