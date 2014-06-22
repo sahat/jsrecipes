@@ -459,7 +459,7 @@ We started out with nothing and now we have a fully functioning web
 application backed by MongoDB with Facebook Sign-in. There is one thing we
 can improve upon. Notice if you go to `http://localhost:3000/me` without
 first signing-in, you will get an error message. Let's protect that route
-by forwarding unauthenticate users to `/login` URL.
+by forwarding unauthenticated users to `/login` URL.
 
 Add the following middleware function somewhere in your **app.js**:
 

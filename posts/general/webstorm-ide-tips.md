@@ -5,7 +5,7 @@ developed by JetBrains. Unlike Vim, you don't have to spend months learning the 
 productive. Simply opening your project in WebStorm instantly makes you far
 more productive than any other text editor thanks to auto-completion,
 smart inspections that can detect dead code, syntax errors, unreachable code,
-references to local files that don't exist (likely due ot misspelling).
+references to local files that don't exist (likely due to misspelling).
 
 Let me get something out of the way first. If you use Vim that's okay,
 stick with it. If you use Sublime Text, that's alright too. Use
@@ -49,7 +49,7 @@ styles yet, so inside **index.html** you add:
 WebStorm will immediately tell you that **style.css** does not exist. If your place
 a cursor over *css* in `css/style.css` and press <kbd>Alt</kbd> + <kbd>Enter</kbd>, it will prompt
 you to create `css` directory. After doing that the yellow highlight will go away from
-`css`, meaning there are no problems. Now moe your cursor to *style.css*, press
+`css`, meaning there are no problems. Now move your cursor to *style.css*, press
 <kbd>Alt</kbd> + <kbd>Enter</kbd> and it will prompt you to create `style.css` file inside `css` folder.
 I think that's pretty neat!
 
@@ -115,7 +115,7 @@ WebStorm can display auto-completion popup with <kbd>Control</kbd> + <kbd>Space<
 ![](images/general/webstorm-ide-tips-3.png)
 
 After I added `background-repeat` and `background-position` properties, WebStorm
-highlighted all those properties with a squigly line, suggesting me to merge
+highlighted all those properties with a squiggly line, suggesting me to merge
 them into a single `background` property.
 
 ![](images/general/webstorm-ide-tips-4.png)

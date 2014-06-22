@@ -87,10 +87,10 @@ function(err, results) {
 ```
 
 **Note:** Last function callback is optional, meaning sometimes you can end on last `task`
-functionIt depends entirely on what you are trying to do. In the example above,
+function. It depends entirely on what you are trying to do. In the example above,
 if task `one` performs some action and doesn't pass any value to `callback()`,
 then you could stop at task `two`, i.e. render a page, return `200` or redirect
-to another page. Either approach is fine, it's just optinal callback is
+to another page. Either approach is fine, it's just optional callback is
 sometimes redundant.
 
 This example was taken straight from the docs. Let's take a look at a more
@@ -304,7 +304,7 @@ of course. Running *N* tasks at the same time is faster than running *N* times o
 after another in `series`. One obvious disadvantage is you can't always use `parallel`
 control flow.
 
-In the `watefall` example above, you had no choice but to pass data from one
+In the `waterfall` example above, you had no choice but to pass data from one
 function to another. In the `series` example, you cannot run everything in
 `parallel` because you cannot delete a  file before it is uploaded to Amazon S3,
 and you cannot do that either until you first check if user has enough free space.

@@ -6,7 +6,7 @@ to Jade.
 
 ### Basics
 
-Jade is whitespace sensitive, like Python, Ruby and Coffeescript. I typically
+Jade is whitespace sensitive, like Python, Ruby and CoffeeScript. I typically
 indent Jade files with 2 spaces, but you may choose 4 spaces if that's your
 preference.
 
@@ -245,7 +245,7 @@ ul
 
 ### Attributes
 
-To addtributes, add them inside parenthesis of a tag, separated by a comma:
+To add attributes, add them inside parenthesis of a tag, separated by a comma:
 
 **Jade**
 ```

@@ -11,7 +11,7 @@
 If you are building a web application, you would almost certainly use icons at
 some point, somewhere in your application.
 
-If you have used Bootstrap 3+ then you might have seen their [glyphicons](http://getbootstrap.com/components/).
+If you have used Bootstrap 3+ then you might have seen their [Glyphicons](http://getbootstrap.com/components/).
 One advantage over fixed-size image-based icons of Bootstrap 2 is that these
 font icons look good at any size, and since it's just a font, you can easily
 change its color in CSS.
@@ -26,7 +26,7 @@ download Bootstrap 3.
 
 **Font File Size**: 120 kB
 
-The only good thing about Glyphicons is they are bundled with Bootstrapp. But
+The only good thing about Glyphicons is they are bundled with Bootstrap. But
 compared to other fonts, it is just too limited to be useful, at least in my
 case. Now, [Glyphicons Pro](glyphicons.com) (commercial version) on the other
 hand is really nice, but you have to pay for it.
@@ -61,7 +61,7 @@ I cannot get with Font Awesome or because that one particular icon looks nicer
 in Elusive Icons set. I really dislike how they make it so hard to download
 Elusive Icons in their redesigned UI by placing the actual download link all
 the way in the bottom after scrolling past hundreds of icons.
-It is so unintuitive that on multiple ocassions I had to download Elusive
+It is so unintuitive that on multiple occasions I had to download Elusive
 Icons directly from the GitHub Project.
 
 <hr>

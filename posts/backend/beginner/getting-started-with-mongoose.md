@@ -60,7 +60,7 @@ port **27017**. You can also specify full path `mongodb://localhost:27017/test`,
 which would have the same effect as `localhost` in this case.
 
 ### Defining a schema
-Before you can do anything, you first have to defina a Mongoose schema. If you
+Before you can do anything, you first have to define a Mongoose schema. If you
 are familiar with SQL, it is the same concept here. A schema
 is just a structural representation of your MongoDB document. For example,
 here is what a `Comment` schema might potentially look like:
@@ -139,7 +139,7 @@ Here is the list of all valid Schema types, as well as some optional properties:
 - **Objectid**
 - **Array**
 
-### Definning a model
+### Defining a model
 
 Mongoose model is what we ultimately need in order to interact with MongoDB. To
 create a `User` model using the schema defined above, you would need to
@@ -267,7 +267,7 @@ User
 #### Get total count of a particular field from all documents
 
 Suppose that each user has a `votes` field and you would like to count the total
-number of votes in your database accross all users.
+number of votes in your database across all users.
 
 ```
 User.aggregate({ $group: { _id: null, total: { $sum: '$votes' } } }, function(err, votesCount) {

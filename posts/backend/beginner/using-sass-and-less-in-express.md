@@ -89,7 +89,7 @@ a small change to my stylesheet.
 the entire [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) and
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/) libraries. I suspect
 the reason behind why Gulp is so fast has to do with partial compilation, i.e.
-it compiles only those parts that have been changed. For the sake of comparisson,
+it compiles only those parts that have been changed. For the sake of comparison,
 Grunt takes over 2 seconds on average to re-compile the same stylesheet.
 
 Before you can execute the gulpfile, you have to install **gulp** both locally and
@@ -157,7 +157,7 @@ In this tutorial I will talk about connect-assets v3 beta2, which at this moment
 GitHub branch. From my experience it is miles better than v2.5 on the master branch.
 
 If you are familiar with Rails Asset Pipeline then you will feel right at home, if not
-that's ok, I have never used Rails either.
+that's okay, I have never used Rails either.
 
 Connect ASsets does more than just compile stylesheets, it also concatenates and
 minifies JavaScript files in *production mode* if you choose that option. But

@@ -51,7 +51,7 @@ the clients that a user has left the chatroom.
 
 With all the formalities out of the way, we can finally get started!
 I assume that you are working in a UNIX environment: Ubuntu, OSX, etc and have
-[node.js](http://nodejs.org) installed. If you do not, please follow these installion 
+[node.js](http://nodejs.org) installed. If you do not, please follow these installation 
 instructions found here: [Link to install NodeJS](http://nodejs.org)
 
 First, let's create a directory where our sample SocketIO chat application will exist.
@@ -165,9 +165,9 @@ socket.io to listen for, and emit events.
 
 We create an object called usernames that will store the usernames of all connected clients.
 Then we tell socket.io after a 'connection' event, we should listen for a 'addUser' and 'sendChat' event.
-When the server recieves 'addUser' event from the client, we store the username sent from 
+When the server receives 'addUser' event from the client, we store the username sent from 
 the client into our usernames object and we also store it as an attribute of the socket. The socket object 
-is passed in on a 'connection' event. When the server recieves a 'sendChat' event, the server broadcasts an 
+is passed in on a 'connection' event. When the server receives a 'sendChat' event, the server broadcasts an 
 'updateChat' event to all connected clients with data sent to the server in the 'sendChat' event. 
 
 
@@ -183,7 +183,7 @@ is passed in on a 'connection' event. When the server recieves a 'sendChat' even
 });
   
 ```
-Finally, we create the event handler for 'disconnect'. When the server recieves a disconnect event,
+Finally, we create the event handler for 'disconnect'. When the server receives a disconnect event,
 we delete the username from the usernames object, emit 'updateUsers' event which will update the
 current list of clients, and broadcast to all clients that a user has disconnected.
 
@@ -191,7 +191,7 @@ We have finished writing the server portion of our socket.io powered chat applic
 
 #### Setting up SocketIO client
 
-In the same directory as 'app.js', create a file called *index.html*. We will store both javascript and HTML
+In the same directory as 'app.js', create a file called *index.html*. We will store both JavaScript and HTML
 inside this file. [JQuery](http://jquery.com/) is used to expedite the data & click registration process.
 Just like our SocketIO server, our client will emit and respond to events.
 
@@ -267,17 +267,17 @@ display the data.
 
 SocketIO is a very powerful tool when you need easy real-time communication between the server and client.
 SocketIO attempts to use the WebSocket protocol, a full-duplex communication channel over TCP. If the WebSocket
-protocol is not supported by the browser, it will fallback to less efficient communication methods: Adobe Flash Socket,
+protocol is not supported by the browser, it will fall back to less efficient communication methods: Adobe Flash Socket,
 AJAX Long Polling, AJAX Multipart Streaming, Forever IFrame, and JSONP Polling. As a developer, this is awesome
 because you have don't have to ask yourself "Will this work on browser x?" because the answer is most likely yes.
 
-Another cool feature of SocketIO is **volatile messages**. Volatile messages are messages that can be droppped
+Another cool feature of SocketIO is **volatile messages**. Volatile messages are messages that can be dropped
 without any significant repercussions. Say you are pushing non mission-critical updates to a client 
 every 5 seconds. You might choose volatile messaging as losing a couple message won't break your app. You can
 read more about SocketIO's features [here](http://socket.io/#how-to-use).
  
 If you are looking for something that can do server to server interprocess communication, you can definitely
-use SocketIO but there are better tools availiable. For example, [ZeroMQ](http://zeromq.org/) is great for
+use SocketIO but there are better tools available. For example, [ZeroMQ](http://zeromq.org/) is great for
 fast and easy communication. Like SocketIO and many other node libraries, [node-zmq](https://github.com/JustinTulloss/zeromq.node)
 follows the Event Emitter pattern so learning zmq is quick and painless. ZeroMQ out of the box offers basic
 messaging patterns: PUB/SUB, REQ/REP, PUSH/PULL. ZeroMQ makes no assumption about your architecture so you

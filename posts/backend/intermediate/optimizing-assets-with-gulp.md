@@ -29,7 +29,7 @@ gulp.task('default', function () {
 });
 ```
 
-How many killobytes you save by compressing an image depends on the image itself.
+How many kilobytes you save by compressing an image depends on the image itself.
 Just to give you some persective, the initial size of a screenshot that I took
 was **360 KB**, but after compression it is **242 KB**.
 
@@ -77,7 +77,7 @@ gulp.task('default', function () {
 
 #### <i class="fa fa-css3 text-danger"></i> Remove Unused CSS
 
-If you are using CSS frameworks like Boostrap or Foundation there is a good
+If you are using CSS frameworks like Bootstrap or Foundation there is a good
 chance you don't use *all* styles from the framework, but only a small subset. You
 could easily reduce the file size of your styles by removing unused CSS.
 
@@ -110,7 +110,7 @@ gulp.task('default', function() {
 Given the amount of JavaScript on a modern website, it is important more than
 ever to minify JavaScript files in production. If you only have one small
 JavaScript file, you probably won't see any performance gain by minifying the file.
-On the other thand, if you have a Backbone.js app with 50 files, loaded via
+On the other hand, if you have a Backbone.js app with 50 files, loaded via
 [Require.js](http://requirejs.org), you really **have to** to minify and
 concatenate all your JavaScript files.
 
@@ -135,7 +135,7 @@ gulp.task('compress', function() {
 <div class="alert alert-info">
   <h4>Gulp and Require.js</h4>
   <p>Take a look at this <a href="https://github.com/sahat/requirejs-library/blob/master/gulpfile.js">gulpfile.js</a>
-  to see an example of <strong>Gulp + Require.js</strong> integration. Thr r.js optimizer already comes
+  to see an example of <strong>Gulp + Require.js</strong> integration. The r.js optimizer already comes
   with a minifier, so you don't need a separate <a href="https://github.com/terinjokes/gulp-uglify">gulp-uglify</a>
   plugin.
   </p>

@@ -60,7 +60,7 @@ Add `data-hover="dropdown"` to the **dropdown-toggle** element.
 </div>
 <br>
 
-You can stil use original Bootstrap dropdowns that work on click, just don't include
+You can still use original Bootstrap dropdowns that work on click, just don't include
 `data-hover="dropdown"` attribute.
 
 <hr>
