@@ -1,5 +1,5 @@
 Emmet is a plugin for many popular text editors like Vim, Sublime Text,
-Eclipse, WebStorm, Esresso, which greatly improves HTML and CSS workflow.
+Eclipse, WebStorm, Espresso, which greatly improves HTML and CSS workflow.
 It allows you to quickly expand simple abbreviations into snippets of code with
 a <kbd>Tab</kbd> key.
 

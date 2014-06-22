@@ -41,7 +41,7 @@ var items = getItems(),
 ```
 
 I prefer their "bad" approach because I don't have to deal with the mess you create
-when swaping or deleting variables. If you want to delete `dragonball` variable,
+when swapping or deleting variables. If you want to delete `dragonball` variable,
 you have to cut/delete that line, then go up one line to `goSportsTeam` and change comma to semicolon.
 Or what if you want to swap `dragonball` with `goSportsTeam`? In my editor
 I can do it with `Command + Shift + Up Arrow`, but now I have to change semicolon
